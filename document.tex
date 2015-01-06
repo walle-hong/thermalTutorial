@@ -1,0 +1,26 @@
+\documentclass[letterpaper,11pt]{book}
+\usepackage{mystyle}
+
+% Book's title and subtitle
+\title{\huge \textbf{Heat and Mass Transfer in Practice}  \large \textbf{Using Mathematica}. \footnote{This is tutorial for ME 8381.} }
+% Author
+\author{\textsc{John C. Bischof} \footnote{Professor in Mechanical Engineering of University of Minnesota.}}
+
+
+\begin{document}
+
+%remove the red rectaugular around the reference.
+\hypersetup{pdfborder=0 0 0}
+\frontmatter
+\maketitle
+\tableofcontents
+%\listoffigures
+%\listoftables
+\mainmatter
+
+%include chapters
+\include{./tex/chMathematica}
+
+\bibliographystyle{plain}
+\bibliography{bibliography/MathematicaTutorial}
+\end{document}
