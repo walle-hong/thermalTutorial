@@ -4,7 +4,7 @@
 \chapter{One-dimensional Steady State Problems}
 
 \section{Overview}
-This Chapter mainly discuss different kind of one-dimensional steady state problems.
+This Chapter mainly discussed different kind of one-dimensional steady state problems. Including the use of Fourier’s law on constant cross sectional and non uniform cross sectional problem , the one dimensional steady state problem with constant and variate heat generation problem in both catesian and cylindrical coodinate system, and the fin design under steady state.
 
 \section{Fourier's law}
 
@@ -127,6 +127,7 @@ PlotQ = Plot[Qax, {x, .001, 1}, PlotRange -> All,    AxesLabel -> {"a", "Q" }]
 
 \section{1-D steady state, constant	internal heat generation problems}
 \begin{example}
+\label{example:23}
 \textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb}}
 A large thin slab of thickness $L=0.1~m$ is “setting.” Setting is an exothermic process 
 that releases $\dot{q}=100W/m^3$. Here the slab heat conductivity is in steady state. 
@@ -136,6 +137,7 @@ temperature distribution in along the length of the slab?
 \end{example}
 
 \begin{solution}
+~
 Based on the heat diffusion equation 
 $$\nabla^2 T+\frac{\dot{q}}{k}=\frac{1}{\propto}\frac{\partial T}{\partial t}$$
 where
@@ -160,6 +162,7 @@ PS1 = Plot[Evaluate[T[x] /. First[solution1]], {x, 0, 0.1},    PlotRange -> All]
 \end{solution}
 
 \begin{example}
+\label{example:24}
 \textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb, and Ch. 3, P. 134.}}
 ~\\
 A steady state long tube generating thermal energy at a uniform volumetric rate
@@ -170,6 +173,7 @@ What is the temperature distribution along the radius of the tube?
 \end{example}
 
 \begin{solution}
+~
 The heat diffusion equation for cylindrical system is 
 $$ 
 \frac{1}{r}\frac{\partial}{r}(kr\frac{\partial T}{\partial r})+
@@ -195,65 +199,158 @@ sketch the $T(r)$
 \end{solution}
 
 \section{1-D steady state, variate internal	heat generation	problems}
+\begin{example}
+\textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb, Ch. 3, P. 178.}}
+Consider the slab in the example \ref{example:23} and the tube in example
+\ref{example:24} are human tissues, the blood perfusion heat that varies with the internal temperature. The blood mass rate per volumetric tissue is $m_b=100kg/s$, specific heat capacity of blood $50J/kg.K$, initial temperature of the blood is 
+$T_a=37K$. Except the internal heat generation, other parameters are the same. 
+Sketch the temperature distribution in the slab and the tube.
+\end{example}
+
+\begin{solution}
+~
+\begin{enumerate}
+\item
+Based on the bioheat equation, the volumetric heat rate diffused by the blood into the tissue is 
+$$q_b=m_b c_b(T_a-T)$$
+set$$\theta = T-T_a$$
+hence based on the 1-D steady state heat diffusion equation in Cartesian coordinate
+where $\gamma^2=m_b c_b/k$, the boundary condition $T(0)=T_0$ and  $T(L)=T_1$,
+the solution for $\theta$ is as below
+$$\frac{\theta}{\theta_0}=\frac{\sinh\gamma x+\sinh\gamma(L-x)}{\sinh\gamma L}$$
+sketch of $\theta(x)$ is as below.
+\item
+For the tube, the cylindrical equation is
+$$\frac{d^2 \theta}{dr^2} + \frac{1}{r}\frac{d\theta}{dr}-\gamma^2\theta=0$$
+Solve this equation and get the sketch of $\theta(r)$
+\end{enumerate}
+\end{solution}
 
 \section{Fin problems}
 \begin{example}
-A rectangular fin with uniform cross-sectional area has constant heat conductivity 
-$k=3~W/m.K$ heat conduction coefficient $h=10~W/mc$, width is $W=0.01~m$, 
-Thickness is $L=1~m$. At start position $x_1=0~m$, temperature is $T_1=30^\circ C$.
-The surface of the fin is exposed to ambient air at $10~K$ with a convection heat transfer
-coefficient $h=10~W/m^2K$. Plot the temperature distribution in the fin under below conditions.
+\textbf{Constant k and A}. 
+\textcolor{blue} {\emph{Refer to tutorial 3.  Fin Solutions 2.nb, Ch. 3, P. 157}}
+A rectangular fin with uniform cross-sectional area has constant heat conductivity
+$k=3W/m.K$, width is $W=0.01m$, Thickness is $L=1m$. At start position $x_1=0m$, temperature is $T_1=30^\circ C$. The surface of the fin is exposed to ambient air at
+$10K$ with a convection heat transfer coefficient $h=10W/m^2K$. Plot the temperature distribution in the fin under below conditions.
 \begin{enumerate}
 \item Prescribed tip temperature: at the end position $x_2=0.04m, T_2=40^\circ C$
 \item Adiabatic tip condition.
 \item Infinite tip condition.
 \end{enumerate}
+\end{example}
 
+\begin{solution}
+~
+\begin{enumerate}
+\item
+The fin energy balance equation
+$$
+\frac{d^2 T}{dx^2} + 
+\left(\frac{1}{A_c}\frac{dA_c}{x}\right)\frac{dT}{dx}-
+\left(\frac{1}{A_c}\frac{h}{k}\frac{dA_s}{x}\right)(T-T_\infty)=0
+$$
+For the proscribed fin problem with constant cross section area  , 
+and surface area, we have   ,   . Hence 
+$$
+\frac{d^2 T}{dx^2}-
+\frac{hp}{kA_c}(T-T_\infty)=0
+$$
+To simplify the form of this equation, we transform the dependent variable by 
+defining an excess temperature $\theta$ as
+$$\theta(x) \equiv T(X)-T_\infty$$
+Where since $T_\infty$ is constant, $d\theta/dx=dT/dx$. Then we obtain
+$$\frac{d^2 T}{dx^2}-m^2\theta=0$$
+Where
+$$m^2 \ equiv \frac{hp}{kA_c}$$
+With prescribed boundary condition
+$$\theta(0)=T_1-T_\infty \equiv \theta_1$$
+$$\theta(0.04)=T_2-T_\infty \equiv \theta_2$$
+Then for prescribed condition the fin temperature distribution is
+$$
+\frac{\theta}{\theta_1}=
+\frac{(\theta/\theta_1)\sinh mx+\sinh m(L-x)}{\sinh mL}
+$$
+\item
+For adiabatic tip condition, the heat convection rate at the tip is considered negligible
+$$hA_c\theta(L)=-k\frac{d\theta}{dx}|_{x=L}=0$$
+And
+$$\frac{d\theta}{dx}|_{x=L}=0$$
+Then the heat distribution equation of adiabatic tip condition could be written as
+$$\frac{\theta}{\theta_1}=
+\frac{\cosh m(L-x)}{\cosh mL}
+$$
+The temperature distribution along x direction is shown below
+\item
+For an infinite fin the tip is  $x\to\infty$, and the boundary condition at the tip is 
+$$\theta(0.04)=0$$
+And the temperature distribution is 
+$$\frac{\theta}{\theta_1}=e^{-mx}$$
+Sketch the temperature distribution
+
+
+\end{enumerate}
+\end{solution}
+
+
+\begin{example}
+\textcolor{blue} {\emph{Refer to tutorial 3.  Fin Solutions 2.nb, Ch. 3, P. 167.}}
+A dylindrical fin with has constant heat conductivity  $k=3W/m.K$, width is
+$W=0.01m$. At start position $r_1=0.0001m$, temperature is $T_1=30K$. Radius at
+the end of fin is $r_2=0.04m$. The surface of the fin is exposed to ambient air at
+$10K$ with a convection heat transfer coefficient $h=10W/m^2K$. Plot the temperature distribution in the fin under below conditions.
+\begin{enumerate}
+\item Prescribed tip condition, at $r_2=0.04m$, temperature $T_2=40~K$
+\item Infinite tip condition.
+\end{enumerate}
 \end{example}
 
 \begin{solution}
 ~\\
 \begin{enumerate}
-\item
-The fin energy balance equation
-$$$$
-For the proscribed fin problem with constant cross section area , and surface area, we have  ,  . Hence 
+\item For a cylindrical fin, the cross section area $A_c=2\pi rw$,
+surface area $A_s=2\pi(r^2-r_1^2)$, replace $x$ by $r$ in
+$$
+\frac{d^2 T}{dx^2} + 
+\left(\frac{1}{A_c}\frac{dA_c}{x}\right)\frac{dT}{dx}-
+\left(\frac{1}{A_c}\frac{h}{k}\frac{dA_s}{x}\right)(T-T_\infty)=0
+$$
+and get
+$$
+\frac{d^2 T}{dr^2}+
+\frac{1}{r}\frac{dT}{dr}-
+\frac{2h}{kw}(T-T_\infty)=0
+$$
+with $m^2 \equiv 2h/kw \text{and} \theta=T-T_\infty$
+$$
+\frac{d^2 \theta}{dr^2}+
+\frac{1}{r}\frac{d\theta}{dr}-
+m^2\theta=0
+$$
+For proscribed tip problem, boundary condition is 
+$$\theta(0)=T_1-T_\infty \equiv \theta_1$$
+$$\theta(0.04)=T_2-T_\infty \equiv \theta_2$$
 
-To simplify the form of this eqauation, we transform the dependent variable by defining an excess temperature  as 
-
-Where since  is constant, . Then we obtain
-
-Where 
-
-With prescribed boundrary condition
-
-Then for prescribed condition the fin temperature distribution is
-\item
-
-For adiabatic tip condition, the heat convection rate at the tip is considered negligible,
-
-And 
-
-Then the heat distribution equation of adiabatic tip condition could be written as
-
-The temperature distribution along x direction is shown below
-\item
-For an infinite fin the tip is , and the boundary condition at the tip is 
-
-And the temperature distribution is 
-
-Sketch the temperature distribution 
+Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
+\item For infinite boundary condition
+$$\theta(r_2)=\theta(0.04)=0$$
+Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
 \end{enumerate}
-
 \end{solution}
 
-\begin{example}
-\textbf{Constant k and A}
-A rectangular fin with uniform cross-sectional area has constant heat conductivity heat conduction coefficient , width is , Thickness is . At start position , temperature is . The surface of the fin is exposed to ambient air at  with a convection heat transfer coefficient . Plot the temperature distribution in the fin under below conditions.
-\end{example}
 
-\begin{solution}
-TODO
-\end{solution}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

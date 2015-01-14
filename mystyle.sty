@@ -5,6 +5,7 @@
 \usepackage{url}
 \usepackage{listings}
 \usepackage{amsmath}
+\usepackage{amssymb,amsthm}
 \usepackage{lmodern}
 \usepackage{color}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -15,3 +16,27 @@
 \usepackage[english]{babel}
 \usepackage{epstopdf}
 \usepackage{tikz}
+
+
+
+\newtheoremstyle{examplesty}         % Name
+            {}                   % Above skip 
+            {}                   % Below skip
+            {\upshape}           % Body font
+            {}                   % Indent
+            {\bfseries} % Head font
+            {}                   % Head body punct
+            {1em}                % Space after head
+            {}                   % Heading
+
+% Examples rejig the theorem environment
+\theoremstyle{examplesty}
+\newtheorem{example}{Example}[section]
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\bfseries\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
