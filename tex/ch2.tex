@@ -17,6 +17,10 @@ Consider a one-dimensional plane wall in steady state and without heat generatio
 Temperature on one side is $T_0=50~K$, other side is $T_1=30~K$, wall width is $L=0.01~m$,
 area is $A=1~m^2$, thermal conductivity $k=0.5~W/m.k$. Sketch the heat distribution on T-x coordinate,
 what is the heat flux  through the wall?
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/1}
+\end{figure}
 \end{example}
 
 \begin{solution}
@@ -56,6 +60,11 @@ Plot2=ListPlot[{{0,50},{0.01,30}},
       PlotStyle->{AbsolutePointSize[8]},
       AxesLabel->{Distance (m),Temperature}]
 \end{lstlisting}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/2}
+\end{figure}
 \end{solution}
 
 \begin{example}
@@ -73,6 +82,11 @@ assuming one-dimensional conditions. Sketch the temperature distribution.
 \item Calculate the heat rate $Q$ through the cone.
 \item If $a$ changes from 0.001 to 1, sketch change of $Q$.
 \end{enumerate}
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/3}
+\end{figure}
+
 \end{example}
 
 \begin{solution}
@@ -111,6 +125,10 @@ and the distribution is as shown.
 Plot2 = Plot[T, {x, .05, .25}, PlotRange -> All, 
 AxesLabel -> {Distance (m), Temperature }]
 \end{lstlisting}
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/4}
+\end{figure}
 \item
 Substituting numerical values into the foregoing result for the heat 
 transfer rate, it follows that
@@ -118,6 +136,10 @@ $$Q=\frac{\pi 0.25^2\times3.46~\text{W/m.K}\times(400-600)~K}{4(1/0.05~m - 1/0.2
 \item
 If changes from $0.001$ to $1$, as $Q$ has expression changes with $a$,
 we can sketch $Q$’s changes with $a$.
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/5}
+\end{figure}
 \begin{lstlisting}
 Qax =  *x^2*   k*(- )/(4 ((1/x1) - (1/x2)))
 PlotQ = Plot[Qax, {x, .001, 1}, PlotRange -> All,    AxesLabel -> {"a", "Q" }]
@@ -134,6 +156,10 @@ that releases $\dot{q}=100W/m^3$. Here the slab heat conductivity is in steady s
 Set the x-axis along with the wall thickness. At position $x=0m$, temperature is $T_0=37~K$,
 at position $x=L$,$T_1=33~K$, thermal conductivity $k=0.4W/m.K$. What’s the
 temperature distribution in along the length of the slab? 
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/6}
+\end{figure}
 \end{example}
 
 \begin{solution}
@@ -159,6 +185,10 @@ From the result, temperature distribution could be expressed as a quadratic curv
 \begin{lstlisting}
 PS1 = Plot[Evaluate[T[x] /. First[solution1]], {x, 0, 0.1},    PlotRange -> All]
 \end{lstlisting}
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/7}
+\end{figure}
 \end{solution}
 
 \begin{example}
@@ -170,6 +200,10 @@ $\dot{q}=1000W/m^3$, the thermal conductivity $k=0.4$W/m.K.
 At radius $r_1=0.1368m$, temperature $T_0=37~K$, at position $r_2=0.1768m$
 , temperature $T_1=33~K$, the two end of the rod are well insulated.
 What is the temperature distribution along the radius of the tube?
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/8}
+\end{figure}
 \end{example}
 
 \begin{solution}
@@ -196,6 +230,10 @@ $$
 ~\\
 By evaluating $r_1=0.1368~m, T_0=37~K, r_2=0.1768~m \text{and} T_1=33~K$,
 sketch the $T(r)$
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/9}
+\end{figure}
 \end{solution}
 
 \section{1-D steady state, variate internal	heat generation	problems}
@@ -219,10 +257,18 @@ where $\gamma^2=m_b c_b/k$, the boundary condition $T(0)=T_0$ and  $T(L)=T_1$,
 the solution for $\theta$ is as below
 $$\frac{\theta}{\theta_0}=\frac{\sinh\gamma x+\sinh\gamma(L-x)}{\sinh\gamma L}$$
 sketch of $\theta(x)$ is as below.
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/10}
+\end{figure}
 \item
 For the tube, the cylindrical equation is
 $$\frac{d^2 \theta}{dr^2} + \frac{1}{r}\frac{d\theta}{dr}-\gamma^2\theta=0$$
 Solve this equation and get the sketch of $\theta(r)$
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/11}
+\end{figure}
 \end{enumerate}
 \end{solution}
 
@@ -238,6 +284,10 @@ $10K$ with a convection heat transfer coefficient $h=10W/m^2K$. Plot the tempera
 \item Adiabatic tip condition.
 \item Infinite tip condition.
 \end{enumerate}
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/12}
+\end{figure}
 \end{example}
 
 \begin{solution}
@@ -271,6 +321,10 @@ $$
 \frac{\theta}{\theta_1}=
 \frac{(\theta/\theta_1)\sinh mx+\sinh m(L-x)}{\sinh mL}
 $$
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/13}
+\end{figure}
 \item
 For adiabatic tip condition, the heat convection rate at the tip is considered negligible
 $$hA_c\theta(L)=-k\frac{d\theta}{dx}|_{x=L}=0$$
@@ -281,13 +335,20 @@ $$\frac{\theta}{\theta_1}=
 \frac{\cosh m(L-x)}{\cosh mL}
 $$
 The temperature distribution along x direction is shown below
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/14}
+\end{figure}
 \item
 For an infinite fin the tip is  $x\to\infty$, and the boundary condition at the tip is 
 $$\theta(0.04)=0$$
 And the temperature distribution is 
 $$\frac{\theta}{\theta_1}=e^{-mx}$$
 Sketch the temperature distribution
-
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/15}
+\end{figure}
 
 \end{enumerate}
 \end{solution}
@@ -299,10 +360,15 @@ A dylindrical fin with has constant heat conductivity  $k=3W/m.K$, width is
 $W=0.01m$. At start position $r_1=0.0001m$, temperature is $T_1=30K$. Radius at
 the end of fin is $r_2=0.04m$. The surface of the fin is exposed to ambient air at
 $10K$ with a convection heat transfer coefficient $h=10W/m^2K$. Plot the temperature distribution in the fin under below conditions.
+
 \begin{enumerate}
 \item Prescribed tip condition, at $r_2=0.04m$, temperature $T_2=40~K$
 \item Infinite tip condition.
 \end{enumerate}
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/16}
+\end{figure}
 \end{example}
 
 \begin{solution}
@@ -332,9 +398,17 @@ $$\theta(0)=T_1-T_\infty \equiv \theta_1$$
 $$\theta(0.04)=T_2-T_\infty \equiv \theta_2$$
 
 Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/17}
+\end{figure}
 \item For infinite boundary condition
 $$\theta(r_2)=\theta(0.04)=0$$
 Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch2/18}
+\end{figure}
 \end{enumerate}
 \end{solution}
 
