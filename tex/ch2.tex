@@ -9,21 +9,23 @@ This Chapter mainly discussed different kind of one-dimensional steady state pro
 \section{Fourier's law}
 
 \begin{example}
+\label{example:2:1}
 \textbf{Fourier’s law, plane wall, constant internal heat
 generation.} \textcolor{blue} {\emph{Refer to tutorial Fourier’s
-law.nb, and Ch. 2, P. 69.}}
-
-Consider a one-dimensional plane wall in steady state and without heat generation.
+law.nb, and Ch. 2, P. 69.}} Consider a one-dimensional plane wall in steady state and without heat generation.
 Temperature on one side is $T_0=50~K$, other side is $T_1=30~K$, wall width is $L=0.01~m$,
 area is $A=1~m^2$, thermal conductivity $k=0.5~W/m.k$. Sketch the heat distribution on T-x coordinate,
-what is the heat flux  through the wall?
+what is the heat flux  through the wall? (As shown in figure \ref{fig:2:1})
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/1}
+    \caption{Model of example \ref{example:2:1}}
+    \label{fig:2:1}
 \end{figure}
 \end{example}
 
 \begin{solution}
+~\\
 For the plan wall, the heat resistance is
 $$R=\frac{L}{kA}$$
 So the heat rate 
@@ -54,7 +56,7 @@ In steady state,  is constant, so the heat distribution along the x direction is
 $$T(x)=C_1x+C_2$$
 As given, $T(0)=T_0=50~K, T(0.01)=T_1=30~K$, we can get
 $$T(x)=\frac{T_1-T_0}{L}x+T_0=-2000x+50$$
-And the sketch of  is shown below:
+And the sketch of  is shown as figure \ref{fig:2:2}.
 \begin{lstlisting}
 Plot2=ListPlot[{{0,50},{0.01,30}},
       PlotStyle->{AbsolutePointSize[8]},
@@ -63,17 +65,18 @@ Plot2=ListPlot[{{0,50},{0.01,30}},
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/2}
+    \includegraphics[scale=0.8]{figures/ch2/2}
+    \caption{result}
+    \label{fig:2:2}
 \end{figure}
 \end{solution}
 
 \begin{example}
+\label{example:2:2}
 \textbf{Conical section} \textcolor{blue} {\emph{Refer to tutorial 
-Prob\_ 7 copy.nb, and Ch. 3, P. 134.}}
-
-A diagram shows a conical section fabricated from pyroceram, $k=3.46W/m.K$.
-It is of circular cross section with the diameter $D=ax$, where $a=0.25$.
-The small end is at $x_1=50~mm$ and the large end at $x_2=250~mm$.
+Prob\_ 7 copy.nb, and Ch. 3, P. 134.}}A diagram shows a conical section 
+fabricated from pyroceram, $k=3.46W/m.K$. It is of circular cross section with 
+the diameter $D=ax$, where $a=0.25$.The small end is at $x_1=50~mm$ and the large end at $x_2=250~mm$.
 The end temperature are $T_1=400~K$ and $T_2=600~K$, while the lateral 
 surface is well insulated.
 \begin{enumerate}
@@ -85,11 +88,13 @@ assuming one-dimensional conditions. Sketch the temperature distribution.
 \begin{figure}[h]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/3}
+    \caption{Model of example \ref{example:2:2}}
+    \label{fig:2:3}
 \end{figure}
-
 \end{example}
 
 \begin{solution}
+~//
 \begin{enumerate}
 \item
 Consider the heat conduction is under steady state, one-dimensional coordinate,
@@ -120,25 +125,29 @@ $$T_2=T_1+(T_1-T_2)\left[\frac{(1/x)-(1/x_2)}{(1/x_1)-(1/x_2)}\right]$$
 Q =*a^2*k*(- )/(4((1/x1)-(1/x2))) (*  Watts  *)
 \end{lstlisting}
 From the result, temperature may be calculated as a function of $x$
-and the distribution is as shown.
+and the distribution is as shown in figure \ref{fig:2:4}.
 \begin{lstlisting}
 Plot2 = Plot[T, {x, .05, .25}, PlotRange -> All, 
 AxesLabel -> {Distance (m), Temperature }]
 \end{lstlisting}
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/4}
+    \includegraphics[scale=0.8]{figures/ch2/4}
+    \caption{result of 1}
+    \label{fig:2:4}
 \end{figure}
 \item
 Substituting numerical values into the foregoing result for the heat 
 transfer rate, it follows that
 $$Q=\frac{\pi 0.25^2\times3.46~\text{W/m.K}\times(400-600)~K}{4(1/0.05~m - 1/0.25~m)}=-2.12W$$
 \item
-If changes from $0.001$ to $1$, as $Q$ has expression changes with $a$,
-we can sketch $Q$’s changes with $a$.
+If $a$ changes from $0.001$ to $1$, as $Q$ has expression changes with $a$,
+we can sketch $Q$’s changes with $a$ as shown in figure \ref{fig:2:5}.
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/5}
+    \includegraphics[scale=0.8]{figures/ch2/5}
+    \caption{result of 3}
+    \label{fig:2:5}
 \end{figure}
 \begin{lstlisting}
 Qax =  *x^2*   k*(- )/(4 ((1/x1) - (1/x2)))
@@ -159,11 +168,13 @@ temperature distribution in along the length of the slab?
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/6}
+    \caption{Model of example \ref{example:23}}
+    \label{fig:2:6}
 \end{figure}
 \end{example}
 
 \begin{solution}
-~
+~\\
 Based on the heat diffusion equation 
 $$\nabla^2 T+\frac{\dot{q}}{k}=\frac{1}{\propto}\frac{\partial T}{\partial t}$$
 where
@@ -181,28 +192,32 @@ Integration twice
 $$T(x)=-\frac{\dot{q}}{2k}x^2+C_1x+C_2$$
 By evaluating $T(0)=T_0$, and $T(L)=T_1$, hence
 $$T(x)=-\frac{\dot{q}}{2k}x^2+ \left(\frac{T_1-T_0}{L}+\frac{\dot{q}L}{2k}\right)x+T_0$$
-From the result, temperature distribution could be expressed as a quadratic curve as below
+From the result, temperature distribution could be expressed as a quadratic curve as shown in
+figure \ref{fig:2:7}.
 \begin{lstlisting}
 PS1 = Plot[Evaluate[T[x] /. First[solution1]], {x, 0, 0.1},    PlotRange -> All]
 \end{lstlisting}
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/7}
+    \includegraphics[scale=0.8]{figures/ch2/7}
+    \caption{result}
+    \label{fig:2:7}
 \end{figure}
 \end{solution}
 
 \begin{example}
 \label{example:24}
 \textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb, and Ch. 3, P. 134.}}
-~\\
 A steady state long tube generating thermal energy at a uniform volumetric rate
 $\dot{q}=1000W/m^3$, the thermal conductivity $k=0.4$W/m.K.
 At radius $r_1=0.1368m$, temperature $T_0=37~K$, at position $r_2=0.1768m$
 , temperature $T_1=33~K$, the two end of the rod are well insulated.
 What is the temperature distribution along the radius of the tube?
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/8}
+    \caption{Model of example \ref{example:24}}
+    \label{fig:2:8}
 \end{figure}
 \end{example}
 
@@ -229,10 +244,12 @@ T(r)=-\frac{\dot{q}}{4k}r^2 +\left[\frac{T_1-T_0+(\dot{q}/4k)\cdot r_2^2}{In(r_2
 $$
 ~\\
 By evaluating $r_1=0.1368~m, T_0=37~K, r_2=0.1768~m \text{and} T_1=33~K$,
-sketch the $T(r)$
+sketch the $T(r)$ as shown in figure \ref{fig:2:9}
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/9}
+    \caption{result}
+    \label{fig:2:9}
 \end{figure}
 \end{solution}
 
@@ -260,6 +277,8 @@ sketch of $\theta(x)$ is as below.
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/10}
+    \caption{result of 1}
+    \label{fig:2:10}
 \end{figure}
 \item
 For the tube, the cylindrical equation is
@@ -267,18 +286,21 @@ $$\frac{d^2 \theta}{dr^2} + \frac{1}{r}\frac{d\theta}{dr}-\gamma^2\theta=0$$
 Solve this equation and get the sketch of $\theta(r)$
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/11}
+    \includegraphics[scale=0.8]{figures/ch2/11}
+    \caption{result of 2}
+    \label{fig:2:11}
 \end{figure}
 \end{enumerate}
 \end{solution}
 
 \section{Fin problems}
 \begin{example}
+\label{example:2:fin}
 \textbf{Constant k and A}. 
 \textcolor{blue} {\emph{Refer to tutorial 3.  Fin Solutions 2.nb, Ch. 3, P. 157}}
 A rectangular fin with uniform cross-sectional area has constant heat conductivity
-$k=3W/m.K$, width is $W=0.01m$, Thickness is $L=1m$. At start position $x_1=0m$, temperature is $T_1=30^\circ C$. The surface of the fin is exposed to ambient air at
-$10K$ with a convection heat transfer coefficient $h=10W/m^2K$. Plot the temperature distribution in the fin under below conditions.
+$k=3W/m.K$, width is $W=0.01m$, Thickness is $L=1m$. At start position $x_1=0m$, temperature is $T_1=30^\circ C$. The surface of the fin is exposed to ambient air at $10K$ with a convection heat transfer coefficient $h=10W/m^2K$.
+Plot the temperature distribution in the fin under below conditions. (Shown in figure \ref{fig:2:12})
 \begin{enumerate}
 \item Prescribed tip temperature: at the end position $x_2=0.04m, T_2=40^\circ C$
 \item Adiabatic tip condition.
@@ -286,7 +308,9 @@ $10K$ with a convection heat transfer coefficient $h=10W/m^2K$. Plot the tempera
 \end{enumerate}
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/12}
+    \includegraphics[scale=0.7]{figures/ch2/12}
+    \caption{Model of example \ref{example:2:fin}}
+    \label{fig:2:12}
 \end{figure}
 \end{example}
 
@@ -300,8 +324,8 @@ $$
 \left(\frac{1}{A_c}\frac{dA_c}{x}\right)\frac{dT}{dx}-
 \left(\frac{1}{A_c}\frac{h}{k}\frac{dA_s}{x}\right)(T-T_\infty)=0
 $$
-For the proscribed fin problem with constant cross section area  , 
-and surface area, we have   ,   . Hence 
+For the proscribed fin problem with constant cross section area $A_c=WL$ , 
+and surface area, we have $dA_c/dx=0$, $dAs/dx=p$. Hence
 $$
 \frac{d^2 T}{dx^2}-
 \frac{hp}{kA_c}(T-T_\infty)=0
@@ -323,7 +347,9 @@ $$
 $$
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/13}
+    \includegraphics[scale=0.8]{figures/ch2/13}
+    \caption{result of 1}
+    \label{fig:2:13}
 \end{figure}
 \item
 For adiabatic tip condition, the heat convection rate at the tip is considered negligible
@@ -337,7 +363,9 @@ $$
 The temperature distribution along x direction is shown below
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/14}
+    \includegraphics[scale=0.8]{figures/ch2/14}
+    \caption{result of 2}
+    \label{fig:2:14}
 \end{figure}
 \item
 For an infinite fin the tip is  $x\to\infty$, and the boundary condition at the tip is 
@@ -347,7 +375,9 @@ $$\frac{\theta}{\theta_1}=e^{-mx}$$
 Sketch the temperature distribution
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/15}
+    \includegraphics[scale=0.8]{figures/ch2/15}
+    \caption{result of 3}
+    \label{fig:2:15}
 \end{figure}
 
 \end{enumerate}
@@ -355,11 +385,14 @@ Sketch the temperature distribution
 
 
 \begin{example}
+\label{example:2:Noncons}
+\textbf{Non constant cross sectional problem}
 \textcolor{blue} {\emph{Refer to tutorial 3.  Fin Solutions 2.nb, Ch. 3, P. 167.}}
 A dylindrical fin with has constant heat conductivity  $k=3W/m.K$, width is
 $W=0.01m$. At start position $r_1=0.0001m$, temperature is $T_1=30K$. Radius at
 the end of fin is $r_2=0.04m$. The surface of the fin is exposed to ambient air at
-$10K$ with a convection heat transfer coefficient $h=10W/m^2K$. Plot the temperature distribution in the fin under below conditions.
+$10K$ with a convection heat transfer coefficient $h=10W/m^2K$.
+Plot the temperature distribution in the fin under below conditions. (Shown in figure \ref{fig:2:16})
 
 \begin{enumerate}
 \item Prescribed tip condition, at $r_2=0.04m$, temperature $T_2=40~K$
@@ -367,7 +400,9 @@ $10K$ with a convection heat transfer coefficient $h=10W/m^2K$. Plot the tempera
 \end{enumerate}
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/16}
+    \includegraphics[scale=0.4]{figures/ch2/16}
+    \caption{Model of example \ref{example:2:Noncons}}
+    \label{fig:2:16}
 \end{figure}
 \end{example}
 
@@ -400,21 +435,21 @@ $$\theta(0.04)=T_2-T_\infty \equiv \theta_2$$
 Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/17}
+    \includegraphics[scale=0.8]{figures/ch2/17}
+    \caption{result of 1}
+    \label{fig:2:17}
 \end{figure}
 \item For infinite boundary condition
 $$\theta(r_2)=\theta(0.04)=0$$
 Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/18}
+    \includegraphics[scale=0.8]{figures/ch2/18}
+    \caption{result of 2}
+    \label{fig:2:18}
 \end{figure}
 \end{enumerate}
 \end{solution}
-
-
-
-
 
 
 
