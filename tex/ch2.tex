@@ -85,7 +85,7 @@ assuming one-dimensional conditions. Sketch the temperature distribution.
 \item Calculate the heat rate $Q$ through the cone.
 \item If $a$ changes from 0.001 to 1, sketch change of $Q$.
 \end{enumerate}
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/3}
     \caption{Model of example \ref{example:2:2}}
@@ -94,15 +94,22 @@ assuming one-dimensional conditions. Sketch the temperature distribution.
 \end{example}
 
 \begin{solution}
-~//
+~\\
 \begin{enumerate}
 \item
 Consider the heat conduction is under steady state, one-dimensional coordinate,
 without internal heat generation, the heat transfer rate is a constant independent
 of $x$. Use Fourier’s Law to determine the temperature distribution.
 $$Q=-kA\frac{dT}{dx}$$
-Where $A=\frac{\pi D^2}{4}=\frac{\pi a^2x^2}{4}$. Separating variables,
-$$\frac{4Qdx}{\pi a^2x^2}=-kdT$$
+Where $A=\frac{\pi D^2}{4}=\frac{\pi a^2x^2}{4}$. If $T(x_1)=T_1$, then we have
+\begin{equation*}
+\left\{
+\begin{aligned}
+ \frac{4Qdx}{\pi a^2x^2}&=-kdT \\
+ T(x_1)&=T_1
+\end{aligned}
+\right.
+\end{equation*}
 Integrating from $x_1$ to any $x$ within the cone, and recalling that $Q$ and $k$
 are constant, it follows that
 $$\frac{4Q}{\pi a^2}\int_x^{x_1} dx/x^2=-k\int dT$$
@@ -110,27 +117,59 @@ Hence
 $$\frac{4Q}{\pi a^2}\left(-\frac{1}{x}+\frac{1}{x_1}\right)=-k\left(T-T_1\right)$$
 and
 $$T(x)=T_1-\frac{4Q}{\pi a^2}\left(\frac{1}{x_1}-\frac{1}{x}\right)$$
+In Mathematica, we can also use \textbf{DSolve} to get \emph{T} in terms of \emph{x}.
+%Separating variables,
+\begin{lstlisting}
+>>DSolve[{k*Pi*a^2*x^2/4*T'[x] == -Q, T[x1] == T1}, T[x], x]
+
+$\left\{\left\{T(x)\to \frac{\pi  a^2 k \text{T1} x \text{x1}-4 Q x+4 Q \text{x1}}{\pi  a^2 k x \text{x1}}\right\}\right\}$
+\end{lstlisting}
 Although $Q$ is a constant, it is as yet an unknown.
 However, it may be determined by evaluating the above expression at
 $x=x_2$, where $T(x_2)=T_2$. Hence
 $$Q=\frac{\pi a^2k(T_1-T_2)}{4[(1/x_1)-(1/x_2)]}$$
 and solving for Q
-\begin{lstlisting}
-Q =*a^2*k*(- )/(4((1/x1)-(1/x2))) (*  Watts  *)
-\end{lstlisting}
 Substituting for $Q$ into the expression for $T(x)$,
 the temperature distribution becomes
-$$T_2=T_1+(T_1-T_2)\left[\frac{(1/x)-(1/x_2)}{(1/x_1)-(1/x_2)}\right]$$
+$$T_2=T_1+(T_1-T_2)\left[\frac{(1/x)-(1/x_2)}{(1/x_1)-(1/x_2)}
+\right]$$
+In Mathematica, we can use function \textbf{Reduce} to get \emph{Q}.
 \begin{lstlisting}
-Q =*a^2*k*(- )/(4((1/x1)-(1/x2))) (*  Watts  *)
+>>Reduce[{T2*a^2*Pi*x*x1 ==
+           -4 Q*x2 + 4 Q *x1 + a^2*k *Pi *x2*x1},Q]
+        
+$(\text{x2}=0 \text{\&\&} \text{x1}=0) \text{||} \left(\text{x1}-\text{x2}\neq 0\text{\&\&} Q=-\frac{\pi  a^2 \text{x1} \text{x2} (k-\text{T2})}{4 (\text{x1}-\text{x2})}\right)\text{||}$
+$\left(\text{x1}=\text{x2}\text{\&\&} \text{x2}\neq 0\text{\&\&} k=\frac{\text{T2} x}{\text{x2}}\right)\text{||} (\text{x1}=\text{x2}\text{\&\&} \text{x2} (k \text{x2}-\text{T2} x)\neq 0\text{\&\&} a=0)
+$
 \end{lstlisting}
+
+%>>Q =*a^2*k*(- )/(4((1/x1)-(1/x2))) (*  Watts  *)
+
 From the result, temperature may be calculated as a function of $x$
 and the distribution is as shown in figure \ref{fig:2:4}.
 \begin{lstlisting}
+k = 3.46;
+(* W/m2K using water *)
+x1 = 0.05;
+x2 = 0.25;
+L = x2 - x1;
+a = 0.25;
+Dia = a*x;
+(* cm  *)
+A = $\pi$*Dia^2/4;
+(* 1 meter ^2  *)
+R = L/(k*A);
+(* Resistance  *)
+(* Temperature on one side of wall *)
+$\text{T}_1$ = 400;
+(* Temperature on the other side of the wall *)
+$\text{T}_2$ = 600;
+(*  Watts  *)
+T = $\text{T}_1$ + ($\text{T}_1$ - $\text{T}_2$)*((1/x - 1/x1)/(1/x1 - 1/x2));
 Plot2 = Plot[T, {x, .05, .25}, PlotRange -> All, 
-AxesLabel -> {Distance (m), Temperature }]
+              AxesLabel -> {Distance (m), Temperature }]
 \end{lstlisting}
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.8]{figures/ch2/4}
     \caption{result of 1}
@@ -140,19 +179,24 @@ AxesLabel -> {Distance (m), Temperature }]
 Substituting numerical values into the foregoing result for the heat 
 transfer rate, it follows that
 $$Q=\frac{\pi 0.25^2\times3.46~\text{W/m.K}\times(400-600)~K}{4(1/0.05~m - 1/0.25~m)}=-2.12W$$
+\begin{lstlisting}
+Q = $\pi$*a^2*k*($\text{T}_1$ - $\text{T}_2$)/(4 ((1/x1) - (1/x2)))
+\end{lstlisting}
 \item
 If $a$ changes from $0.001$ to $1$, as $Q$ has expression changes with $a$,
 we can sketch $Q$’s changes with $a$ as shown in figure \ref{fig:2:5}.
-\begin{figure}[h!]
+\begin{lstlisting}
+Qax = $\pi$*x^2*k*($\text{T}_1$ - $\text{T}_2$)/(4 ((1/x1) - (1/x2)))
+PlotQ = Plot[Qax, {x, .001, 1}, PlotRange -> All]
+\end{lstlisting}
+
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.8]{figures/ch2/5}
     \caption{result of 3}
     \label{fig:2:5}
 \end{figure}
-\begin{lstlisting}
-Qax =  *x^2*   k*(- )/(4 ((1/x1) - (1/x2)))
-PlotQ = Plot[Qax, {x, .001, 1}, PlotRange -> All,    AxesLabel -> {"a", "Q" }]
-\end{lstlisting}
+
 \end{enumerate}
 \end{solution}
 
@@ -165,7 +209,7 @@ that releases $\dot{q}=100W/m^3$. Here the slab heat conductivity is in steady s
 Set the x-axis along with the wall thickness. At position $x=0m$, temperature is $T_0=37~K$,
 at position $x=L$,$T_1=33~K$, thermal conductivity $k=0.4W/m.K$. What’s the
 temperature distribution in along the length of the slab? 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/6}
     \caption{Model of example \ref{example:23}}
@@ -197,7 +241,7 @@ figure \ref{fig:2:7}.
 \begin{lstlisting}
 PS1 = Plot[Evaluate[T[x] /. First[solution1]], {x, 0, 0.1},    PlotRange -> All]
 \end{lstlisting}
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.8]{figures/ch2/7}
     \caption{result}
@@ -213,7 +257,7 @@ $\dot{q}=1000W/m^3$, the thermal conductivity $k=0.4$W/m.K.
 At radius $r_1=0.1368m$, temperature $T_0=37~K$, at position $r_2=0.1768m$
 , temperature $T_1=33~K$, the two end of the rod are well insulated.
 What is the temperature distribution along the radius of the tube?
-\begin{figure}[ht!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/8}
     \caption{Model of example \ref{example:24}}
@@ -273,7 +317,7 @@ hence based on the 1-D steady state heat diffusion equation in Cartesian coordin
 where $\gamma^2=m_b c_b/k$, the boundary condition $T(0)=T_0$ and  $T(L)=T_1$,
 the solution for $\theta$ is as below
 $$\frac{\theta}{\theta_0}=\frac{\sinh\gamma x+\sinh\gamma(L-x)}{\sinh\gamma L}$$
-sketch of $\theta(x)$ is as below.
+sketch of $\theta(x)$ is as figure \ref{fig:2:10}.
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=0.6]{figures/ch2/10}
@@ -306,7 +350,7 @@ Plot the temperature distribution in the fin under below conditions. (Shown in f
 \item Adiabatic tip condition.
 \item Infinite tip condition.
 \end{enumerate}
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.7]{figures/ch2/12}
     \caption{Model of example \ref{example:2:fin}}
@@ -398,7 +442,7 @@ Plot the temperature distribution in the fin under below conditions. (Shown in f
 \item Prescribed tip condition, at $r_2=0.04m$, temperature $T_2=40~K$
 \item Infinite tip condition.
 \end{enumerate}
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.4]{figures/ch2/16}
     \caption{Model of example \ref{example:2:Noncons}}

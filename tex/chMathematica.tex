@@ -84,7 +84,7 @@ $
 \right)
 $
 
-\begin{table}[h!]
+\begin{table}[H]
 \caption{Basic matrix operations} % title of Table
 \centering % used for centering table
 \begin{tabular}{c c}
@@ -110,21 +110,21 @@ The Wolfram Language has many ways to plot functions and data by using function 
 \textbf{Plot[Sin[x\string^2],\{x,0,3\},AxesLabel->\{"x value",Sin[x\string^2]\},GridLines->Automatic]} adds label and grid line to the plotting shown in Figure \ref{fig:sinLabel}.
 %2\string^3 gives 2^3
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=1]{figures/sin}
   \caption{Plot of $y=sin(x)$}
   \label{fig:sin}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.75]{figures/sin3D}
   \caption{Plot of $z=sin(x)cos(y)$}
   \label{fig:sin3D}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=1]{figures/sinLabel}
   \caption{Plot of $y=sin(x^2)$ with label and axis description}
@@ -150,6 +150,8 @@ The function \emph{DSolve} gives symbolic solutions to the differential equation
   \label{fig:ODE}
 \end{figure}
 
+\definecolor{light-gray}{gray}{0.95}
+
 %setting
 \lstset{
 language=Mathematica,
@@ -160,6 +162,7 @@ frame=tb,
 columns=fullflexible,
 showstringspaces=false,
 mathescape=true
+%backgroundcolor=\color{light-gray}
 }
 
 %insert mathematica code
