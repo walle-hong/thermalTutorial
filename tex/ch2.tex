@@ -121,8 +121,9 @@ In Mathematica, we can also use \textbf{DSolve} to get \emph{T} in terms of \emp
 %Separating variables,
 \begin{lstlisting}
 >>DSolve[{k*Pi*a^2*x^2/4*T'[x] == -Q, T[x1] == T1}, T[x], x]
-
+@\scalebox{1.5}{
 $\left\{\left\{T(x)\to \frac{\pi  a^2 k \text{T1} x \text{x1}-4 Q x+4 Q \text{x1}}{\pi  a^2 k x \text{x1}}\right\}\right\}$
+}@
 \end{lstlisting}
 Although $Q$ is a constant, it is as yet an unknown.
 However, it may be determined by evaluating the above expression at
