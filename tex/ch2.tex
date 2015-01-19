@@ -13,7 +13,7 @@ This Chapter mainly discussed different kind of one-dimensional steady state pro
 \textbf{Fourier’s law, plane wall, constant internal heat
 generation.} \textcolor{blue} {\emph{Refer to tutorial Fourier’s
 law.nb, and Ch. 2, P. 69.}} Consider a one-dimensional plane wall in steady state and without heat generation.
-Temperature on one side is $T_0=50~K$, other side is $T_1=30~K$, wall width is $L=0.01~m$,
+Temperature on one side is $T_0=50~^\circ C$, other side is $T_1=30~^\circ C$, wall width is $L=0.01~m$,
 area is $A=1~m^2$, thermal conductivity $k=0.5~W/m.k$. Sketch the heat distribution on T-x coordinate,
 what is the heat flux  through the wall? (As shown in figure \ref{fig:2:1})
 \begin{figure}[h!]
@@ -36,6 +36,7 @@ $$
 \begin{lstlisting}
 Plot1=Plot[$T_0$ + x/L*($T_1-T_0$),{x, 0, L}]
 \end{lstlisting}
+
 The heat flux$$q=\frac{Q}{A}==1000~W/m^2$$
 \begin{lstlisting}
 R=L/(k*A); (*Resistance*)
@@ -65,8 +66,8 @@ Plot2=ListPlot[{{0,50},{0.01,30}},
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/2}
-    \caption{result}
+    \includegraphics[scale=1]{figures/ch2/2}
+    \caption{Temperature distribution in plane wall}
     \label{fig:2:2}
 \end{figure}
 \end{solution}
@@ -101,7 +102,7 @@ Consider the heat conduction is under steady state, one-dimensional coordinate,
 without internal heat generation, the heat transfer rate is a constant independent
 of $x$. Use Fourier’s Law to determine the temperature distribution.
 $$Q=-kA\frac{dT}{dx}$$
-Where $A=\frac{\pi D^2}{4}=\frac{\pi a^2x^2}{4}$. If $T(x_1)=T_1$, then we have
+Where $A={\pi D^2}/{4}={\pi a^2x^2}/{4}$. If $T(x_1)=T_1$, then we have
 \begin{equation*}
 \left\{
 \begin{aligned}
@@ -171,8 +172,8 @@ Plot2 = Plot[T, {x, .05, .25}, PlotRange -> All,
 \end{lstlisting}
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/4}
-    \caption{result of 1}
+    \includegraphics[scale=1]{figures/ch2/4}
+    \caption{Temperature distribution in conical}
     \label{fig:2:4}
 \end{figure}
 \item
@@ -192,8 +193,8 @@ PlotQ = Plot[Qax, {x, .001, 1}, PlotRange -> All]
 
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/5}
-    \caption{result of 3}
+    \includegraphics[scale=1]{figures/ch2/5}
+    \caption{Heat rate cross conical section}
     \label{fig:2:5}
 \end{figure}
 
@@ -206,8 +207,8 @@ PlotQ = Plot[Qax, {x, .001, 1}, PlotRange -> All]
 \textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb}}
 A large thin slab of thickness $L=0.1~m$ is “setting.” Setting is an exothermic process 
 that releases $\dot{q}=100W/m^3$. Here the slab heat conductivity is in steady state. 
-Set the x-axis along with the wall thickness. At position $x=0m$, temperature is $T_0=37~K$,
-at position $x=L$,$T_1=33~K$, thermal conductivity $k=0.4W/m.K$. What’s the
+Set the x-axis along with the wall thickness. At position $x=0m$, temperature is $T_0=37~^\circ C$,
+at position $x=L$,$T_1=33~^\circ C$, thermal conductivity $k=0.4W/m.K$. What’s the
 temperature distribution in along the length of the slab? 
 \begin{figure}[H]
   \centering
@@ -243,8 +244,8 @@ PS1 = Plot[Evaluate[T[x] /. First[solution1]], {x, 0, 0.1},    PlotRange -> All]
 \end{lstlisting}
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/7}
-    \caption{result}
+    \includegraphics[scale=1]{figures/ch2/7}
+    \caption{1D steady state temperature distribution in plane wall with constant heat generation}
     \label{fig:2:7}
 \end{figure}
 \end{solution}
@@ -254,8 +255,8 @@ PS1 = Plot[Evaluate[T[x] /. First[solution1]], {x, 0, 0.1},    PlotRange -> All]
 \textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb, and Ch. 3, P. 134.}}
 A steady state long tube generating thermal energy at a uniform volumetric rate
 $\dot{q}=1000W/m^3$, the thermal conductivity $k=0.4$W/m.K.
-At radius $r_1=0.1368m$, temperature $T_0=37~K$, at position $r_2=0.1768m$
-, temperature $T_1=33~K$, the two end of the rod are well insulated.
+At radius $r_1=0.1368m$, temperature $T_0=37~^\circ C$, at position $r_2=0.1768m$
+, temperature $T_1=33~^\circ C$, the two end of the rod are well insulated.
 What is the temperature distribution along the radius of the tube?
 \begin{figure}[H]
   \centering
@@ -291,8 +292,8 @@ By evaluating $r_1=0.1368~m, T_0=37~K, r_2=0.1768~m \text{and} T_1=33~K$,
 sketch the $T(r)$ as shown in figure \ref{fig:2:9}
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/9}
-    \caption{result}
+    \includegraphics[scale=1]{figures/ch2/9}
+    \caption{1D steady state temperature distribution in tube with constant heat generation}
     \label{fig:2:9}
 \end{figure}
 \end{solution}
@@ -302,7 +303,7 @@ sketch the $T(r)$ as shown in figure \ref{fig:2:9}
 \textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb, Ch. 3, P. 178.}}
 Consider the slab in the example \ref{example:23} and the tube in example
 \ref{example:24} are human tissues, the blood perfusion heat that varies with the internal temperature. The blood mass rate per volumetric tissue is $m_b=100kg/s$, specific heat capacity of blood $50J/kg.K$, initial temperature of the blood is 
-$T_a=37K$. Except the internal heat generation, other parameters are the same. 
+$T_a=37~^\circ C$. Except the internal heat generation, other parameters are the same. 
 Sketch the temperature distribution in the slab and the tube.
 \end{example}
 
@@ -320,8 +321,8 @@ $$\frac{\theta}{\theta_0}=\frac{\sinh\gamma x+\sinh\gamma(L-x)}{\sinh\gamma L}$$
 sketch of $\theta(x)$ is as figure \ref{fig:2:10}.
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.6]{figures/ch2/10}
-    \caption{result of 1}
+    \includegraphics[scale=1]{figures/ch2/10}
+    \caption{1D steady state temperature distribution in rectangular tissue with variate heat generation}
     \label{fig:2:10}
 \end{figure}
 \item
@@ -330,8 +331,8 @@ $$\frac{d^2 \theta}{dr^2} + \frac{1}{r}\frac{d\theta}{dr}-\gamma^2\theta=0$$
 Solve this equation and get the sketch of $\theta(r)$
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/11}
-    \caption{result of 2}
+    \includegraphics[scale=1]{figures/ch2/11}
+    \caption{1D steady state temperature distribution in cylindrical tissue with variate heat generation}
     \label{fig:2:11}
 \end{figure}
 \end{enumerate}
@@ -343,7 +344,7 @@ Solve this equation and get the sketch of $\theta(r)$
 \textbf{Constant k and A}. 
 \textcolor{blue} {\emph{Refer to tutorial 3.  Fin Solutions 2.nb, Ch. 3, P. 157}}
 A rectangular fin with uniform cross-sectional area has constant heat conductivity
-$k=3W/m.K$, width is $W=0.01m$, Thickness is $L=1m$. At start position $x_1=0m$, temperature is $T_1=30^\circ C$. The surface of the fin is exposed to ambient air at $10K$ with a convection heat transfer coefficient $h=10W/m^2K$.
+$k=3W/m.K$, width is $W=0.01m$, Thickness is $L=1m$. At start position $x_1=0m$, temperature is $T_1=30^\circ C$. The surface of the fin is exposed to ambient air at $10~^\circ C$ with a convection heat transfer coefficient $h=10W/m^2K$.
 Plot the temperature distribution in the fin under below conditions. (Shown in figure \ref{fig:2:12})
 \begin{enumerate}
 \item Prescribed tip temperature: at the end position $x_2=0.04m, T_2=40^\circ C$
@@ -352,7 +353,7 @@ Plot the temperature distribution in the fin under below conditions. (Shown in f
 \end{enumerate}
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.7]{figures/ch2/12}
+    \includegraphics[scale=0.6]{figures/ch2/12}
     \caption{Model of example \ref{example:2:fin}}
     \label{fig:2:12}
 \end{figure}
@@ -391,8 +392,8 @@ $$
 $$
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/13}
-    \caption{result of 1}
+    \includegraphics[scale=1]{figures/ch2/13}
+    \caption{Temperature distribution in rectangular fin under prescribed tip condition}
     \label{fig:2:13}
 \end{figure}
 \item
@@ -407,8 +408,8 @@ $$
 The temperature distribution along x direction is shown below
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/14}
-    \caption{result of 2}
+    \includegraphics[scale=1]{figures/ch2/14}
+    \caption{Temperature distribution in rectangular fin under adiabatic tip condition}
     \label{fig:2:14}
 \end{figure}
 \item
@@ -419,7 +420,7 @@ $$\frac{\theta}{\theta_1}=e^{-mx}$$
 Sketch the temperature distribution
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/15}
+    \includegraphics[scale=1]{figures/ch2/15}
     \caption{result of 3}
     \label{fig:2:15}
 \end{figure}
@@ -433,19 +434,19 @@ Sketch the temperature distribution
 \textbf{Non constant cross sectional problem}
 \textcolor{blue} {\emph{Refer to tutorial 3.  Fin Solutions 2.nb, Ch. 3, P. 167.}}
 A dylindrical fin with has constant heat conductivity  $k=3W/m.K$, width is
-$W=0.01m$. At start position $r_1=0.0001m$, temperature is $T_1=30K$. Radius at
+$W=0.01m$. At start position $r_1=0.0001m$, temperature is $T_1=30^\circ C$. Radius at
 the end of fin is $r_2=0.04m$. The surface of the fin is exposed to ambient air at
-$10K$ with a convection heat transfer coefficient $h=10W/m^2K$.
+$10^\circ C$ with a convection heat transfer coefficient $h=10W/m^2K$.
 Plot the temperature distribution in the fin under below conditions. (Shown in figure \ref{fig:2:16})
 
 \begin{enumerate}
-\item Prescribed tip condition, at $r_2=0.04m$, temperature $T_2=40~K$
+\item Prescribed tip condition, at $r_2=0.04m$, temperature $T_2=40^\circ C$
 \item Infinite tip condition.
 \end{enumerate}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.4]{figures/ch2/16}
-    \caption{Model of example \ref{example:2:Noncons}}
+    \caption{Temperature distribution in rectangular fin under infinite tip condition \ref{example:2:Noncons}}
     \label{fig:2:16}
 \end{figure}
 \end{example}
@@ -473,14 +474,14 @@ $$
 m^2\theta=0
 $$
 For proscribed tip problem, boundary condition is 
-$$\theta(0)=T_1-T_\infty \equiv \theta_1$$
+$$\theta(0.0001)=T_1-T_\infty \equiv \theta_1$$
 $$\theta(0.04)=T_2-T_\infty \equiv \theta_2$$
 
 Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/17}
-    \caption{result of 1}
+    \includegraphics[scale=1]{figures/ch2/17}
+    \caption{Temperature distribution in rectangular fin under prescribed tip condition}
     \label{fig:2:17}
 \end{figure}
 \item For infinite boundary condition
@@ -488,8 +489,8 @@ $$\theta(r_2)=\theta(0.04)=0$$
 Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=0.8]{figures/ch2/18}
-    \caption{result of 2}
+    \includegraphics[scale=1]{figures/ch2/18}
+    \caption{Temperature distribution in rectangular fin under infinite tip condition}
     \label{fig:2:18}
 \end{figure}
 \end{enumerate}
