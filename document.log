@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.20)  18 JAN 2015 22:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.20)  20 JAN 2015 01:13
 entering extended mode
 **document.tex
 (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\document.tex
@@ -867,7 +867,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\chMathematica.aux)
 (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch2.aux)
 (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch3.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch4.aux))
+(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch4.aux)
+(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\appendix.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -994,7 +995,7 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 7.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<figures/mathematica.png, id=146, 623.32875pt x 359.09157pt>
+<figures/mathematica.png, id=151, 623.32875pt x 359.09157pt>
 File: figures/mathematica.png Graphic file (type png)
 
 <use figures/mathematica.png>
@@ -1072,7 +1073,7 @@ o.pdf figures/sin.eps>
 (epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/sin-eps-converted-to.pdf, id=190, 260.975pt x 156.585pt>
+<figures/sin-eps-converted-to.pdf, id=195, 260.975pt x 156.585pt>
 File: figures/sin-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/sin-eps-converted-to.pdf>
@@ -1080,7 +1081,7 @@ Package pdftex.def Info: figures/sin-eps-converted-to.pdf used on input line 11
 5.
 (pdftex.def)             Requested size: 260.97437pt x 156.58461pt.
 
-<figures/sin3D.png, id=191, 361.35pt x 278.03876pt>
+<figures/sin3D.png, id=196, 361.35pt x 278.03876pt>
 File: figures/sin3D.png Graphic file (type png)
  <use figures/sin3D.png>
 Package pdftex.def Info: figures/sin3D.png used on input line 122.
@@ -1113,7 +1114,7 @@ ted-to.pdf figures/sinLabel.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/sinLabel-eps-converted-to.pdf, id=208, 260.975pt x 154.5775pt>
+<figures/sinLabel-eps-converted-to.pdf, id=213, 260.975pt x 154.5775pt>
 File: figures/sinLabel-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/sinLabel-eps-converted-to.pdf>
@@ -1148,7 +1149,7 @@ o.pdf figures/ODE.eps>
 (epstopdf)             \includegraphics on input line 148.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/ODE-eps-converted-to.pdf, id=225, 260.975pt x 163.61125pt>
+<figures/ODE-eps-converted-to.pdf, id=230, 260.975pt x 163.61125pt>
 File: figures/ODE-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ODE-eps-converted-to.pdf>
@@ -1190,7 +1191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
 ]
 Chapter 2.
-<figures/ch2/1.png, id=263, 158.84344pt x 240.9pt>
+<figures/ch2/1.png, id=268, 158.84344pt x 240.9pt>
 File: figures/ch2/1.png Graphic file (type png)
  <use figures/ch2/1.png>
 Package pdftex.def Info: figures/ch2/1.png used on input line 21.
@@ -1210,43 +1211,56 @@ LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              for symbol `textasteriskcentered' on input line 37.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 41.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 42.
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/it' undefined
 (Font)              using `OMS/lmss/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 41.
+(Font)              for symbol `textasteriskcentered' on input line 42.
 
 [14pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.61 Plot2=
+l.62 Plot2=
            ListPlot[{{0,50},{0.01,30}}, <C:/Users/guoxx691/Documents/GitHub/the
 rmalTutorial/figures/ch2/1.png>]
-<figures/ch2/2.png, id=290, 361.35pt x 208.78pt>
-File: figures/ch2/2.png Graphic file (type png)
- <use figures/ch2/2.png>
-Package pdftex.def Info: figures/ch2/2.png used on input line 68.
-(pdftex.def)             Requested size: 289.0804pt x 167.0242pt.
+Package epstopdf Info: Source file: <figures/ch2/2.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 280594 bytes
+(epstopdf)             Output file: <figures/ch2/2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:05
+(epstopdf)                    size: 23091 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/2-eps-converted
+-to.pdf figures/ch2/2.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
 
-<figures/ch2/3.png, id=291, 353.82187pt x 185.19188pt>
+<figures/ch2/2-eps-converted-to.pdf, id=295, 260.975pt x 143.53625pt>
+File: figures/ch2/2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/2-eps-converted-to.pdf used on input line 
+69.
+(pdftex.def)             Requested size: 260.97437pt x 143.53589pt.
+
+<figures/ch2/3.png, id=296, 353.82187pt x 185.19188pt>
 File: figures/ch2/3.png Graphic file (type png)
  <use figures/ch2/3.png>
-Package pdftex.def Info: figures/ch2/3.png used on input line 90.
+Package pdftex.def Info: figures/ch2/3.png used on input line 91.
 (pdftex.def)             Requested size: 212.29475pt x 111.11597pt.
 
-Underfull \vbox (badness 1968) has occurred while \output is active []
+Underfull \vbox (badness 4429) has occurred while \output is active []
 
  [15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.94 \end{example}
+l.95 \end{example}
                    <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/
-ch2/2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+ch2/2-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
@@ -1255,38 +1269,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.131 $$
+l.132 $$
         Q=\frac{\pi a^2k(T_1-T_2)}{4[(1/x_1)-(1/x_2)]}$$ <C:/Users/guoxx691/Doc
 uments/GitHub/thermalTutorial/figures/ch2/3.png>] [17]
-<figures/ch2/4.png, id=350, 361.35pt x 200.75pt>
-File: figures/ch2/4.png Graphic file (type png)
- <use figures/ch2/4.png>
-Package pdftex.def Info: figures/ch2/4.png used on input line 175.
-(pdftex.def)             Requested size: 289.0804pt x 160.6002pt.
+Package epstopdf Info: Source file: <figures/ch2/4.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 275144 bytes
+(epstopdf)             Output file: <figures/ch2/4-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:06
+(epstopdf)                    size: 21135 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/4-eps-converted
+-to.pdf figures/ch2/4.eps>
+(epstopdf)             \includegraphics on input line 176.
+Package epstopdf Info: Output file is already uptodate.
 
-<figures/ch2/5.png, id=352, 361.35pt x 227.85126pt>
-File: figures/ch2/5.png Graphic file (type png)
- <use figures/ch2/5.png>
-Package pdftex.def Info: figures/ch2/5.png used on input line 196.
-(pdftex.def)             Requested size: 289.0804pt x 182.28123pt.
+<figures/ch2/4-eps-converted-to.pdf, id=357, 260.975pt x 143.53625pt>
+File: figures/ch2/4-eps-converted-to.pdf Graphic file (type pdf)
 
-Underfull \vbox (badness 2269) has occurred while \output is active []
+<use figures/ch2/4-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/4-eps-converted-to.pdf used on input line 
+176.
+(pdftex.def)             Requested size: 260.97437pt x 143.53589pt.
+Package epstopdf Info: Source file: <figures/ch2/5.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 268339 bytes
+(epstopdf)             Output file: <figures/ch2/5-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:07
+(epstopdf)                    size: 17143 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/5-eps-converted
+-to.pdf figures/ch2/5.eps>
+(epstopdf)             \includegraphics on input line 197.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/ch2/5-eps-converted-to.pdf, id=359, 260.975pt x 141.52875pt>
+File: figures/ch2/5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/5-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/5-eps-converted-to.pdf used on input line 
+197.
+(pdftex.def)             Requested size: 260.97437pt x 141.5284pt.
+
+Underfull \vbox (badness 4242) has occurred while \output is active []
 
  [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.200 
-       <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/4.png>]
-<figures/ch2/6.png, id=370, 278.54062pt x 237.13594pt>
+l.201 
+       <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/4-eps-co
+nverted-to.pdf>] <figures/ch2/6.png, id=379, 278.54062pt x 237.13594pt>
 File: figures/ch2/6.png Graphic file (type png)
- <use figures/ch2/6.png>
-Package pdftex.def Info: figures/ch2/6.png used on input line 215.
+
+<use figures/ch2/6.png>
+Package pdftex.def Info: figures/ch2/6.png used on input line 216.
 (pdftex.def)             Requested size: 167.12566pt x 142.28265pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Overfull \hbox (83.43886pt too wide) has occurred while \output is active
 \T1/lmr/m/sl/10.95 2.3.  1-D STEADY STATE, CONSTANT INTERNAL HEAT GENERATION PR
@@ -1298,232 +1335,345 @@ OBLEMS \T1/lmr/m/n/10.95 19
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.219 \end{example}
-                    <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures
-/ch2/5.png>] <figures/ch2/7.png, id=379, 325.215pt x 176.66pt>
-File: figures/ch2/7.png Graphic file (type png)
-
-<use figures/ch2/7.png>
-Package pdftex.def Info: figures/ch2/7.png used on input line 247.
-(pdftex.def)             Requested size: 260.17235pt x 141.32819pt.
- [20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-6}) has been already used, duplicate ignored
+l.225 $$
+        \nabla^2 T+\frac{\dot{q}}{k}=\frac{1}{\propto}\frac{\partial T}{\par...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.251 \end{solution}
-                     <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figure
-s/ch2/6.png>] <figures/ch2/8.png, id=391, 295.1025pt x 283.0575pt>
-File: figures/ch2/8.png Graphic file (type png)
+l.225 $$
+        \nabla^2 T+\frac{\dot{q}}{k}=\frac{1}{\propto}\frac{\partial T}{\par...
+ <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/5-eps-converte
+d-to.pdf> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/6.png
+>]
+Package epstopdf Info: Source file: <figures/ch2/7.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 273444 bytes
+(epstopdf)             Output file: <figures/ch2/7-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:08
+(epstopdf)                    size: 20821 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/7-eps-converted
+-to.pdf figures/ch2/7.eps>
+(epstopdf)             \includegraphics on input line 248.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/ch2/7-eps-converted-to.pdf, id=392, 260.975pt x 143.53625pt>
+File: figures/ch2/7-eps-converted-to.pdf Graphic file (type pdf)
 
-<use figures/ch2/8.png>
-Package pdftex.def Info: figures/ch2/8.png used on input line 263.
+<use figures/ch2/7-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/7-eps-converted-to.pdf used on input line 
+248.
+(pdftex.def)             Requested size: 260.97437pt x 143.53589pt.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.252 \end{solution}
+                     <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figure
+s/ch2/7-eps-converted-to.pdf>]
+<figures/ch2/8.png, id=404, 295.1025pt x 283.0575pt>
+File: figures/ch2/8.png Graphic file (type png)
+ <use figures/ch2/8.png>
+Package pdftex.def Info: figures/ch2/8.png used on input line 264.
 (pdftex.def)             Requested size: 177.06285pt x 169.8358pt.
+
+Overfull \hbox (2.13594pt too wide) detected at line 290
+\OML/lmm/m/it/10.95 T\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 r\OT1/lmr/m/n/10.9
+5 ) = \OMS/lmsy/m/n/10.95  []\OML/lmm/m/it/10.95 r[] \OT1/lmr/m/n/10.95 + [] \O
+MS/lmsy/m/n/10.95  \OML/lmm/m/it/10.95 Inr \OT1/lmr/m/n/10.95 + []
+ []
+
+Package epstopdf Info: Source file: <figures/ch2/9.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 288306 bytes
+(epstopdf)             Output file: <figures/ch2/9-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:09
+(epstopdf)                    size: 18017 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/9-eps-converted
+-to.pdf figures/ch2/9.eps>
+(epstopdf)             \includegraphics on input line 296.
+Package epstopdf Info: Output file is already uptodate.
+<figures/ch2/9-eps-converted-to.pdf, id=407, 260.975pt x 159.59625pt>
+File: figures/ch2/9-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/9-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/9-eps-converted-to.pdf used on input line 
+296.
+(pdftex.def)             Requested size: 260.97437pt x 159.59584pt.
 
 Overfull \hbox (83.43886pt too wide) has occurred while \output is active
 \T1/lmr/m/sl/10.95 2.3.  1-D STEADY STATE, CONSTANT INTERNAL HEAT GENERATION PR
 OBLEMS \T1/lmr/m/n/10.95 21
  []
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.282 $$
-        \frac{1}{r}\frac{\partial}{r}(kr\frac{\partial T}{\partial r})+\dot{...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8}) 
-has been already used, duplicate ignored
+l.300 \end{solution}
+                     <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figure
+s/ch2/8.png>] [22pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.2.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.282 $$
-        \frac{1}{r}\frac{\partial}{r}(kr\frac{\partial T}{\partial r})+\dot{...
- <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/7.png> <C:/Use
-rs/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/8.png>]
-Overfull \hbox (2.13594pt too wide) detected at line 289
-\OML/lmm/m/it/10.95 T\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 r\OT1/lmr/m/n/10.9
-5 ) = \OMS/lmsy/m/n/10.95  []\OML/lmm/m/it/10.95 r[] \OT1/lmr/m/n/10.95 + [] \O
-MS/lmsy/m/n/10.95  \OML/lmm/m/it/10.95 Inr \OT1/lmr/m/n/10.95 + []
- []
+l.321 $$
+        \frac{\theta}{\theta_0}=\frac{\sinh\gamma x+\sinh\gamma(L-x)}{\sinh\...
+ <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/9-eps-converte
+d-to.pdf>]
+Package epstopdf Info: Source file: <figures/ch2/10.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 284464 bytes
+(epstopdf)             Output file: <figures/ch2/10-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:10
+(epstopdf)                    size: 15214 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/10-eps-converte
+d-to.pdf figures/ch2/10.eps>
+(epstopdf)             \includegraphics on input line 325.
+Package epstopdf Info: Output file is already uptodate.
 
-<figures/ch2/9.png, id=401, 361.35pt x 224.84pt>
-File: figures/ch2/9.png Graphic file (type png)
- <use figures/ch2/9.png>
-Package pdftex.def Info: figures/ch2/9.png used on input line 295.
-(pdftex.def)             Requested size: 216.81168pt x 134.90503pt.
+<figures/ch2/10-eps-converted-to.pdf, id=427, 260.975pt x 157.58875pt>
+File: figures/ch2/10-eps-converted-to.pdf Graphic file (type pdf)
 
-[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
-}) has been already used, duplicate ignored
+<use figures/ch2/10-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/10-eps-converted-to.pdf used on input line
+ 325.
+(pdftex.def)             Requested size: 260.97437pt x 157.58835pt.
+Package epstopdf Info: Source file: <figures/ch2/11.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 292397 bytes
+(epstopdf)             Output file: <figures/ch2/11-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:11
+(epstopdf)                    size: 12833 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/11-eps-converte
+d-to.pdf figures/ch2/11.eps>
+(epstopdf)             \includegraphics on input line 335.
+Package epstopdf Info: Output file is already uptodate.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.314 B
-       ased on the bioheat equation, the volumetric heat rate diffused by th...
- <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/9.png>]
-<figures/ch2/10.png, id=411, 361.35pt x 217.81375pt>
-File: figures/ch2/10.png Graphic file (type png)
- <use figures/ch2/10.png>
-Package pdftex.def Info: figures/ch2/10.png used on input line 324.
-(pdftex.def)             Requested size: 216.81168pt x 130.68924pt.
+<figures/ch2/11-eps-converted-to.pdf, id=428, 260.975pt x 169.63374pt>
+File: figures/ch2/11-eps-converted-to.pdf Graphic file (type pdf)
 
-<figures/ch2/11.png, id=412, 361.35pt x 223.83624pt>
-File: figures/ch2/11.png Graphic file (type png)
- <use figures/ch2/11.png>
-Package pdftex.def Info: figures/ch2/11.png used on input line 334.
-(pdftex.def)             Requested size: 289.0804pt x 179.06923pt.
+<use figures/ch2/11-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/11-eps-converted-to.pdf used on input line
+ 335.
+(pdftex.def)             Requested size: 260.97437pt x 169.63332pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (71.27219pt too wide) has occurred while \output is active
-\T1/lmr/m/sl/10.95 2.4.  1-D STEADY STATE, VARIATE INTERNAL HEAT GENERATION PRO
-BLEMS \T1/lmr/m/n/10.95 23
- []
 
 [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.349 \begin{enumerate}
-                        <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/fig
-ures/ch2/10.png>] <figures/ch2/12.png, id=421, 255.20343pt x 237.88875pt>
+l.352 \item A
+             diabatic tip condition. <C:/Users/guoxx691/Documents/GitHub/therma
+lTutorial/figures/ch2/10-eps-converted-to.pdf>]
+<figures/ch2/12.png, id=440, 255.20343pt x 237.88875pt>
 File: figures/ch2/12.png Graphic file (type png)
 
 <use figures/ch2/12.png>
-Package pdftex.def Info: figures/ch2/12.png used on input line 356.
-(pdftex.def)             Requested size: 178.64117pt x 166.52098pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Package pdftex.def Info: figures/ch2/12.png used on input line 357.
+(pdftex.def)             Requested size: 153.12323pt x 142.73433pt.
  [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.360 \end{example}
-                    <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures
-/ch2/11.png>] [25pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.2.12}) has been already used, duplicate ignored
+l.372 $$
+        pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.2.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.392 $$
-         <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/12.png
->] <figures/ch2/13.png, id=440, 361.35pt x 206.7725pt>
-File: figures/ch2/13.png Graphic file (type png)
+l.372 $$
+         <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/11-eps
+-converted-to.pdf> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/
+ch2/12.png>]
+Package epstopdf Info: Source file: <figures/ch2/13.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 277966 bytes
+(epstopdf)             Output file: <figures/ch2/13-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:12
+(epstopdf)                    size: 17732 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/13-eps-converte
+d-to.pdf figures/ch2/13.eps>
+(epstopdf)             \includegraphics on input line 396.
+Package epstopdf Info: Output file is already uptodate.
 
-<use figures/ch2/13.png>
-Package pdftex.def Info: figures/ch2/13.png used on input line 395.
-(pdftex.def)             Requested size: 289.0804pt x 165.41821pt.
- <figures/ch2/14.png, id=441, 361.35pt x 206.7725pt>
-File: figures/ch2/14.png Graphic file (type png)
+<figures/ch2/13-eps-converted-to.pdf, id=453, 260.975pt x 147.55125pt>
+File: figures/ch2/13-eps-converted-to.pdf Graphic file (type pdf)
 
-<use figures/ch2/14.png>
-Package pdftex.def Info: figures/ch2/14.png used on input line 411.
-(pdftex.def)             Requested size: 289.0804pt x 165.41821pt.
+<use figures/ch2/13-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/13-eps-converted-to.pdf used on input line
+ 396.
+(pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/ch2/15.png, id=442, 361.35pt x 206.7725pt>
-File: figures/ch2/15.png Graphic file (type png)
- <use figures/ch2/15.png>
-Package pdftex.def Info: figures/ch2/15.png used on input line 423.
-(pdftex.def)             Requested size: 289.0804pt x 165.41821pt.
+Package epstopdf Info: Source file: <figures/ch2/14.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 268465 bytes
+(epstopdf)             Output file: <figures/ch2/14-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:13
+(epstopdf)                    size: 15077 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/14-eps-converte
+d-to.pdf figures/ch2/14.eps>
+(epstopdf)             \includegraphics on input line 412.
+Package epstopdf Info: Output file is already uptodate.
+<figures/ch2/14-eps-converted-to.pdf, id=454, 260.975pt x 147.55125pt>
+File: figures/ch2/14-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/14-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/14-eps-converted-to.pdf used on input line
+ 412.
+(pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25]
+Package epstopdf Info: Source file: <figures/ch2/15.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 265213 bytes
+(epstopdf)             Output file: <figures/ch2/15-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:14
+(epstopdf)                    size: 14390 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/15-eps-converte
+d-to.pdf figures/ch2/15.eps>
+(epstopdf)             \includegraphics on input line 424.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/ch2/15-eps-converted-to.pdf, id=462, 260.975pt x 147.55125pt>
+File: figures/ch2/15-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/15-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/15-eps-converted-to.pdf used on input line
+ 424.
+(pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.427 
-       <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/13.png>]
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.441 
+l.442 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.15}) has been already used, duplicate ignored
+2.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.441 
-       <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/14.png> 
-<C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/15.png>]
-<figures/ch2/16.png, id=458, 497.60907pt x 336.50719pt>
+l.442 
+       <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/13-eps-c
+onverted-to.pdf> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch
+2/14-eps-converted-to.pdf>]
+<figures/ch2/16.png, id=475, 497.60907pt x 336.50719pt>
 File: figures/ch2/16.png Graphic file (type png)
 
 <use figures/ch2/16.png>
-Package pdftex.def Info: figures/ch2/16.png used on input line 448.
+Package pdftex.def Info: figures/ch2/16.png used on input line 449.
 (pdftex.def)             Requested size: 199.0401pt x 134.60048pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
 
  []
 
-<figures/ch2/17.png, id=460, 361.35pt x 206.7725pt>
-File: figures/ch2/17.png Graphic file (type png)
- <use figures/ch2/17.png>
-Package pdftex.def Info: figures/ch2/17.png used on input line 483.
-(pdftex.def)             Requested size: 289.0804pt x 165.41821pt.
-
-[28pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-6}) has been already used, duplicate ignored
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.487 \item F
-             or infinite boundary condition <C:/Users/guoxx691/Documents/GitHub
-/thermalTutorial/figures/ch2/16.png>]
-<figures/ch2/18.png, id=470, 361.35pt x 206.7725pt>
-File: figures/ch2/18.png Graphic file (type png)
- <use figures/ch2/18.png>
-Package pdftex.def Info: figures/ch2/18.png used on input line 492.
-(pdftex.def)             Requested size: 289.0804pt x 165.41821pt.
+l.458 \item F
+             or a cylindrical fin, the cross section area $A_c=2\pi rw$,pdfTeX 
+warning (ext4): destination with the same identifier (name{figure.2.16}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.458 \item F
+             or a cylindrical fin, the cross section area $A_c=2\pi rw$, <C:/Us
+ers/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/15-eps-converted-to.p
+df> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/16.png>]
+Package epstopdf Info: Source file: <figures/ch2/17.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 274805 bytes
+(epstopdf)             Output file: <figures/ch2/17-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:15
+(epstopdf)                    size: 17426 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/17-eps-converte
+d-to.pdf figures/ch2/17.eps>
+(epstopdf)             \includegraphics on input line 484.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/ch2/17-eps-converted-to.pdf, id=490, 260.975pt x 147.55125pt>
+File: figures/ch2/17-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/17-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/17-eps-converted-to.pdf used on input line
+ 484.
+(pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
+Package epstopdf Info: Source file: <figures/ch2/18.eps>
+(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    size: 268002 bytes
+(epstopdf)             Output file: <figures/ch2/18-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 21:33:15
+(epstopdf)                    size: 14970 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/ch2/18-eps-converte
+d-to.pdf figures/ch2/18.eps>
+(epstopdf)             \includegraphics on input line 493.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/ch2/18-eps-converted-to.pdf, id=491, 260.975pt x 147.55125pt>
+File: figures/ch2/18-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/18-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/18-eps-converted-to.pdf used on input line
+ 493.
+(pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [29pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-.17}) has been already used, duplicate ignored
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.498 \end{solution}
+                     <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figure
+s/ch2/17-eps-converted-to.pdf>]) [29pdfTeX warning (ext4): destination with the
+ same identifier (name{figure.2.18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.24 \include{./tex/ch2}
                          <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/fi
-gures/ch2/17.png>] [30pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.2.18}) has been already used, duplicate ignored
+gures/ch2/18-eps-converted-to.pdf>]
+(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch3.tex [30
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.24 \include{./tex/ch2}
-                         <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/fi
-gures/ch2/18.png>]
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch3.tex
+
+
+]
 Chapter 3.
-<figures/ch3/1.png, id=483, 323.70938pt x 191.9672pt>
+<figures/ch3/1.png, id=513, 323.70938pt x 191.9672pt>
 File: figures/ch3/1.png Graphic file (type png)
  <use figures/ch3/1.png>
 Package pdftex.def Info: figures/ch3/1.png used on input line 12.
 (pdftex.def)             Requested size: 258.96785pt x 153.57396pt.
 
-[31
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
-has been already used, duplicate ignored
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.16 \end{example}
                    <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/
-ch3/1.png>] <figures/ch3/2.png, id=493, 1505.625pt x 1196.47pt>
+ch3/1.png>] <figures/ch3/2.png, id=523, 1505.625pt x 1196.47pt>
 File: figures/ch3/2.png Graphic file (type png)
 
 <use figures/ch3/2.png>
@@ -1550,7 +1700,7 @@ Chapter 4.
 
 LaTeX Warning: Reference `fig:4:1' on page 35 undefined on input line 14.
 
-[35] <figures/ch4/2.png, id=517, 361.35pt x 216.81pt>
+[35] <figures/ch4/2.png, id=547, 361.35pt x 216.81pt>
 File: figures/ch4/2.png Graphic file (type png)
  <use figures/ch4/2.png>
 Package pdftex.def Info: figures/ch4/2.png used on input line 42.
@@ -1559,13 +1709,13 @@ Package pdftex.def Info: figures/ch4/2.png used on input line 42.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-<figures/ch4/3.png, id=527, 361.35pt x 216.81pt>
+<figures/ch4/3.png, id=557, 361.35pt x 216.81pt>
 File: figures/ch4/3.png Graphic file (type png)
  <use figures/ch4/3.png>
 Package pdftex.def Info: figures/ch4/3.png used on input line 49.
 (pdftex.def)             Requested size: 289.0804pt x 173.44823pt.
 
-<figures/ch4/4.png, id=528, 361.35pt x 216.81pt>
+<figures/ch4/4.png, id=558, 361.35pt x 216.81pt>
 File: figures/ch4/4.png Graphic file (type png)
  <use figures/ch4/4.png>
 Package pdftex.def Info: figures/ch4/4.png used on input line 56.
@@ -1587,13 +1737,13 @@ l.60 \end{solution}
 l.60 \end{solution}
                     <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures
 /ch4/2.png> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch4/3.p
-ng>] <figures/ch4/5.png, id=535, 271.76532pt x 182.18062pt>
+ng>] <figures/ch4/5.png, id=565, 271.76532pt x 182.18062pt>
 File: figures/ch4/5.png Graphic file (type png)
 
 <use figures/ch4/5.png>
 Package pdftex.def Info: figures/ch4/5.png used on input line 71.
 (pdftex.def)             Requested size: 217.41254pt x 145.74467pt.
- <figures/ch4/6.png, id=538, 297.36093pt x 278.54062pt>
+ <figures/ch4/6.png, id=568, 297.36093pt x 278.54062pt>
 File: figures/ch4/6.png Graphic file (type png)
 
 <use figures/ch4/6.png>
@@ -1620,7 +1770,25 @@ h4/4.png> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch4/5.png
                                                   \fi \fi 
 l.119 $$
          <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch4/6.png>
-]) [40]
+]) [40] (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\appendix.tex
+Appendix A.
+[41
+
+
+
+]
+Overfull \hbox (2.52628pt too wide) in paragraph at lines 61--63
+[][]\T1/lmr/bx/n/10.95 Example A.6 []SOV (sep-a-ra-tion of vari-able) in 1D Cyl
+in-dri-cal space
+ []
+
+[42]
+Overfull \hbox (20.99936pt too wide) detected at line 124
+[] \OT1/lmr/m/n/10.95 + [][] + [] \OML/lmm/m/it/10.95 R \OT1/lmr/m/n/10.95 = 0[
+]
+ []
+
+[43]) [44]
 No file document.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
@@ -1628,11 +1796,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
 (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\chMathematica.aux)
 (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch2.aux)
 (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch3.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch4.aux))
+(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch4.aux)
+(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: A6CF15AC4353856C1CBBE04E2D3627C0;1528.
+(rerunfilecheck)             Checksum: A9AFAC087D721244DEE67690F355F1C2;1575.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1643,41 +1812,42 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 19373 strings out of 493921
- 327588 string characters out of 3147272
- 543186 words of memory out of 3000000
- 22033 multiletter control sequences out of 15000+200000
+ 19396 strings out of 493921
+ 328984 string characters out of 3147272
+ 544301 words of memory out of 3000000
+ 22035 multiletter control sequences out of 15000+200000
  113564 words of font info for 83 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  63i,11n,60p,580b,3122s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fon
+ts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
 .enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmc
 sc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmro10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/symbols/msam10.pfb>
-Output written on document.pdf (40 pages, 1548130 bytes).
+2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on document.pdf (44 pages, 1525137 bytes).
 PDF statistics:
- 689 PDF objects out of 1000 (max. 8388607)
- 194 named destinations out of 1000 (max. 500000)
- 339 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 756 PDF objects out of 1000 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
+ 347 words of extra memory for PDF output out of 10000 (max. 10000000)
 
