@@ -1,0 +1,197 @@
+\appendix
+%\addcontentsline{toc}{part}{\appendixname}
+\numberwithin{example}{chapter}
+\chapter{Workshops}
+
+\begin{example}
+\textbf{1-D steady state solution in Cartisian coordinate}\\
+BCs: at $x=0$, $T=10$; 
+$x=1$, $T=100$ Heat Generation: g variable Given: $k=1$
+$$T''+g=0$$
+$$T=0.5gx^2+C_1x+C_2$$
+\end{example}
+
+
+\begin{example}
+\textbf{1 - D steady state solution in spherical coordinate}\\
+BCs: at $r = 0.1$, $T = 10$; $r = 1$, $T = 100$.
+Heat Generation: g variable
+Given: $k=1$
+
+$$\frac{1}{r}\frac{d^2}{dr^2}(rT)+g=0$$
+$$T=\frac{1}{6}gr^2+\frac{C_1}{r}+C_2$$
+\end{example}
+
+\begin{example}
+\textbf{fin problem: round rod}\\
+Given: $k=206W/m/K$
+$$\theta=T-T_\infty$$
+$$\theta''-m^2\theta=0,~m=\sqrt{\frac{hp}{kA}}$$
+$$\theta=\frac{\cosh{m(l-x)}+n\sinh{(m(l-x))}}{\cosh{(ml)}+n\sinh{(ml)}}\theta_0,~n=h/(km)$$
+\end{example}
+
+\begin{example}
+\textbf{lumped problem:long thin rod at $T(0)=20^oC$}\\
+Given: $k = 0.5$; $\rho= 900$; $C_p = 3800$;
+$$\theta=T-T_\infty$$
+$$\theta'-m^2\theta=0,~m=\sqrt{\frac{hA}{\rho C_pV}}$$
+$$\theta=\theta_0e^{-mt}$$
+\end{example}
+
+\begin{example}
+\textbf{ SOV (separation of variable) in 1D Cartisian space and time
+No heat Generation}\\
+$k = 0.5$; $\rho=1000$; $C_p = 4200$;
+$$\frac{\partial T}{\partial t}=
+\alpha\left(\frac{\partial^2 T}{\partial x^2}+
+\frac{\partial^2 T}{\partial y^2}+
+\frac{\partial^2 T}{\partial z^2}\right)$$
+$$T(x,t)=X(x)Y(y)Z(z)\Gamma(t)$$
+$$X(x),~Y(y),~\text{and} ~Z(z)\text{: trigonometric function}$$
+$$\Gamma(t)\text{: exponential decay function}$$
+$$\text{Trigonometric differential equation: }X''+\beta^2X=0$$
+$$T=\sum_{i=1}^{\infty} \frac{1}{N_i}e^{-\alpha{\beta_i}^2t}\sin{(\beta_i x)}\int_0^{l}\sin{(\beta_i x')}F(x')dx'$$
+$$\beta\cot{(\beta l)}=-h/k$$
+$$\frac{1}{N_i}=2\frac{{\beta_i}^2+{H_2}^2}{l({\beta_i}^2+{H_2}^2)+H_2},
+~H_2=h/k$$
+\end{example}
+
+\begin{example}
+\textbf{SOV (separation of variable) in 1D Cylindrical space and time
+No heat Generation}
+$k = 0.5$; $\rho= 1000$; $C_p = 4200$;
+
+$$\frac{1}{\alpha}\frac{\partial T}{\partial t}=
+\frac{\partial^2 T}{\partial z^2}+
+\frac{1}{r^2}\frac{\partial^2 T}{\partial \phi^2}+
+\frac{1}{r}\frac{\partial T}{\partial r}+
+\frac{\partial^2 T}{\partial r^2}$$
+$$T(z,r,\phi,t)=Z(z)R(r)\Phi(\phi)\Gamma(t)$$
+$$Z(z)~\text{and} ~\Phi(\phi)\text{: trigonometric}$$
+$$R(r)\text{: Bessel function}$$
+$$\Gamma(t)\text{: exponential decay function}$$
+$$\text{Bessel differential equation (order } \upsilon\text{):}
+\frac{\partial^2 R}{\partial r^2}+
+\frac{1}{r}\frac{\partial R}{\partial r}+
+\left(\beta^2-\frac{\upsilon^2}{r^2}\right) R=0
+$$
+
+$$\upsilon \text{ is eigenvalue of trigonometric differential equation of } \Phi(\phi)$$
+$$T(r,t)=\sum_{i=1}^{\infty} \frac{1}{N_i}e^{-\alpha{\beta_i}^2t}J_\upsilon(\beta r)\int_0^{b}r'J_\upsilon(\beta r')F(r')dr'$$
+$$0.5\beta(J_{\upsilon-1}(\beta b)-
+J_{\upsilon+1}(\beta b))+
+HJ_{\upsilon+1}(\beta b)=0,
+~H=h/k
+$$
+$$\frac{1}{N_i}=\frac{2}{J_\upsilon(\beta b)}
+\frac{\beta^2}{b^2(\beta^2+H^2)-\upsilon^2}
+$$
+\end{example}
+
+\begin{example}
+\textbf{SOV (separation of variable) in 1D spherical space and time: full sphere No heat Generation}\\
+$k = 0.5$, $\rho= 1000$, $C_p = 4200$, $b=0.01$, $T(x,0)=60$, $T(b,t)=0$.
+
+$$ 
+\frac{1}{\alpha}\frac{\partial T}{\partial t}=
+\frac{\partial^2 T}{\partial r^2}+
+\frac{2}{r}\frac{\partial T}{\partial r}+
+\frac{1}{r^2\sin \theta} \frac{\partial}{\partial \theta}
+\left( \sin\theta\frac{\partial T}{\partial \theta} \right)
++\frac{1}{r^2{\sin{\theta}}^2}\frac{\partial^2 T}{\partial \phi^2}
+$$
+$$\mu=\cos \theta,~V=r^{0.5}T$$
+$$
+\frac{1}{\alpha}\frac{\partial V}{\partial t}=
+\frac{\partial^2 V}{\partial r^2}+
+\frac{1}{r}\frac{\partial V}{\partial r}-
+\frac{V}{4r^2}+
+\frac{1}{r^2}\frac{\partial}{\partial \mu}
+\left( (1-\mu^2)\frac{\partial V}{\partial \mu}\right)+
+\frac{1}{r^2(1-\mu^2)}\frac{\partial^2 V}{\partial \phi^2}
+$$
+
+$$V(r,\mu,\phi,t)=R(r)M(\mu)\Phi(\phi)\Gamma(t)$$
+$$R(r)\text{: Bessel function, }\beta$$
+$$\Phi(\phi)\text{: trigonometric, m}$$
+$$\Gamma(t)\text{: exponential decay function}$$
+$$M(\mu)\text{: Legendre polynomial}$$
+$$ 
+\frac{\partial^2 R}{\partial r^2}+
+\frac{1}{r}\frac{\partial R}{\partial r}+
+\left(\beta^2-\frac{(n+0.5)^2}{r^2}\right) R 
+=0\text{, order n+0.5 Bessel differential equation}
+$$
+$$
+\frac{\partial}{\partial \mu}
+\left( (1-\mu^2)\frac{\partial V}{\partial \mu}\right)+
+\left[ n(n+1)-\frac{m^2}{1-\mu^2} \right]M=0
+$$
+$$\text{Legendre’s associated differential equation of degree n and order m}$$
+\begin{equation*}
+\begin{aligned}
+T(r,\mu,t)=&\sum_{n=0}^{\infty}\sum_{p=1}^{\infty} \frac{1}{N(n)N(\beta_{np})}
+e^{-\alpha{\beta_{np}}^2t}r^{-0.5}J_{n+0.5}(\beta_{np}r)P_n(\mu)\times\\
+&\int_{r'=0}^{b}\int_{\mu'=-1}^{1} {r'}^{1.5}J_{n+0.5}(\beta_{np}r')P_n(\mu')F(\mu',r')d\mu'dr'
+\end{aligned}
+\end{equation*}
+$$J_{n+0.5}(\beta_{np}b)$$
+$$N(n)=\frac{1}{2n+1}$$
+$$N(\beta_{np})=-\frac{b^2}{2}J_{n-0.5}(\beta_{np}b)J_{n+1.5}(\beta_{np}b)$$
+
+
+\end{example}
+
+\begin{example}
+\textbf{SOV (separation of variable) in 1D spherical space and time: half sphere}
+
+\begin{equation*}
+\begin{aligned}
+T(r,\mu,t)=&\sum_{n=1,3,5\dots}^{\infty}\sum_{p=1}^{\infty} \frac{1}{N(n)N(\beta_{np})}
+e^{-\alpha{\beta_{np}}^2t}r^{-0.5}J_{n+0.5}(\beta_{np}r)P_n(\mu)\times\\
+&\int_{r'=0}^{b}\int_{\mu'=-1}^{1} {r'}^{1.5}J_{n+0.5}(\beta_{np}r')P_n(\mu')
+F(\mu',r')d\mu'dr'
+\end{aligned}
+\end{equation*}
+
+$$J_{n+0.5}(\beta_{np}b)$$
+$$N(n)=\frac{1}{2n+1}$$
+$$N(\beta_{np})=-\frac{b^2}{2}J_{n-0.5}(\beta_{np}b)J_{n+1.5}(\beta_{np}b)$$
+\end{example}
+
+\begin{example}
+\textbf{Semi-infinite domain solution: error function and complimentary error
+function}\\
+$k = 0.5$, $\rho= 1000$, $C_p = 4200$.
+Initial condition: $T(x,0)=0$
+Boundary condition: $T(0,t)=100^oC$ or convective $w/:h=100w/m^2$, $T_f=100^oC$.
+
+
+$$T(x,t)=T_0 erf(x/\sqrt{4\alpha t}),~T(0,t)=0^o C\text{ or,}$$
+\begin{eqnarray*}
+&T(x,t)=T_0 erfc(x/\sqrt{4\alpha t})-e^{Hx+H^2\alpha t}
+erfc(H \sqrt{\alpha t}+x\sqrt{4\alpha t})\\
+&\text{ for convective conditions}
+\end{eqnarray*}
+\end{example}
+
+\begin{example}
+\textbf{Summary of special functions used in heat conduction problems.}
+\end{example}
+
+%
+%%\addcontentsline{toc}{chapter}{aaaaaaaaaaaaaa}
+%\begin{table}[H]
+%\caption{Table of examples} % title of Table
+%\centering % used for centering table
+%\begin{tabular}{c c c}
+%\hline %inserts double horizontal lines
+%Example & Page & Location of Notebook\\
+%%heading
+%\hline % inserts single horizontal line
+%Example \ref{example:2:1}& \pageref{example:2:1}& 1D ss/2-2-1 Fourier Plane Wall.nb\\
+%[1ex] % [1ex] adds vertical space
+%\hline %inserts single line
+%\end{tabular}
+%\label{table:matrixOps} % is used to refer this table in the text
+%\end{table}
