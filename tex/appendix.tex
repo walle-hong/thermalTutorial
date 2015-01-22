@@ -1,17 +1,25 @@
 \appendix
 \renewcommand{\thechapter}{\arabic{chapter}}
-\addcontentsline{toc}{part}{\appendixname}
-\numberwithin{example}{chapter}
-\chapter{Workshops examples}
+\renewcommand{\thesection}{\arabic{section}}
+
+\addcontentsline{titletoc}{part}{\appendixname}
+\numberwithin{example}{section}
+\chapter{Workshops examples*}
 
 \newcommand{\myWSEgPath}[1] {
+\label{example:#1}
   \textcolor{blue} {(Please refer to .../workshopNB/#1.nb)}}
 
+\section{Mathematica Workbook Listing}
+~\\Here is a listing of most common seen heat transfer condition and regularly used methods for solving the problems. As listed, the problem marked with \textbf{*} were already mentioned in the tutorial examples. Others will be further discussed in the mathematica workbooks.
+
+\section{1-dimensional steady state}
+\subsection{Variable heat generation}
 \begin{example}
 \textbf{1-D steady state solution in Cartisian coordinate}\\
 BCs: at $x=0$, $T=10$; 
 $x=1$, $T=100$ Heat Generation: g variable Given: $k=1$
-\myWSEgPath{1}
+\myWSEgPath{1-1}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/1}
@@ -20,12 +28,12 @@ $$T''+g=0$$
 $$T=0.5gx^2+C_1x+C_2$$
 \end{example}
 
-
+\subsection{Spehrical coordinate}
 \begin{example}
 \textbf{1 - D steady state solution in spherical coordinate}\\
 BCs: at $r = 0.1$, $T = 10$; $r = 1$, $T = 100$.
 Heat Generation: g variable
-\myWSEgPath{2}
+\myWSEgPath{1-2}
 Given: $k=1$
 \begin{figure}[H]
   \centering
@@ -35,10 +43,11 @@ $$\frac{1}{r}\frac{d^2}{dr^2}(rT)+g=0$$
 $$T=\frac{1}{6}gr^2+\frac{C_1}{r}+C_2$$
 \end{example}
 
+\subsection{round fin}
 \begin{example}
 \textbf{fin problem: round rod}\\
 Given: $k=206W/m/K$
-\myWSEgPath{3}
+\myWSEgPath{1-3}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/3}
@@ -48,10 +57,15 @@ $$\theta''-m^2\theta=0,~m=\sqrt{\frac{hp}{kA}}$$
 $$\theta=\frac{\cosh{m(l-x)}+n\sinh{(m(l-x))}}{\cosh{(ml)}+n\sinh{(ml)}}\theta_0,~n=h/(km)$$
 \end{example}
 
+\section{Multi-dimensional steady state}
+\subsection{2D square with heat generation, NDSolve method}
+
+\section{Transient}
+\subsection{Lumped form cylindrical}
 \begin{example}
 \textbf{lumped problem:long thin rod at $T(0)=20^oC$}\\
 Given: $k = 0.5$; $\rho= 900$; $C_p = 3800$.
-\myWSEgPath{4}
+\myWSEgPath{2-1}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/4}
@@ -60,12 +74,14 @@ $$\theta=T-T_\infty$$
 $$\theta'-m^2\theta=0,~m=\sqrt{\frac{hA}{\rho C_pV}}$$
 $$\theta=\theta_0e^{-mt}$$
 \end{example}
+\subsection{Lumped form radiative condition}
 
+\subsection{SOV method: Catesian, Cylindrical, Spherical}
 \begin{example}
 \textbf{ SOV (separation of variable) in 1D Cartisian space and time
 No heat Generation}\\
 $k = 0.5$; $\rho=1000$; $C_p = 4200$.
-\myWSEgPath{5}
+\myWSEgPath{2-2}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/5}
@@ -84,12 +100,11 @@ $$\beta\cot{(\beta l)}=-h/k$$
 $$\frac{1}{N_i}=2\frac{{\beta_i}^2+{H_2}^2}{l({\beta_i}^2+{H_2}^2)+H_2},
 ~H_2=h/k$$
 \end{example}
-
 \begin{example}
 \textbf{SOV (separation of variable) in 1D Cylindrical space and time
 No heat Generation}
 $k = 0.5$; $\rho= 1000$; $C_p = 4200$.
-\myWSEgPath{6}
+\myWSEgPath{2-3}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/6}
@@ -124,7 +139,7 @@ $$
 \begin{example}
 \textbf{SOV (separation of variable) in 1D spherical space and time: full sphere No heat Generation}\\
 $k = 0.5$, $\rho= 1000$, $C_p = 4200$, $b=0.01$, $T(x,0)=60$, $T(b,t)=0$.
-\myWSEgPath{7}
+\myWSEgPath{2-4}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/7}
@@ -175,12 +190,10 @@ e^{-\alpha{\beta_{np}}^2t}r^{-0.5}J_{n+0.5}(\beta_{np}r)P_n(\mu)\times\\
 $$J_{n+0.5}(\beta_{np}b)$$
 $$N(n)=\frac{1}{2n+1}$$
 $$N(\beta_{np})=-\frac{b^2}{2}J_{n-0.5}(\beta_{np}b)J_{n+1.5}(\beta_{np}b)$$
-
-
 \end{example}
 
 \begin{example}
-\textbf{SOV (separation of variable) in 1D spherical space and time: half sphere}. \myWSEgPath{8}
+\textbf{SOV (separation of variable) in 1D spherical space and time: half sphere}. \myWSEgPath{2-5}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/8}
@@ -204,7 +217,7 @@ $$N(\beta_{np})=-\frac{b^2}{2}J_{n-0.5}(\beta_{np}b)J_{n+1.5}(\beta_{np}b)$$
 function}\\
 $k = 0.5$, $\rho= 1000$, $C_p = 4200$.
 Initial condition: $T(x,0)=0$
-Boundary condition: $T(0,t)=100^oC$ or convective $w/:h=100w/m^2$, $T_f=100^oC$.\myWSEgPath{9}
+Boundary condition: $T(0,t)=100^oC$ or convective $w/:h=100w/m^2$, $T_f=100^oC$.\myWSEgPath{2-6}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/9}
@@ -217,23 +230,92 @@ erfc(H \sqrt{\alpha t}+x\sqrt{4\alpha t})\\
 \end{eqnarray*}
 \end{example}
 
+\subsection{NDSolve method}
+
+\subsection{Semi-infinite solutions}
 \begin{example}
-\textbf{Summary of special functions used in heat conduction problems.}\myWSEgPath{10}
+\textbf{Analytical solution}
 \end{example}
 
-%
-%%\addcontentsline{toc}{chapter}{aaaaaaaaaaaaaa}
-%\begin{table}[H]
-%\caption{Table of examples} % title of Table
-%\centering % used for centering table
-%\begin{tabular}{c c c}
-%\hline %inserts double horizontal lines
-%Example & Page & Location of Notebook\\
-%%heading
-%\hline % inserts single horizontal line
-%Example \ref{example:2:1}& \pageref{example:2:1}& 1D ss/2-2-1 Fourier Plane Wall.nb\\
-%[1ex] % [1ex] adds vertical space
-%\hline %inserts single line
-%\end{tabular}
-%\label{table:matrixOps} % is used to refer this table in the text
-%\end{table}
+\begin{example}
+\textbf{Duhamel method}
+\end{example}
+
+\begin{example}
+\textbf{Laplace method}
+\end{example}
+
+\subsection{Numerical method}
+\begin{example}
+\textbf{Finite Difference method for fin: Cartesian, Cylindrical and Spherical}
+\end{example}
+
+\appendix
+
+\section{Special Topics 1}
+\subsection{Multi-dimensional SOV solutions}
+
+\begin{example}
+\textbf{Finite Difference method for fin: Cartesian, Cylindrical and Spherical}
+\end{example}
+
+\subsection{Laplace Solution}
+\begin{example}
+\textbf{Laplace Solution}
+\end{example}
+
+\subsection{Duhamel Solution}
+\begin{example}
+\textbf{DuhamelSolution}
+\end{example}
+
+\subsection{More Error Function Solutions}
+\begin{example}
+\textbf{Semi Inf. Domain}
+\end{example}
+
+\section{Special Topics 2}
+\subsection{Drug Delivery}
+\begin{example}
+\textbf{One compartment drug delivery}
+\end{example}
+
+\begin{example}
+\textbf{Two compartment drug delivery}
+\end{example}
+
+\subsection{Phase Change}
+\begin{example}
+\textbf{Part I: Steady State}
+\end{example}
+
+\begin{example}
+\textbf{Part II: Quasi – Steady Solutions (Cooper and Trezek)}
+\end{example}
+
+\begin{example}
+\textbf{Part III:  Neumann + Stefan}
+\end{example}
+
+\subsection{Biophysics}
+\subsubsection{Arrhenius Modeling vs. Clinical Equivalent Minutes (CEM)}
+\begin{example}
+\textbf{Protein denaturation \& Fractional denaturation}
+\end{example}
+
+\begin{example}
+\textbf{Thermal Dose}
+\end{example}
+
+\subsubsection{Water Transport}
+\subsubsection{Cryoprotective Loading}
+
+\subsection{Iron Oxide Nanoparticle Heating}
+
+\begin{example}
+\textbf{Cancer}
+\end{example}
+
+\begin{example}
+\textbf{Regenerative Medicine}
+\end{example}

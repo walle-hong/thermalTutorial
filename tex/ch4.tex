@@ -5,14 +5,19 @@ This chapter mainly discussed how to solve transient problems, including lumped 
 
 \begin{example}
 \textbf{Lumped method and steady state}
-\textcolor{blue} {\emph{Refer to tutorial Square - Exact Solution.nb, and Ch. 5, P. 281.}}
+\textcolor{blue} {\emph{Refer to tutorial 4-2-1 Lumped and General Solution.nb}}
 Consider a plane wall with consist internal temperature $T_i$ was quickly put into an 
 environment surrounded with symmetrically fluids with constant temperature $T_\infty$. 
 Wall thickness is $2L_c$. The density of the wall is $\rho=921kg/m^3 $,
 the specific heat capacity is $c=2100J/kg\cdot K, k=2.0W/m\cdot K$. The covection coefficient between the junction surface and the
 gas is $h=200W/m^2\cdot K$. 3 groups of parameters are given below and 
 calculate the temperature difference changed with time compared to the initial temperature difference, use lumped method and steady state method, and compare the results difference. (As shown in figure \ref{fig:4:1})
-$$\frac{\theta}{\theta_i}=\frac{T-T_\infty}{T_i-T_\infty}$$
+\begin{figure}[H]
+  \centering
+    \includegraphics[scale=0.6]{figures/ch4/1}
+    \caption{case 1 when $L_{c1}=0.001 m$}
+    \label{fig:4:1}
+\end{figure}
 \begin{enumerate}
 \item Case 1: $L_{c1}=0.001 m, Bi_A=0.1, C_{1A}=1.016$ and \\
 $\zeta_{1A}=0.311 rad, \text{ time } t=60s$
@@ -39,32 +44,38 @@ So that we can plot the internal temperature of the plane wall for the 3 conditi
 
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.8]{figures/ch4/2}
+    \includegraphics[scale=0.5]{figures/ch4/2}
     \caption{case 1 when $L_{c1}=0.001 m$}
     \label{fig:4:2}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.8]{figures/ch4/3}
+    \includegraphics[scale=0.5]{figures/ch4/3}
     \caption{case 2 when $L_{c2}=0.01 m$}
     \label{fig:4:3}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.8]{figures/ch4/4}
+    \includegraphics[scale=0.5]{figures/ch4/4}
     \caption{case 3 when $L_{c3}=0.1 m$}
     \label{fig:4:4}
 \end{figure}
 \end{solution}
+
+\section{SOV analytical solution}
+\begin{example}
+\textbf{Lumped method and steady state}
+\textcolor{blue} {\emph{Refer to tutorial 4-2-1 Lumped and General Solution.nb}}
+\end{example}
 
 \section{FEM method for fin problem}
 \begin{example}
 \label{example:4:FEM}
 Consider a fin length is $L = 0.04 m$, width $w = 0.01$, thickness $THICK = 1 m. h = 10 W/m^2 C, k = 3 W/mC, Cp = 450 J/kg C$,
 density $DENS = 8000 kg/m^3$. At $t=0$, the fin temperature at $x=0 $is $T_0=30\circ C$,
-the fin is suddenly put into a environment with Tenv=20 0C, at x=L, the temperature keeps as $40\circ C$.
+the fin is suddenly put into a environment with Tenv=20 0C, at x=L, the temperature keeps as $40^\circ C$.
 Use RC method to get the transient temperature in the fin. (Shown in figure \ref{fig:4:5})
 \begin{figure}[H]
   \centering
@@ -134,7 +145,7 @@ $$
 \right)
 $$
 $${T_4}^{p+1}={T_4}^p=40$$
-\textbf{Normal method:}
+\textbf{General method:}
 Use the Biot number and finite-difference form of the Fourier number.
 $$Fo=\frac{\alpha\Delta t}{(\Delta x)^2}$$
 $${Fo}_2=\frac{\alpha\Delta t}{A_c}$$
@@ -154,7 +165,7 @@ $$
 Fo({T_2}^p+{T_4}^p)+B_i\cdot {Fo}_2\cdot T_{env}
 $$
 $${T_4}^{p+1}={T_4}^p$$
-
+With origin condition
 $T_0= 
 \begin{bmatrix}
 {T_1}^0\\
@@ -170,8 +181,8 @@ $T_0=
 30\\
 \end{bmatrix}
 $
-
-$T_{100}=
+When $p=1$,temperature at 4 points are
+$T^1=
 \begin{bmatrix}
 31.029\\
 32.9242\\

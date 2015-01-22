@@ -4,7 +4,7 @@
 \chapter{One-dimensional Steady State Problems}
 
 \section{Overview}
-This chapter mainly discusses different kind of one-dimensional steady state problems. Including the use of Fourier’s law on constant cross sectional and non uniform cross sectional problem, the one dimensional steady state problem with constant and variate heat generation problem in both catesian and cylindrical coodinate system, and the fin design under steady state.
+This chapter mainly discusses different kinds of one-dimensional steady state problems. Including the use of Fourier’s law on constant cross sectional and non uniform cross sectional problem, the one dimensional steady state problem with constant and variate heat generation problem in both catesian and cylindrical coodinate system, and the fin design under steady state.
 \section{Fourier's law}
 \begin{example}
 \label{example:2:1}
@@ -27,22 +27,10 @@ For the plan wall, the heat resistance is
 $$R=\frac{L}{kA}$$
 So the heat rate 
 $$
-Q=\frac{\delta T}{R}=kA\frac{T_0-T_1}{L}=1000~W
+Q=\frac{\Delta T}{R}=kA\frac{T_0-T_1}{L}=1000~W
 $$
-
-\begin{lstlisting}
-Plot1=Plot[$T_0$ + x/L*($T_1-T_0$),{x, 0, L}]
-\end{lstlisting}
-
 The heat flux$$q=\frac{Q}{A}==1000~W/m^2$$
-\begin{lstlisting}
-R=L/(k*A); (*Resistance*)
-$T_0$=50; (*Temperature on the other side of the wall)
-$T_1$=30;
-Q=($T_0$-$T_1$)/R; (*Watt5s*)
-FLUX=Q/A;
-\end{lstlisting}
-Based on Fourier’s Law, the heat rate
+Based on Fourier’s equation, the heat rate
 \begin{eqnarray*}
 Q=-kA\frac{dT}{dx}\\
 dT=-\frac{Q}{ka}dx
@@ -50,16 +38,11 @@ dT=-\frac{Q}{ka}dx
 ~\\
 Integral
 $$\int dT=-\int \frac{Q}{ka} dx$$
-In steady state,  is constant, so the heat distribution along the x direction is
+$k$ and $A$ are constant, so the heat distribution along the x direction is
 $$T(x)=C_1x+C_2$$
-As given, $T(0)=T_0=50~K, T(0.01)=T_1=30~K$, we can get
+As given, $T(0)=T_0=50~^\circ C, T(0.01)=T_1=30~^\circ C$, we can get
 $$T(x)=\frac{T_1-T_0}{L}x+T_0=-2000x+50$$
 And the sketch of  is shown as figure \ref{fig:2:2}.
-\begin{lstlisting}
-Plot2=ListPlot[{{0,50},{0.01,30}},
-      PlotStyle->{AbsolutePointSize[8]},
-      AxesLabel->{Distance (m),Temperature}]
-\end{lstlisting}
 
 \begin{figure}[h!]
   \centering
@@ -72,7 +55,7 @@ Plot2=ListPlot[{{0,50},{0.01,30}},
 \begin{example}
 \label{example:2:2}
 \textbf{Conical section} \textcolor{blue} {\emph{Refer to tutorial 
-Prob\_ 7 copy.nb, and Ch. 3, P. 134.}}A diagram shows a conical section 
+2-2-2 Fourier Variate Cross Area.nb.}}A diagram shows a conical section 
 fabricated from pyroceram, $k=3.46W/m.K$. It is of circular cross section with 
 the diameter $D=ax$, where $a=0.25$.The small end is at $x_1=50~mm$ and the large end at $x_2=250~mm$.
 The end temperature are $T_1=400~K$ and $T_2=600~K$, while the lateral 
@@ -115,14 +98,7 @@ Hence
 $$\frac{4Q}{\pi a^2}\left(-\frac{1}{x}+\frac{1}{x_1}\right)=-k\left(T-T_1\right)$$
 and
 $$T(x)=T_1-\frac{4Q}{\pi a^2}\left(\frac{1}{x_1}-\frac{1}{x}\right)$$
-In Mathematica, we can also use \textbf{DSolve} to get \emph{T} in terms of \emph{x}.
 %Separating variables,
-\begin{lstlisting}
->>DSolve[{k*Pi*a^2*x^2/4*T'[x] == -Q, T[x1] == T1}, T[x], x]
-@\scalebox{1.5}{
-$\left\{\left\{T(x)\to \frac{\pi  a^2 k \text{T1} x \text{x1}-4 Q x+4 Q \text{x1}}{\pi  a^2 k x \text{x1}}\right\}\right\}$
-}@
-\end{lstlisting}
 Although $Q$ is a constant, it is as yet an unknown.
 However, it may be determined by evaluating the above expression at
 $x=x_2$, where $T(x_2)=T_2$. Hence
@@ -132,42 +108,11 @@ Substituting for $Q$ into the expression for $T(x)$,
 the temperature distribution becomes
 $$T_2=T_1+(T_1-T_2)\left[\frac{(1/x)-(1/x_2)}{(1/x_1)-(1/x_2)}
 \right]$$
-In Mathematica, we can use function \textbf{Reduce} to get \emph{Q}.
-\begin{lstlisting}
->>Reduce[{T2*a^2*Pi*x*x1 ==
-           -4 Q*x2 + 4 Q *x1 + a^2*k *Pi *x2*x1},Q]
-        
-$(\text{x2}=0 \text{\&\&} \text{x1}=0) \text{||} \left(\text{x1}-\text{x2}\neq 0\text{\&\&} Q=-\frac{\pi  a^2 \text{x1} \text{x2} (k-\text{T2})}{4 (\text{x1}-\text{x2})}\right)\text{||}$
-$\left(\text{x1}=\text{x2}\text{\&\&} \text{x2}\neq 0\text{\&\&} k=\frac{\text{T2} x}{\text{x2}}\right)\text{||} (\text{x1}=\text{x2}\text{\&\&} \text{x2} (k \text{x2}-\text{T2} x)\neq 0\text{\&\&} a=0)
-$
-\end{lstlisting}
 
 %>>Q =*a^2*k*(- )/(4((1/x1)-(1/x2))) (*  Watts  *)
 
 From the result, temperature may be calculated as a function of $x$
 and the distribution is as shown in figure \ref{fig:2:4}.
-\begin{lstlisting}
-k = 3.46;
-(* W/m2K using water *)
-x1 = 0.05;
-x2 = 0.25;
-L = x2 - x1;
-a = 0.25;
-Dia = a*x;
-(* cm  *)
-A = $\pi$*Dia^2/4;
-(* 1 meter ^2  *)
-R = L/(k*A);
-(* Resistance  *)
-(* Temperature on one side of wall *)
-$\text{T}_1$ = 400;
-(* Temperature on the other side of the wall *)
-$\text{T}_2$ = 600;
-(*  Watts  *)
-T = $\text{T}_1$ + ($\text{T}_1$ - $\text{T}_2$)*((1/x - 1/x1)/(1/x1 - 1/x2));
-Plot2 = Plot[T, {x, .05, .25}, PlotRange -> All, 
-              AxesLabel -> {Distance (m), Temperature }]
-\end{lstlisting}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=1]{figures/ch2/4}
@@ -178,16 +123,9 @@ Plot2 = Plot[T, {x, .05, .25}, PlotRange -> All,
 Substituting numerical values into the foregoing result for the heat 
 transfer rate, it follows that
 $$Q=\frac{\pi 0.25^2\times3.46~\text{W/m.K}\times(400-600)~K}{4(1/0.05~m - 1/0.25~m)}=-2.12W$$
-\begin{lstlisting}
-Q = $\pi$*a^2*k*($\text{T}_1$ - $\text{T}_2$)/(4 ((1/x1) - (1/x2)))
-\end{lstlisting}
 \item
 If $a$ changes from $0.001$ to $1$, as $Q$ has expression changes with $a$,
 we can sketch $Q$’s changes with $a$ as shown in figure \ref{fig:2:5}.
-\begin{lstlisting}
-Qax = $\pi$*x^2*k*($\text{T}_1$ - $\text{T}_2$)/(4 ((1/x1) - (1/x2)))
-PlotQ = Plot[Qax, {x, .001, 1}, PlotRange -> All]
-\end{lstlisting}
 
 \begin{figure}[H]
   \centering
@@ -202,11 +140,11 @@ PlotQ = Plot[Qax, {x, .001, 1}, PlotRange -> All]
 \section{1-D steady state, constant	internal heat generation problems}
 \begin{example}
 \label{example:23}
-\textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb}}
+\textcolor{blue} {\emph{Refer to tutorial 2-3-1 2-4-1 and 2-3-2 1D ss heat generation.nb}}
 A large thin slab of thickness $L=0.1~m$ is “setting.” Setting is an exothermic process 
 that releases $\dot{q}=100W/m^3$. Here the slab heat conductivity is in steady state. 
 Set the x-axis along with the wall thickness. At position $x=0m$, temperature is $T_0=37~^\circ C$,
-at position $x=L$,$T_1=33~^\circ C$, thermal conductivity $k=0.4W/m.K$. What’s the
+at position $x=L$, $T_1=33~^\circ C$, thermal conductivity $k=0.4W/m.K$. What’s the
 temperature distribution in along the length of the slab? 
 \begin{figure}[H]
   \centering
@@ -228,18 +166,12 @@ In this problem, the large thin slab could be considered as a one-dimensional pr
 with only $x$ dimension, and consider the slab is in steady state with no change with $t$,
 so the one-dimensional heat diffusion equation for the slab could be write as
 $$\frac{d^2 T}{d x^2}=-\frac{\dot{q}}{k}$$
-\begin{lstlisting}
-solution1 = NDSolve[{T''[x] + /k == 0, T[0] == ,  T[0.1] == }, T, {x, 0, 0.1}];
-\end{lstlisting}
 Integration twice
 $$T(x)=-\frac{\dot{q}}{2k}x^2+C_1x+C_2$$
 By evaluating $T(0)=T_0$, and $T(L)=T_1$, hence
 $$T(x)=-\frac{\dot{q}}{2k}x^2+ \left(\frac{T_1-T_0}{L}+\frac{\dot{q}L}{2k}\right)x+T_0$$
 From the result, temperature distribution could be expressed as a quadratic curve as shown in
 figure \ref{fig:2:7}.
-\begin{lstlisting}
-PS1 = Plot[Evaluate[T[x] /. First[solution1]], {x, 0, 0.1},    PlotRange -> All]
-\end{lstlisting}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=1]{figures/ch2/7}
@@ -250,7 +182,7 @@ PS1 = Plot[Evaluate[T[x] /. First[solution1]], {x, 0, 0.1},    PlotRange -> All]
 
 \begin{example}
 \label{example:24}
-\textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb, and Ch. 3, P. 134.}}
+\textcolor{blue} {\emph{Refer to tutorial 2-3-1 2-4-1 and 2-3-2 1D ss heat generation.nb.}}
 A steady state long tube generating thermal energy at a uniform volumetric rate
 $\dot{q}=1000W/m^3$, the thermal conductivity $k=0.4$W/m.K.
 At radius $r_1=0.1368m$, temperature $T_0=37~^\circ C$, at position $r_2=0.1768m$
@@ -265,7 +197,7 @@ What is the temperature distribution along the radius of the tube?
 \end{example}
 
 \begin{solution}
-~
+~\\
 The heat diffusion equation for cylindrical system is 
 $$ 
 \frac{1}{r}\frac{\partial}{r}(kr\frac{\partial T}{\partial r})+
@@ -298,7 +230,7 @@ sketch the $T(r)$ as shown in figure \ref{fig:2:9}
 
 \section{1-D steady state, variate internal	heat generation	problems}
 \begin{example}
-\textcolor{blue} {\emph{Refer to tutorial HW\_1\_MMATICA.nb, Ch. 3, P. 178.}}
+\textcolor{blue} {\emph{Refer to tutorial 2-3-1 2-4-1 and 2-3-2 1D ss heat generation.nb.}}
 Consider the slab in the example \ref{example:23} and the tube in example
 \ref{example:24} are human tissues, the blood perfusion heat that varies with the internal temperature. The blood mass rate per volumetric tissue is $m_b=100kg/s$, specific heat capacity of blood $50J/kg.K$, initial temperature of the blood is 
 $T_a=37~^\circ C$. Except the internal heat generation, other parameters are the same. 
@@ -319,17 +251,26 @@ $$\frac{\theta}{\theta_0}=\frac{\sinh\gamma x+\sinh\gamma(L-x)}{\sinh\gamma L}$$
 sketch of $\theta(x)$ is as figure \ref{fig:2:10}.
 \begin{figure}[h!]
   \centering
-    \includegraphics[scale=1]{figures/ch2/10}
+    \includegraphics[scale=0.8]{figures/ch2/10}
     \caption{1D steady state temperature distribution in rectangular tissue with variate heat generation}
     \label{fig:2:10}
 \end{figure}
 \item
 For the tube, the cylindrical equation is
+
 $$\frac{d^2 \theta}{dr^2} + \frac{1}{r}\frac{d\theta}{dr}-\gamma^2\theta=0$$
-Solve this equation and get the sketch of $\theta(r)$
-\begin{figure}[h!]
+Solve this equation, then
+\begin{equation*}
+\begin{aligned}
+\theta(r)=&[-\theta_1 Y_0(-i m r) J_0(i m r_1)+\theta_1 J_0(i m r) Y_0(-i m r_1)+\theta_0 Y_0(-i m r) J_0(i m r_2)\\
+&-\theta_0 J_0(i m r) Y_0(-i m r_2)]/[Y_0(-i m r_1) J_0(i m r_2)-J_0(i m r_1) Y_0(-i m r_2)]
+\end{aligned}
+\end{equation*}
+
+and get the sketch of $\theta(r)$ in figure \ref{fig:2:11}
+\begin{figure}[H]
   \centering
-    \includegraphics[scale=1]{figures/ch2/11}
+    \includegraphics[scale=0.8]{figures/ch2/11}
     \caption{1D steady state temperature distribution in cylindrical tissue with variate heat generation}
     \label{fig:2:11}
 \end{figure}
@@ -340,7 +281,7 @@ Solve this equation and get the sketch of $\theta(r)$
 \begin{example}
 \label{example:2:fin}
 \textbf{Constant k and A}. 
-\textcolor{blue} {\emph{Refer to tutorial 3.  Fin Solutions 2.nb, Ch. 3, P. 157}}
+\textcolor{blue} {\emph{Refer to tutorial 2-5-1 and 2-5-2 Fin Solutions.nb.}}
 A rectangular fin with uniform cross-sectional area has constant heat conductivity
 $k=3W/m.K$, width is $W=0.01m$, Thickness is $L=1m$. At start position $x_1=0m$, temperature is $T_1=30^\circ C$. The surface of the fin is exposed to ambient air at $10~^\circ C$ with a convection heat transfer coefficient $h=10W/m^2K$.
 Plot the temperature distribution in the fin under below conditions. (Shown in figure \ref{fig:2:12})
@@ -379,15 +320,20 @@ $$\theta(x) \equiv T(X)-T_\infty$$
 Where since $T_\infty$ is constant, $d\theta/dx=dT/dx$. Then we obtain
 $$\frac{d^2 T}{dx^2}-m^2\theta=0$$
 Where
-$$m^2 \ equiv \frac{hp}{kA_c}$$
+$$m^2=\frac{hp}{kA_c}$$
 With prescribed boundary condition
 $$\theta(0)=T_1-T_\infty \equiv \theta_1$$
 $$\theta(0.04)=T_2-T_\infty \equiv \theta_2$$
-Then for prescribed condition the fin temperature distribution is
+Then for prescribed condition the fin temperature distribution is as below equation, and the sketch is shown below in figure \ref{fig:2:13}
 $$
 \frac{\theta}{\theta_1}=
 \frac{(\theta/\theta_1)\sinh mx+\sinh m(L-x)}{\sinh mL}
 $$
+And for the total heat rate transfer from the fin, we can get it by calculate the fin heat rate at fin base $x=0$
+$$Q_f= -k A_c T(x) \, \mathrm{d}x\|_{x=0}=-k A_c \theta \, \mathrm{d}x\|_{x=0}$$
+For prescribed tip, fin hear rate is 
+$$Q=M\frac{CoshmL-\theta_2/\theta_1}{SinhmL}$$
+Where $M=\sqrt{hpkA_c\theta_0}$.
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=1]{figures/ch2/13}
@@ -403,7 +349,7 @@ Then the heat distribution equation of adiabatic tip condition could be written 
 $$\frac{\theta}{\theta_1}=
 \frac{\cosh m(L-x)}{\cosh mL}
 $$
-The temperature distribution along x direction is shown below
+The temperature distribution along x direction is shown below in figure \ref{fig:2:14}
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=1]{figures/ch2/14}
@@ -415,11 +361,11 @@ For an infinite fin the tip is  $x\to\infty$, and the boundary condition at the 
 $$\theta(0.04)=0$$
 And the temperature distribution is 
 $$\frac{\theta}{\theta_1}=e^{-mx}$$
-Sketch the temperature distribution
+Sketch the temperature distribution as Figure \ref{fig:2:15}
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=1]{figures/ch2/15}
-    \caption{result of 3}
+    \caption{Temperature distribution in rectangular fin under infinite tip condition}
     \label{fig:2:15}
 \end{figure}
 
@@ -474,8 +420,14 @@ $$
 For proscribed tip problem, boundary condition is 
 $$\theta(0.0001)=T_1-T_\infty \equiv \theta_1$$
 $$\theta(0.04)=T_2-T_\infty \equiv \theta_2$$
-
-Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
+Hence
+\begin{equation*}
+\begin{aligned}
+\theta(r)=&[-\theta_2 Y_0(-i \gamma r) J_0(i \gamma r_1)+\theta_2 J_0(i \gamma r) Y_0(-i \gamma r_1)+\theta_1 Y_0(-i \gamma r) J_0(i \gamma r_2)\\
+&-\theta_1 J_0(i \gamma r) Y_0(-i \gamma r_2)]/[Y_0(-i \gamma r_1) J_0(i \gamma r_2)-J_0(i \gamma r_1) Y_0(-i \gamma r_2)]
+\end{aligned}
+\end{equation*}
+Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below in figure \ref{fig:2:17}
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=1]{figures/ch2/17}
@@ -484,7 +436,9 @@ Solve this two step differential equation with Mathematica and get the sketch of
 \end{figure}
 \item For infinite boundary condition
 $$\theta(r_2)=\theta(0.04)=0$$
-Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as below
+And get
+$$\theta=\frac{\theta_1 (Y_0(-ir\gamma)J_0(ir_2\gamma)-J_0(ir\gamma)Y_0(-ir_2\gamma))}{Y_0(-ir_1\gamma)J_0(ir_2\gamma)-J_0(ir_1\gamma)Y_0(-ir_2\gamma)}$$
+Solve this two step differential equation with Mathematica and get the sketch of temperature distribution as figure \ref{fig:2:18}
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=1]{figures/ch2/18}
