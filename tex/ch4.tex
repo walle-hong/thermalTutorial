@@ -11,58 +11,114 @@ environment surrounded with symmetrically fluids with constant temperature $T_\i
 Wall thickness is $2L_c$. The density of the wall is $\rho=921kg/m^3 $,
 the specific heat capacity is $c=2100J/kg\cdot K, k=2.0W/m\cdot K$. The covection coefficient between the junction surface and the
 gas is $h=200W/m^2\cdot K$. 3 groups of parameters are given below and 
-calculate the temperature difference changed with time compared to the initial temperature difference, use lumped method and steady state method, and compare the results difference. (As shown in figure \ref{fig:4:1})
+calculate the temperature difference changed with time compared to the initial temperature difference. $L_{c1}=0.001 m, Bi_A=0.1$ (As shown in figure \ref{fig:4:1})
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.6]{figures/ch4/1}
     \caption{case 1 when $L_{c1}=0.001 m$}
     \label{fig:4:1}
 \end{figure}
-\begin{enumerate}
-\item Case 1: $L_{c1}=0.001 m, Bi_A=0.1, C_{1A}=1.016$ and \\
-$\zeta_{1A}=0.311 rad, \text{ time } t=60s$
-\item Case 2: $L_{c2}=0.01 m, Bi_B=0.1, C_{1B}=1.1191$ and \\
-$\zeta_{1B}=0.8603 rad, \text{ time } t=600s$
-\item Case 3: $L_{c3}=0.1 m, Bi_C=10.0, C_{1C}=1.2620$ and \\
-$\zeta_{1C}=1.4289 rad, \text{ time } t=22000s$
-\end{enumerate}
+%\begin{enumerate}
+%\item Case 1: $L_{c1}=0.001 m, Bi_A=0.1, C_{1A}=1.016$ and \\
+%$\zeta_{1A}=0.311 rad, \text{ time } t=60s$
+%\item Case 2: $L_{c2}=0.01 m, Bi_B=0.1, C_{1B}=1.1191$ and \\
+%$\zeta_{1B}=0.8603 rad, \text{ time } t=600s$
+%\item Case 3: $L_{c3}=0.1 m, Bi_C=10.0, C_{1C}=1.2620$ and \\
+%$\zeta_{1C}=1.4289 rad, \text{ time } t=22000s$
+%\end{enumerate}
+\label{Example:4:1}
 \end{example}
+
 \begin{solution}
 ~\\
-Based on lumped capacitance method, internal temperature of the wall is constant; the plane wall with convection’s temperature distribution is expressed as
+As in this case,first caculate$Bi$, $Bi\le 0.1$, meet the requirment for using lump method. Based on lumped capacitance method, internal temperature of the wall is considered consistant; the plane wall with convection’s temperature distribution is expressed as
+$$-hA_s(T-T_\infty)=\rho Vc\ frac{dT}{dt}$$
+Then get solution for lumped method
 $$\frac{\theta}{\theta_i}=
 \frac{T-T_\infty}{T_i-T_\infty}=exp(-Bi\cdot Fo)
 $$
 Where
 $$Fo=\frac{\alpha t}{{L_c}^2}$$
 $$\alpha=\frac{k}{\rho c}$$
-And for general solution of plane wall convection transient problem, the shape effect is required to be considered, the temperature at the centerline of the plane wall
-$${\theta_0}^*=\frac{\theta_0}{\theta_i}
-=\frac{T-T_\infty}{T_i-T_\infty}=C_1 exp(-\zeta^2Fo)
-$$
-So that we can plot the internal temperature of the plane wall for the 3 conditions listed above. From figure \ref{fig:4:2}, figure \ref{fig:4:3} and figure \ref{fig:4:4}, we can see that the lumped capacitance method is closed to general solution only when $B_i<0.1$
-
+Sketch the wall internal temperature change with time as figure \ref{fig:4:2}
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.5]{figures/ch4/2}
-    \caption{case 1 when $L_{c1}=0.001 m$}
+    \includegraphics[scale=1]{figures/ch4/2}
+    \caption{Plane wall lumped}
     \label{fig:4:2}
 \end{figure}
+%And for general solution of plane wall convection transient problem, the shape effect is required to be considered, the temperature at the centerline of the plane wall
+%$${\theta_0}^*=\frac{\theta_0}{\theta_i}
+%=\frac{T-T_\infty}{T_i-T_\infty}=C_1 exp(-\zeta^2Fo)
+%$$
+%So that we can plot the internal temperature of the plane wall for the 3 conditions listed above. From figure \ref{fig:4:2}, figure \ref{fig:4:3} and figure \ref{fig:4:4}, we can see that the lumped capacitance method is closed to general solution only when $B_i<0.1$
+
+%\begin{figure}[H]
+%  \centering
+%    \includegraphics[scale=0.5]{figures/ch4/2}
+%    \caption{case 1 when $L_{c1}=0.001 m$}
+%    \label{fig:4:2}
+%\end{figure}
+
+%\begin{figure}[H]
+%  \centering
+%    \includegraphics[scale=0.5]{figures/ch4/3}
+ %   \caption{case 2 when $L_{c2}=0.01 m$}
+ %   \label{fig:4:3}
+%\end{figure}
+
+%\begin{figure}[H]
+%  \centering
+%    \includegraphics[scale=0.5]{figures/ch4/4}
+%    \caption{case 3 when $L_{c3}=0.1 m$}
+%    \label{fig:4:4}
+%\end{figure}
+%\end{solution}
+\end{solution}
+
+\section{The Lumped Capacitance Method}
+\begin{example}
+\textbf{Transient one term solution}
+\textcolor{blue} {\emph{Refer to  }}
+Coonsider the wall thickness in Example \ref{Example:4:1} please answer the following for two cases where the half thickness is $L =0.1$ m, $Bi=10$. Please plot the centerline solutions over time.\ref{Example:4:1}
+\end{example}
+\begin{solution}
+First calculate $Bi$, and $F_o$, $L_C= 0.1$.
+$$Bi= 10$$
+$$Fo=-\frac{\alpha t}{L_C^2}=2.27496$$
+Hence based on the table listed in figure \ref{fig:4:12} , solving this problem with exact solution method
+$$\theta*=\frac{T-T_\infty}{T_i-T_\infty}=\sum_{n=1}^{\infty}C_n\exp(-\zeta^2_nFo)\cos(\zeta_nx*)$$ 
 
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.5]{figures/ch4/3}
-    \caption{case 2 when $L_{c2}=0.01 m$}
-    \label{fig:4:3}
+    \includegraphics[scale=1.2]{figures/ch4/12}
+    \caption{One term coefficients}\footnote{Theodore L. Bergman,  Adrienne S. Lavine, Frank P. Incropera and David P. Dewitt: Fundamentals of Heat and Mass Transfer, 7th Edition(Wiley 2002),301}
+    \label{fig:4:12}
 \end{figure}
 
+
+Where $x*=x/L$.
+For values of $Fo>0.2$,the infinete series solution, $\theta*$ could be approximated by the first term of the series, $n=1$
+the form of te temperature distribution becomes
+$$\theta*=C_1\exp(-\zeta^2_1Fo)\cos(\zeta_1x*)$$
+Hence based on the table listed in figure?? , $\zeta_{1}=0.4801$, $C_1=1.0382$,sketch the centerline temperature with time $\theta_0*$ as figure \ref{fig:4:10}
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.5]{figures/ch4/4}
-    \caption{case 3 when $L_{c3}=0.1 m$}
-    \label{fig:4:4}
+    \includegraphics[scale=1]{figures/ch4/10}
+    \caption{One term result}
+    \label{fig:4:10}
+\end{figure}
+Use lumped method to solve the problem, and compare the sketch of lumped method result with one term result in figure \ref{fig:4:11}
+\begin{figure}[H]
+  \centering
+    \includegraphics[scale=1]{figures/ch4/11}
+    \caption{One term compare with lumped}
+    \label{fig:4:11}
 \end{figure}
 \end{solution}
+
+
+
 
 \section{SOV analytical solution}
 \begin{example}
@@ -124,7 +180,7 @@ For dirichlet boundary condition $T(L,0)=0$, it is condition 9, so that
 \[
  T(x,t) = 
    \underbrace{\frac{2}{L}}_{\frac{1}{N\beta_m}} +\sum_{m=1}^{\infty}
-   \underbrace{e^{-\alpha t \left(\frac{m\pi}{L}\right)}}_{X(\beta_m,x)}
+   \underbrace{\exp^{-\alpha t \left(\frac{m\pi}{L}\right)}}_{X(\beta_m,x)}
    \underbrace{\sin\left(xm\frac{\pi}{L}\right)}_{X(\beta_m,x)}
    \int_0^L{y^2 \sin\left(ym\frac{\pi}{L}\right)}dy
 \]

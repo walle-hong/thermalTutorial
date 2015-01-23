@@ -1,21 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.20)  20 JAN 2015 01:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  22 JAN 2015 23:21
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **document.tex
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\document.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
+(./document.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk11.clo"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/bk11.clo
 File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,30 +23,29 @@ File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\mystyle.sty
+) (./mystyle.sty
 Package: mystyle 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -203,7 +195,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -234,7 +226,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -258,13 +250,13 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 \lst@mode=\count88
@@ -280,35 +272,35 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \lst@lineno=\count93
 \lst@maxwidth=\dimen106
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 \c@lstnumber=\count94
 \lst@skipnumbers=\count95
 \lst@framebox=\box27
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
-File: listings.cfg 2013/08/26 1.5b listings configuration
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
-Package: listings 2013/08/26 1.5b (Carsten Heinz)
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen107
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen108
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count96
@@ -349,17 +341,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -371,7 +363,7 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip48
 \dth@everypar=\toks28
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -406,35 +398,35 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 137.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count108
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -465,7 +457,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -473,27 +465,27 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen116
 \Hy@linkcounter=\count109
 \Hy@pagecounter=\count110
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count111
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -525,49 +517,43 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count117
 \c@bookmark@seq@number=\count118
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip49
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/03/24 3.9k The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\english.ldf"
-Language: english 2005/03/30 v3.3o English support from the babel system
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/03/24 3.9k Babel common definitions
 \babel@savecnt=\count119
 \U@D=\dimen122
 )
@@ -575,89 +561,100 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
-\pgfutil@everybye=\toks29
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
-\pgfutil@abb=\box30
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen123
+\pgfutil@tempdimb=\dimen124
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box30
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
-Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
 ))
-Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
-Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks30
 \pgfkeys@temptoks=\toks31
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
-x"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
 \pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen123
-\pgf@y=\dimen124
-\pgf@xa=\dimen125
-\pgf@ya=\dimen126
-\pgf@xb=\dimen127
-\pgf@yb=\dimen128
-\pgf@xc=\dimen129
-\pgf@yc=\dimen130
+\pgf@x=\dimen125
+\pgf@y=\dimen126
+\pgf@xa=\dimen127
+\pgf@ya=\dimen128
+\pgf@xb=\dimen129
+\pgf@yb=\dimen130
+\pgf@xc=\dimen131
+\pgf@yc=\dimen132
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count120
 \c@pgf@countb=\count121
 \c@pgf@countc=\count122
 \c@pgf@countd=\count123
- ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+Driver file for pgf: pgfsys-pdftex.def
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
-File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
-"
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
-ex"
-File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count124
 \pgfsyssoftpath@bigbuffer@items=\count125
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
-ex"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -672,203 +669,227 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
-Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen131
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen133
 \pgfmath@count=\count126
 \pgfmath@box=\box31
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
-tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
-ic.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
-.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
-code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
-ex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
-tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
-ex"))) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex
-"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count127
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
-"
-File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen132
-\pgf@picmaxx=\dimen133
-\pgf@picminy=\dimen134
-\pgf@picmaxy=\dimen135
-\pgf@pathminx=\dimen136
-\pgf@pathmaxx=\dimen137
-\pgf@pathminy=\dimen138
-\pgf@pathmaxy=\dimen139
-\pgf@xx=\dimen140
-\pgf@xy=\dimen141
-\pgf@yx=\dimen142
-\pgf@yy=\dimen143
-\pgf@zx=\dimen144
-\pgf@zy=\dimen145
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen134
+\pgf@picmaxx=\dimen135
+\pgf@picminy=\dimen136
+\pgf@picmaxy=\dimen137
+\pgf@pathminx=\dimen138
+\pgf@pathmaxx=\dimen139
+\pgf@pathminy=\dimen140
+\pgf@pathmaxy=\dimen141
+\pgf@xx=\dimen142
+\pgf@xy=\dimen143
+\pgf@yx=\dimen144
+\pgf@yy=\dimen145
+\pgf@zx=\dimen146
+\pgf@zy=\dimen147
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
-ode.tex"
-File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen146
-\pgf@path@lasty=\dimen147
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen148
+\pgf@path@lasty=\dimen149
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
-tex"
-File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen148
-\pgf@shorten@start@additional=\dimen149
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen150
+\pgf@shorten@start@additional=\dimen151
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
-"
-File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box32
 \pgf@hbox=\box33
 \pgf@layerbox@main=\box34
 \pgf@picture@serial@count=\count128
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
-de.tex"
-File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen150
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen152
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
-.code.tex"
-File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen151
-\pgf@pt@y=\dimen152
-\pgf@pt@temp=\dimen153
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen153
+\pgf@pt@y=\dimen154
+\pgf@pt@temp=\dimen155
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
-x"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
-code.tex"
-File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
-"
-File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen156
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
-File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen154
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen157
 \pgf@sys@shading@range@num=\count129
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
-x"
-File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
-ex"
-File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
 \pgfexternal@startupbox=\box35
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
-"
-File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
-de.tex"
-File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
-ex"
-File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
-File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
 \pgfnodeparttextbox=\box36
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
-File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
-sty"
-Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen155
-\pgf@nodesepend=\dimen156
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
-sty"
-Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
-Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen157
-\pgffor@skip=\dimen158
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen158
+\pgf@nodesepend=\dimen159
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
-Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
-code.tex"
-File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen160
+\pgffor@skip=\dimen161
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \pgf@plot@mark@count=\count130
-\pgfplotmarksize=\dimen159
+\pgfplotmarksize=\dimen162
 )
-\tikz@lastx=\dimen160
-\tikz@lasty=\dimen161
-\tikz@lastxsaved=\dimen162
-\tikz@lastysaved=\dimen163
-\tikzleveldistance=\dimen164
-\tikzsiblingdistance=\dimen165
+\tikz@lastx=\dimen163
+\tikz@lasty=\dimen164
+\tikz@lastxsaved=\dimen165
+\tikz@lastysaved=\dimen166
+\tikzleveldistance=\dimen167
+\tikzsiblingdistance=\dimen168
 \tikz@figbox=\box37
-\tikz@tempbox=\box38
+\tikz@figbox@bg=\box38
+\tikz@tempbox=\box39
+\tikz@tempbox@bg=\box40
 \tikztreelevel=\count131
 \tikznumberofchildren=\count132
 \tikznumberofcurrentchild=\count133
 \tikz@fig@count=\count134
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
-File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count135
 \pgfmatrixcurrentcolumn=\count136
 \pgf@matrix@numberofcolumns=\count137
 )
 \tikz@expandcount=\count138
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-librarytopaths.code.tex"
-File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count139
-\float@exts=\toks38
-\float@box=\box39
-\@float@everytoks=\toks39
-\@floatcapt=\box40
+\float@exts=\toks41
+\float@box=\box41
+\@float@everytoks=\toks42
+\@floatcapt=\box42
 )
-\c@example=\count140
+(/usr/local/texlive/2014/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count140
+\decimalpart=\count141
 )
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\document.aux
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\chMathematica.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch2.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch3.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch4.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\appendix.aux))
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@example=\count142
+)
+(./document.aux (./tex/chMathematica.aux) (./tex/ch2.aux) (./tex/ch3.aux)
+(./tex/ch4.aux))
+\openout1 = `document.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -884,118 +905,115 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 11.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\c@lstlisting=\count141
+\c@lstlisting=\count143
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
-\scratchdimen=\dimen166
-\scratchbox=\box41
-\nofMPsegments=\count143
-\nofMParguments=\count144
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count145
-\MPscratchDim=\dimen167
-\MPnumerator=\count146
-\makeMPintoPDFobject=\count147
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count144
+\scratchdimen=\dimen169
+\scratchbox=\box43
+\nofMPsegments=\count145
+\nofMParguments=\count146
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen170
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
+\everyMPtoPDFconversion=\toks44
 )
-\AtBeginShipoutBox=\box42
+\AtBeginShipoutBox=\box44
 Package hyperref Info: Link coloring OFF on input line 11.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count148
+\c@section@level=\count150
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\document.out)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\document.out)
-\@outlinefile=\write4
+(./document.out) (./document.out)
+\@outlinefile=\write5
+\openout5 = `document.out'.
 
-ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 17.
+ ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 16.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 17.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 16.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 17.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 16.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 17.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 16.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 17.
+(Font)              <12> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 17.
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+(Font)              <6> on input line 16.
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 17.
+(Font)              <10> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 17.
+(Font)              <7> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 17.
+(Font)              <5> on input line 16.
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-]
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\document.toc
+] (./document.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 3.
 )
-\tf@toc=\write5
- [3]
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\chMathematica.tex
-[4
+\tf@toc=\write6
+\openout6 = `document.toc'.
+
+[3]
+\openout2 = `./tex/chMathematica.aux'.
+
+ (./tex/chMathematica.tex [4
 
 
 ]
 Chapter 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 3.
-
-LaTeX Warning: Citation `website:wiki-mathematica' on page 5 undefined on input
- line 3.
-
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 7.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<figures/mathematica.png, id=151, 623.32875pt x 359.09157pt>
+<figures/mathematica.png, id=157, 623.32875pt x 359.09157pt>
 File: figures/mathematica.png Graphic file (type png)
 
 <use figures/mathematica.png>
@@ -1006,7 +1024,7 @@ Package pdftex.def Info: figures/mathematica.png used on input line 11.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 19.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
@@ -1042,8 +1060,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--50
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.50 
-      <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/mathematica.p
-ng>]
+      <./figures/mathematica.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 52--58
 
  []
@@ -1063,17 +1080,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
 Package epstopdf Info: Source file: <figures/sin.eps>
-(epstopdf)                    date: 2015-01-04 18:41:52
+(epstopdf)                    date: 2015-01-18 21:15:38
 (epstopdf)                    size: 106167 bytes
 (epstopdf)             Output file: <figures/sin-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-15 10:42:58
-(epstopdf)                    size: 8447 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/sin-eps-converted-t
-o.pdf figures/sin.eps>
+(epstopdf)                    date: 2015-01-18 21:17:52
+(epstopdf)                    size: 9815 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/sin-eps-converted-
+to.pdf figures/sin.eps>
 (epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/sin-eps-converted-to.pdf, id=195, 260.975pt x 156.585pt>
+<figures/sin-eps-converted-to.pdf, id=202, 260.975pt x 156.585pt>
 File: figures/sin-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/sin-eps-converted-to.pdf>
@@ -1081,7 +1098,7 @@ Package pdftex.def Info: figures/sin-eps-converted-to.pdf used on input line 11
 5.
 (pdftex.def)             Requested size: 260.97437pt x 156.58461pt.
 
-<figures/sin3D.png, id=196, 361.35pt x 278.03876pt>
+<figures/sin3D.png, id=203, 361.35pt x 278.03876pt>
 File: figures/sin3D.png Graphic file (type png)
  <use figures/sin3D.png>
 Package pdftex.def Info: figures/sin3D.png used on input line 122.
@@ -1101,20 +1118,19 @@ l.126
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.126 
-       <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/sin-eps-conv
-erted-to.pdf>]
+       <./figures/sin-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/sinLabel.eps>
-(epstopdf)                    date: 2015-01-04 19:33:04
+(epstopdf)                    date: 2015-01-18 21:15:38
 (epstopdf)                    size: 169559 bytes
 (epstopdf)             Output file: <figures/sinLabel-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-15 10:42:59
-(epstopdf)                    size: 10221 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/sinLabel-eps-conver
-ted-to.pdf figures/sinLabel.eps>
+(epstopdf)                    date: 2015-01-18 21:17:53
+(epstopdf)                    size: 13379 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/sinLabel-eps-conve
+rted-to.pdf figures/sinLabel.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/sinLabel-eps-converted-to.pdf, id=213, 260.975pt x 154.5775pt>
+<figures/sinLabel-eps-converted-to.pdf, id=222, 260.975pt x 154.5775pt>
 File: figures/sinLabel-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/sinLabel-eps-converted-to.pdf>
@@ -1135,21 +1151,19 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.139 \item \emph
                  {Differential-Algebraic Equations} {DAEs}, in which some me...
- <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/sin3D.png (PNG cop
-y)> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/sinLabel-eps-co
-nverted-to.pdf>]
+ <./figures/sin3D.png (PNG copy)> <./figures/sinLabel-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/ODE.eps>
-(epstopdf)                    date: 2015-01-04 20:29:23
+(epstopdf)                    date: 2015-01-18 21:15:38
 (epstopdf)                    size: 132725 bytes
 (epstopdf)             Output file: <figures/ODE-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-15 10:43:00
-(epstopdf)                    size: 10911 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ODE-eps-converted-t
-o.pdf figures/ODE.eps>
+(epstopdf)                    date: 2015-01-18 21:17:55
+(epstopdf)                    size: 12649 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ODE-eps-converted-
+to.pdf figures/ODE.eps>
 (epstopdf)             \includegraphics on input line 148.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/ODE-eps-converted-to.pdf, id=230, 260.975pt x 163.61125pt>
+<figures/ODE-eps-converted-to.pdf, id=243, 260.975pt x 163.61125pt>
 File: figures/ODE-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ODE-eps-converted-to.pdf>
@@ -1157,19 +1171,19 @@ Package pdftex.def Info: figures/ODE-eps-converted-to.pdf used on input line 14
 8.
 (pdftex.def)             Requested size: 260.97437pt x 163.61084pt.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2013/08/26 1.5b listings language file
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2013/08/26 1.5b listings language file
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2013/08/26 1.5b listings language file
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 171.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [10pdfTeX warning (ext4): destination with the same identifier (name{figure.1
 .5}) has been already used, duplicate ignored
@@ -1177,677 +1191,789 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.182 \end{lstlisting}
-                       <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figu
-res/ODE-eps-converted-to.pdf>]
+                       <./figures/ODE-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
-) [11] (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch2.tex
-\c@problem=\count149
+) [11]
+\openout2 = `./tex/ch2.aux'.
+
+ (./tex/ch2.tex
+\c@problem=\count151
  [12
 
 
 
 ]
 Chapter 2.
-<figures/ch2/1.png, id=268, 158.84344pt x 240.9pt>
+<figures/ch2/1.png, id=283, 158.84344pt x 240.9pt>
 File: figures/ch2/1.png Graphic file (type png)
  <use figures/ch2/1.png>
-Package pdftex.def Info: figures/ch2/1.png used on input line 21.
+Package pdftex.def Info: figures/ch2/1.png used on input line 18.
 (pdftex.def)             Requested size: 95.3068pt x 144.5411pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [13]
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 37.
+Package epstopdf Info: Source file: <figures/ch2/2.eps>
+(epstopdf)                    date: 2015-01-19 01:56:04
+(epstopdf)                    size: 280594 bytes
+(epstopdf)             Output file: <figures/ch2/2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 09:12:36
+(epstopdf)                    size: 22996 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/2-eps-converte
+d-to.pdf figures/ch2/2.eps>
+(epstopdf)             \includegraphics on input line 49.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/ch2/2-eps-converted-to.pdf, id=294, 260.975pt x 143.53625pt>
+File: figures/ch2/2-eps-converted-to.pdf Graphic file (type pdf)
 
-LaTeX Font Info:    No file OMSlmss.fd. on input line 37.
+<use figures/ch2/2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/2-eps-converted-to.pdf used on input line 
+49.
+(pdftex.def)             Requested size: 260.97437pt x 143.53589pt.
 
 
-LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 37.
-
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 42.
-
-LaTeX Font Warning: Font shape `OMS/lmss/m/it' undefined
-(Font)              using `OMS/lmss/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 42.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.62 Plot2=
-           ListPlot[{{0,50},{0.01,30}}, <C:/Users/guoxx691/Documents/GitHub/the
-rmalTutorial/figures/ch2/1.png>]
-Package epstopdf Info: Source file: <figures/ch2/2.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
-(epstopdf)                    size: 280594 bytes
-(epstopdf)             Output file: <figures/ch2/2-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:05
-(epstopdf)                    size: 23091 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/2-eps-converted
--to.pdf figures/ch2/2.eps>
-(epstopdf)             \includegraphics on input line 69.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/ch2/2-eps-converted-to.pdf, id=295, 260.975pt x 143.53625pt>
-File: figures/ch2/2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/ch2/2-eps-converted-to.pdf>
-Package pdftex.def Info: figures/ch2/2-eps-converted-to.pdf used on input line 
-69.
-(pdftex.def)             Requested size: 260.97437pt x 143.53589pt.
-
-<figures/ch2/3.png, id=296, 353.82187pt x 185.19188pt>
+l.64 \item D
+            erive and expression for the temperature distribution $T(x)$, <./fi
+gures/ch2/1.png>] <figures/ch2/3.png, id=304, 353.82187pt x 185.19188pt>
 File: figures/ch2/3.png Graphic file (type png)
- <use figures/ch2/3.png>
-Package pdftex.def Info: figures/ch2/3.png used on input line 91.
+
+<use figures/ch2/3.png>
+Package pdftex.def Info: figures/ch2/3.png used on input line 71.
 (pdftex.def)             Requested size: 212.29475pt x 111.11597pt.
 
-Underfull \vbox (badness 4429) has occurred while \output is active []
-
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.95 \end{example}
-                   <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/
-ch2/2-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.132 $$
-        Q=\frac{\pi a^2k(T_1-T_2)}{4[(1/x_1)-(1/x_2)]}$$ <C:/Users/guoxx691/Doc
-uments/GitHub/thermalTutorial/figures/ch2/3.png>] [17]
+l.84 $$Q=-kA\frac{dT}{dx}$$
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.2.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.84 $$Q=-kA\frac{dT}{dx}$$
+                            <./figures/ch2/2-eps-converted-to.pdf> <./figures/c
+h2/3.png>]
 Package epstopdf Info: Source file: <figures/ch2/4.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    date: 2015-01-19 01:56:04
 (epstopdf)                    size: 275144 bytes
 (epstopdf)             Output file: <figures/ch2/4-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:06
-(epstopdf)                    size: 21135 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/4-eps-converted
--to.pdf figures/ch2/4.eps>
-(epstopdf)             \includegraphics on input line 176.
+(epstopdf)                    date: 2015-01-19 09:12:38
+(epstopdf)                    size: 21043 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/4-eps-converte
+d-to.pdf figures/ch2/4.eps>
+(epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/ch2/4-eps-converted-to.pdf, id=357, 260.975pt x 143.53625pt>
+<figures/ch2/4-eps-converted-to.pdf, id=319, 260.975pt x 143.53625pt>
 File: figures/ch2/4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ch2/4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ch2/4-eps-converted-to.pdf used on input line 
-176.
+118.
 (pdftex.def)             Requested size: 260.97437pt x 143.53589pt.
+ [16]
 Package epstopdf Info: Source file: <figures/ch2/5.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    date: 2015-01-19 01:56:04
 (epstopdf)                    size: 268339 bytes
 (epstopdf)             Output file: <figures/ch2/5-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:07
-(epstopdf)                    size: 17143 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/5-eps-converted
--to.pdf figures/ch2/5.eps>
-(epstopdf)             \includegraphics on input line 197.
+(epstopdf)                    date: 2015-01-19 09:12:39
+(epstopdf)                    size: 17053 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/5-eps-converte
+d-to.pdf figures/ch2/5.eps>
+(epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/ch2/5-eps-converted-to.pdf, id=359, 260.975pt x 141.52875pt>
+<figures/ch2/5-eps-converted-to.pdf, id=327, 260.975pt x 141.52875pt>
 File: figures/ch2/5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ch2/5-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ch2/5-eps-converted-to.pdf used on input line 
-197.
+132.
 (pdftex.def)             Requested size: 260.97437pt x 141.5284pt.
 
-Underfull \vbox (badness 4242) has occurred while \output is active []
+<figures/ch2/6.png, id=328, 278.54062pt x 237.13594pt>
+File: figures/ch2/6.png Graphic file (type png)
+ <use figures/ch2/6.png>
+Package pdftex.def Info: figures/ch2/6.png used on input line 151.
+(pdftex.def)             Requested size: 167.12566pt x 142.28265pt.
 
- [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-4}) has been already used, duplicate ignored
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 
-       <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/4-eps-co
-nverted-to.pdf>] <figures/ch2/6.png, id=379, 278.54062pt x 237.13594pt>
-File: figures/ch2/6.png Graphic file (type png)
+l.154 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.2.5}) has been already used, duplicate ignored
 
-<use figures/ch2/6.png>
-Package pdftex.def Info: figures/ch2/6.png used on input line 216.
-(pdftex.def)             Requested size: 167.12566pt x 142.28265pt.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.154 \end{figure}
+                   <./figures/ch2/4-eps-converted-to.pdf> <./figures/ch2/5-eps-
+converted-to.pdf>] [18pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.2.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.172 ...T_0}{L}+\frac{\dot{q}L}{2k}\right)x+T_0$$
+                                                   <./figures/ch2/6.png>]
+Package epstopdf Info: Source file: <figures/ch2/7.eps>
+(epstopdf)                    date: 2015-01-19 01:56:04
+(epstopdf)                    size: 273444 bytes
+(epstopdf)             Output file: <figures/ch2/7-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 09:12:41
+(epstopdf)                    size: 20733 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/7-eps-converte
+d-to.pdf figures/ch2/7.eps>
+(epstopdf)             \includegraphics on input line 177.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/ch2/7-eps-converted-to.pdf, id=349, 260.975pt x 143.53625pt>
+File: figures/ch2/7-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/7-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/7-eps-converted-to.pdf used on input line 
+177.
+(pdftex.def)             Requested size: 260.97437pt x 143.53589pt.
+
+<figures/ch2/8.png, id=350, 295.1025pt x 283.0575pt>
+File: figures/ch2/8.png Graphic file (type png)
+ <use figures/ch2/8.png>
+Package pdftex.def Info: figures/ch2/8.png used on input line 193.
+(pdftex.def)             Requested size: 177.06285pt x 169.8358pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Overfull \hbox (83.43886pt too wide) has occurred while \output is active
 \T1/lmr/m/sl/10.95 2.3.  1-D STEADY STATE, CONSTANT INTERNAL HEAT GENERATION PR
 OBLEMS \T1/lmr/m/n/10.95 19
  []
 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 $$
-        \nabla^2 T+\frac{\dot{q}}{k}=\frac{1}{\propto}\frac{\partial T}{\par...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.225 $$
-        \nabla^2 T+\frac{\dot{q}}{k}=\frac{1}{\propto}\frac{\partial T}{\par...
- <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/5-eps-converte
-d-to.pdf> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/6.png
->]
-Package epstopdf Info: Source file: <figures/ch2/7.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
-(epstopdf)                    size: 273444 bytes
-(epstopdf)             Output file: <figures/ch2/7-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:08
-(epstopdf)                    size: 20821 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/7-eps-converted
--to.pdf figures/ch2/7.eps>
-(epstopdf)             \includegraphics on input line 248.
-Package epstopdf Info: Output file is already uptodate.
- <figures/ch2/7-eps-converted-to.pdf, id=392, 260.975pt x 143.53625pt>
-File: figures/ch2/7-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/ch2/7-eps-converted-to.pdf>
-Package pdftex.def Info: figures/ch2/7-eps-converted-to.pdf used on input line 
-248.
-(pdftex.def)             Requested size: 260.97437pt x 143.53589pt.
- [20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.252 \end{solution}
-                     <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figure
-s/ch2/7-eps-converted-to.pdf>]
-<figures/ch2/8.png, id=404, 295.1025pt x 283.0575pt>
-File: figures/ch2/8.png Graphic file (type png)
- <use figures/ch2/8.png>
-Package pdftex.def Info: figures/ch2/8.png used on input line 264.
-(pdftex.def)             Requested size: 177.06285pt x 169.8358pt.
-
-Overfull \hbox (2.13594pt too wide) detected at line 290
+l.197 \end{example}
+                    <./figures/ch2/7-eps-converted-to.pdf>]
+Overfull \hbox (2.13594pt too wide) detected at line 219
 \OML/lmm/m/it/10.95 T\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 r\OT1/lmr/m/n/10.9
-5 ) = \OMS/lmsy/m/n/10.95  []\OML/lmm/m/it/10.95 r[] \OT1/lmr/m/n/10.95 + [] \O
-MS/lmsy/m/n/10.95  \OML/lmm/m/it/10.95 Inr \OT1/lmr/m/n/10.95 + []
+5 ) = \OMS/lmsy/m/n/10.95 ^^@[]\OML/lmm/m/it/10.95 r[] \OT1/lmr/m/n/10.95 + [] 
+\OMS/lmsy/m/n/10.95 ^^A \OML/lmm/m/it/10.95 Inr \OT1/lmr/m/n/10.95 + []
  []
 
 Package epstopdf Info: Source file: <figures/ch2/9.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    date: 2015-01-19 01:56:04
 (epstopdf)                    size: 288306 bytes
 (epstopdf)             Output file: <figures/ch2/9-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:09
-(epstopdf)                    size: 18017 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/9-eps-converted
--to.pdf figures/ch2/9.eps>
-(epstopdf)             \includegraphics on input line 296.
+(epstopdf)                    date: 2015-01-19 09:12:42
+(epstopdf)                    size: 17934 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/9-eps-converte
+d-to.pdf figures/ch2/9.eps>
+(epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
-<figures/ch2/9-eps-converted-to.pdf, id=407, 260.975pt x 159.59625pt>
+<figures/ch2/9-eps-converted-to.pdf, id=362, 260.975pt x 159.59625pt>
 File: figures/ch2/9-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ch2/9-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ch2/9-eps-converted-to.pdf used on input line 
-296.
+225.
 (pdftex.def)             Requested size: 260.97437pt x 159.59584pt.
-
-Overfull \hbox (83.43886pt too wide) has occurred while \output is active
-\T1/lmr/m/sl/10.95 2.3.  1-D STEADY STATE, CONSTANT INTERNAL HEAT GENERATION PR
-OBLEMS \T1/lmr/m/n/10.95 21
- []
-
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.300 \end{solution}
-                     <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figure
-s/ch2/8.png>] [22pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.2.9}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.321 $$
-        \frac{\theta}{\theta_0}=\frac{\sinh\gamma x+\sinh\gamma(L-x)}{\sinh\...
- <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/9-eps-converte
-d-to.pdf>]
-Package epstopdf Info: Source file: <figures/ch2/10.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
-(epstopdf)                    size: 284464 bytes
-(epstopdf)             Output file: <figures/ch2/10-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:10
-(epstopdf)                    size: 15214 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/10-eps-converte
-d-to.pdf figures/ch2/10.eps>
-(epstopdf)             \includegraphics on input line 325.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/ch2/10-eps-converted-to.pdf, id=427, 260.975pt x 157.58875pt>
-File: figures/ch2/10-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/ch2/10-eps-converted-to.pdf>
-Package pdftex.def Info: figures/ch2/10-eps-converted-to.pdf used on input line
- 325.
-(pdftex.def)             Requested size: 260.97437pt x 157.58835pt.
-Package epstopdf Info: Source file: <figures/ch2/11.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
-(epstopdf)                    size: 292397 bytes
-(epstopdf)             Output file: <figures/ch2/11-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:11
-(epstopdf)                    size: 12833 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/11-eps-converte
-d-to.pdf figures/ch2/11.eps>
-(epstopdf)             \includegraphics on input line 335.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/ch2/11-eps-converted-to.pdf, id=428, 260.975pt x 169.63374pt>
-File: figures/ch2/11-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/ch2/11-eps-converted-to.pdf>
-Package pdftex.def Info: figures/ch2/11-eps-converted-to.pdf used on input line
- 335.
-(pdftex.def)             Requested size: 260.97437pt x 169.63332pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-0}) has been already used, duplicate ignored
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.352 \item A
-             diabatic tip condition. <C:/Users/guoxx691/Documents/GitHub/therma
-lTutorial/figures/ch2/10-eps-converted-to.pdf>]
-<figures/ch2/12.png, id=440, 255.20343pt x 237.88875pt>
+l.238 \end{example}
+                    <./figures/ch2/8.png>]
+Package epstopdf Info: Source file: <figures/ch2/10.eps>
+(epstopdf)                    date: 2015-01-19 01:56:04
+(epstopdf)                    size: 284464 bytes
+(epstopdf)             Output file: <figures/ch2/10-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 09:12:44
+(epstopdf)                    size: 15089 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/10-eps-convert
+ed-to.pdf figures/ch2/10.eps>
+(epstopdf)             \includegraphics on input line 254.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/ch2/10-eps-converted-to.pdf, id=373, 260.975pt x 157.58875pt>
+File: figures/ch2/10-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/10-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/10-eps-converted-to.pdf used on input line
+ 254.
+(pdftex.def)             Requested size: 208.78027pt x 126.07115pt.
+
+Overfull \hbox (71.27219pt too wide) has occurred while \output is active
+\T1/lmr/m/sl/10.95 2.4.  1-D STEADY STATE, VARIATE INTERNAL HEAT GENERATION PRO
+BLEMS \T1/lmr/m/n/10.95 21
+ []
+
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.259 F
+       or the tube, the cylindrical equation is <./figures/ch2/9-eps-converted-
+to.pdf>]
+Overfull \hbox (35.57771pt too wide) detected at line 268
+[] []
+ []
+
+Package epstopdf Info: Source file: <figures/ch2/11.eps>
+(epstopdf)                    date: 2015-01-20 15:02:07
+(epstopdf)                    size: 267446 bytes
+(epstopdf)             Output file: <figures/ch2/11-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-20 15:16:51
+(epstopdf)                    size: 12799 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/11-eps-convert
+ed-to.pdf figures/ch2/11.eps>
+(epstopdf)             \includegraphics on input line 273.
+Package epstopdf Info: Output file is already uptodate.
+<figures/ch2/11-eps-converted-to.pdf, id=383, 260.975pt x 151.56625pt>
+File: figures/ch2/11-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/11-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/11-eps-converted-to.pdf used on input line
+ 273.
+(pdftex.def)             Requested size: 208.78027pt x 121.25316pt.
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.288 \begin{enumerate}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{figure.2.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.288 \begin{enumerate}
+                        <./figures/ch2/10-eps-converted-to.pdf> <./figures/ch2/
+11-eps-converted-to.pdf>]
+<figures/ch2/12.png, id=396, 255.20343pt x 237.88875pt>
 File: figures/ch2/12.png Graphic file (type png)
 
 <use figures/ch2/12.png>
-Package pdftex.def Info: figures/ch2/12.png used on input line 357.
+Package pdftex.def Info: figures/ch2/12.png used on input line 295.
 (pdftex.def)             Requested size: 153.12323pt x 142.73433pt.
- [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-11}) has been already used, duplicate ignored
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.372 $$
-        pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.2.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.372 $$
-         <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/11-eps
--converted-to.pdf> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/
-ch2/12.png>]
+l.319 $$\theta(x) \equiv T(X)-T_\infty$$
+                                         <./figures/ch2/12.png>]
 Package epstopdf Info: Source file: <figures/ch2/13.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    date: 2015-01-19 01:56:04
 (epstopdf)                    size: 277966 bytes
 (epstopdf)             Output file: <figures/ch2/13-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:12
-(epstopdf)                    size: 17732 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/13-eps-converte
-d-to.pdf figures/ch2/13.eps>
-(epstopdf)             \includegraphics on input line 396.
+(epstopdf)                    date: 2015-01-19 09:12:47
+(epstopdf)                    size: 17677 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/13-eps-convert
+ed-to.pdf figures/ch2/13.eps>
+(epstopdf)             \includegraphics on input line 339.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/ch2/13-eps-converted-to.pdf, id=453, 260.975pt x 147.55125pt>
+<figures/ch2/13-eps-converted-to.pdf, id=410, 260.975pt x 147.55125pt>
 File: figures/ch2/13-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ch2/13-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ch2/13-eps-converted-to.pdf used on input line
- 396.
+ 339.
 (pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <figures/ch2/14.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    date: 2015-01-19 01:56:04
 (epstopdf)                    size: 268465 bytes
 (epstopdf)             Output file: <figures/ch2/14-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:13
-(epstopdf)                    size: 15077 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/14-eps-converte
-d-to.pdf figures/ch2/14.eps>
-(epstopdf)             \includegraphics on input line 412.
+(epstopdf)                    date: 2015-01-19 09:12:49
+(epstopdf)                    size: 15031 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/14-eps-convert
+ed-to.pdf figures/ch2/14.eps>
+(epstopdf)             \includegraphics on input line 355.
 Package epstopdf Info: Output file is already uptodate.
-<figures/ch2/14-eps-converted-to.pdf, id=454, 260.975pt x 147.55125pt>
+<figures/ch2/14-eps-converted-to.pdf, id=412, 260.975pt x 147.55125pt>
 File: figures/ch2/14-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ch2/14-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ch2/14-eps-converted-to.pdf used on input line
- 412.
+ 355.
 (pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25]
+[24] [25pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.2.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.363 $$\frac{\theta}{\theta_1}=e^{-mx}$$
+                                         pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.2.14}) has been already used, duplicate igno
+red
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.363 $$\frac{\theta}{\theta_1}=e^{-mx}$$
+                                          <./figures/ch2/13-eps-converted-to.pd
+f> <./figures/ch2/14-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/ch2/15.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    date: 2015-01-19 01:56:04
 (epstopdf)                    size: 265213 bytes
 (epstopdf)             Output file: <figures/ch2/15-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:14
-(epstopdf)                    size: 14390 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/15-eps-converte
-d-to.pdf figures/ch2/15.eps>
-(epstopdf)             \includegraphics on input line 424.
+(epstopdf)                    date: 2015-01-19 09:12:50
+(epstopdf)                    size: 14334 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/15-eps-convert
+ed-to.pdf figures/ch2/15.eps>
+(epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
- <figures/ch2/15-eps-converted-to.pdf, id=462, 260.975pt x 147.55125pt>
+
+<figures/ch2/15-eps-converted-to.pdf, id=432, 260.975pt x 147.55125pt>
 File: figures/ch2/15-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ch2/15-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ch2/15-eps-converted-to.pdf used on input line
- 424.
+ 367.
 (pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.442 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.14}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.442 
-       <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/13-eps-c
-onverted-to.pdf> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch
-2/14-eps-converted-to.pdf>]
-<figures/ch2/16.png, id=475, 497.60907pt x 336.50719pt>
+<figures/ch2/16.png, id=434, 497.60907pt x 336.50719pt>
 File: figures/ch2/16.png Graphic file (type png)
 
 <use figures/ch2/16.png>
-Package pdftex.def Info: figures/ch2/16.png used on input line 449.
+Package pdftex.def Info: figures/ch2/16.png used on input line 392.
 (pdftex.def)             Requested size: 199.0401pt x 134.60048pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+Underfull \vbox (badness 2343) has occurred while \output is active []
+
+ [26pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.396 \end{example}
+                    <./figures/ch2/15-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-5}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.458 \item F
-             or a cylindrical fin, the cross section area $A_c=2\pi rw$,pdfTeX 
-warning (ext4): destination with the same identifier (name{figure.2.16}) has be
-en already used, duplicate ignored
+Overfull \hbox (15.55705pt too wide) detected at line 429
+[] []
+ []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.458 \item F
-             or a cylindrical fin, the cross section area $A_c=2\pi rw$, <C:/Us
-ers/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/15-eps-converted-to.p
-df> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch2/16.png>]
 Package epstopdf Info: Source file: <figures/ch2/17.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
+(epstopdf)                    date: 2015-01-19 01:56:04
 (epstopdf)                    size: 274805 bytes
 (epstopdf)             Output file: <figures/ch2/17-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:15
-(epstopdf)                    size: 17426 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/17-eps-converte
-d-to.pdf figures/ch2/17.eps>
-(epstopdf)             \includegraphics on input line 484.
+(epstopdf)                    date: 2015-01-19 09:12:52
+(epstopdf)                    size: 17378 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/17-eps-convert
+ed-to.pdf figures/ch2/17.eps>
+(epstopdf)             \includegraphics on input line 433.
 Package epstopdf Info: Output file is already uptodate.
-
-<figures/ch2/17-eps-converted-to.pdf, id=490, 260.975pt x 147.55125pt>
+<figures/ch2/17-eps-converted-to.pdf, id=449, 260.975pt x 147.55125pt>
 File: figures/ch2/17-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ch2/17-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ch2/17-eps-converted-to.pdf used on input line
- 484.
-(pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
-Package epstopdf Info: Source file: <figures/ch2/18.eps>
-(epstopdf)                    date: 2015-01-19 21:30:50
-(epstopdf)                    size: 268002 bytes
-(epstopdf)             Output file: <figures/ch2/18-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-01-19 21:33:15
-(epstopdf)                    size: 14970 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/ch2/18-eps-converte
-d-to.pdf figures/ch2/18.eps>
-(epstopdf)             \includegraphics on input line 493.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/ch2/18-eps-converted-to.pdf, id=491, 260.975pt x 147.55125pt>
-File: figures/ch2/18-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/ch2/18-eps-converted-to.pdf>
-Package pdftex.def Info: figures/ch2/18-eps-converted-to.pdf used on input line
- 493.
+ 433.
 (pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-7}) has been already used, duplicate ignored
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.498 \end{solution}
-                     <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figure
-s/ch2/17-eps-converted-to.pdf>]) [29pdfTeX warning (ext4): destination with the
- same identifier (name{figure.2.18}) has been already used, duplicate ignored
+l.440 ...gamma)-J_0(ir_1\gamma)Y_0(-ir_2\gamma)}$$
+                                                   <./figures/ch2/16.png>]
+Package epstopdf Info: Source file: <figures/ch2/18.eps>
+(epstopdf)                    date: 2015-01-19 01:56:04
+(epstopdf)                    size: 268002 bytes
+(epstopdf)             Output file: <figures/ch2/18-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-19 09:12:54
+(epstopdf)                    size: 14909 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch2/18-eps-convert
+ed-to.pdf figures/ch2/18.eps>
+(epstopdf)             \includegraphics on input line 444.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/ch2/18-eps-converted-to.pdf, id=458, 260.975pt x 147.55125pt>
+File: figures/ch2/18-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch2/18-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch2/18-eps-converted-to.pdf used on input line
+ 444.
+(pdftex.def)             Requested size: 260.97437pt x 147.55087pt.
+) [28pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+.17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.24 \include{./tex/ch2}
-                         <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/fi
-gures/ch2/18-eps-converted-to.pdf>]
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch3.tex [30
+l.23 \include{./tex/ch2}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.2.18}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.23 \include{./tex/ch2}
+                         <./figures/ch2/17-eps-converted-to.pdf> <./figures/ch2
+/18-eps-converted-to.pdf>] [29]
+\openout2 = `./tex/ch3.aux'.
+
+ (./tex/ch3.tex [30
 
 
 
 ]
 Chapter 3.
-<figures/ch3/1.png, id=513, 323.70938pt x 191.9672pt>
+<figures/ch3/1.png, id=478, 323.70938pt x 191.9672pt>
 File: figures/ch3/1.png Graphic file (type png)
  <use figures/ch3/1.png>
-Package pdftex.def Info: figures/ch3/1.png used on input line 12.
+Package pdftex.def Info: figures/ch3/1.png used on input line 13.
 (pdftex.def)             Requested size: 258.96785pt x 153.57396pt.
-
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.16 \end{example}
-                   <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/
-ch3/1.png>] <figures/ch3/2.png, id=523, 1505.625pt x 1196.47pt>
-File: figures/ch3/2.png Graphic file (type png)
-
-<use figures/ch3/2.png>
-Package pdftex.def Info: figures/ch3/2.png used on input line 36.
-(pdftex.def)             Requested size: 301.11966pt x 239.28976pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [32] [33pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.3.2}) has been already used, duplicate ignored
+[31] <figures/ch3/2.png, id=487, 260.6538pt x 207.6558pt>
+File: figures/ch3/2.png Graphic file (type png)
+
+<use figures/ch3/2.png>
+Package pdftex.def Info: figures/ch3/2.png used on input line 42.
+(pdftex.def)             Requested size: 208.5233pt x 166.12486pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/ch3/3.pdf, id=490, 260.975pt x 163.61125pt>
+File: figures/ch3/3.pdf Graphic file (type pdf)
+ <use figures/ch3/3.pdf>
+Package pdftex.def Info: figures/ch3/3.pdf used on input line 51.
+(pdftex.def)             Requested size: 182.68126pt x 114.52708pt.
+
+Overfull \hbox (20.68236pt too wide) in paragraph at lines 51--52
+ [][] 
+ []
+
+<figures/ch3/4.pdf, id=491, 260.975pt x 156.585pt>
+File: figures/ch3/4.pdf Graphic file (type pdf)
+ <use figures/ch3/4.pdf>
+Package pdftex.def Info: figures/ch3/4.pdf used on input line 58.
+(pdftex.def)             Requested size: 182.68126pt x 109.60873pt.
+
+Overfull \hbox (20.68236pt too wide) in paragraph at lines 58--59
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.25 \include{./tex/ch3}
-                         <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/fi
-gures/ch3/2.png>]
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch4.tex [34
+l.72 \end{equation*}
+                     <./figures/ch3/1.png>]) [33pdfTeX warning (ext4): destinat
+ion with the same identifier (name{figure.3.2}) has been already used, duplicat
+e ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 \include{./tex/ch3}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.3.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 \include{./tex/ch3}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.3.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 \include{./tex/ch3}
+                         <./figures/ch3/2.png> <./figures/ch3/3.pdf> <./figures
+/ch3/4.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./figures/ch3/4.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>]
+\openout2 = `./tex/ch4.aux'.
+
+ (./tex/ch4.tex [34
 
 
 
 ]
 Chapter 4.
-
-LaTeX Warning: Reference `fig:4:1' on page 35 undefined on input line 14.
-
-[35] <figures/ch4/2.png, id=547, 361.35pt x 216.81pt>
-File: figures/ch4/2.png Graphic file (type png)
- <use figures/ch4/2.png>
-Package pdftex.def Info: figures/ch4/2.png used on input line 42.
-(pdftex.def)             Requested size: 289.0804pt x 173.44823pt.
+<figures/ch4/1.png, id=524, 261.97874pt x 292.09125pt>
+File: figures/ch4/1.png Graphic file (type png)
+ <use figures/ch4/1.png>
+Package pdftex.def Info: figures/ch4/1.png used on input line 17.
+(pdftex.def)             Requested size: 157.18845pt x 175.25609pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
-<figures/ch4/3.png, id=557, 361.35pt x 216.81pt>
-File: figures/ch4/3.png Graphic file (type png)
- <use figures/ch4/3.png>
-Package pdftex.def Info: figures/ch4/3.png used on input line 49.
-(pdftex.def)             Requested size: 289.0804pt x 173.44823pt.
+ [35]
+Package epstopdf Info: Source file: <figures/ch4/2.eps>
+(epstopdf)                    date: 2015-01-22 23:13:27
+(epstopdf)                    size: 289592 bytes
+(epstopdf)             Output file: <figures/ch4/2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-22 23:20:17
+(epstopdf)                    size: 14502 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch4/2-eps-converte
+d-to.pdf figures/ch4/2.eps>
+(epstopdf)             \includegraphics on input line 46.
+Package epstopdf Info: Output file is already uptodate.
 
-<figures/ch4/4.png, id=558, 361.35pt x 216.81pt>
-File: figures/ch4/4.png Graphic file (type png)
- <use figures/ch4/4.png>
-Package pdftex.def Info: figures/ch4/4.png used on input line 56.
-(pdftex.def)             Requested size: 289.0804pt x 173.44823pt.
+<figures/ch4/2-eps-converted-to.pdf, id=532, 260.975pt x 159.59625pt>
+File: figures/ch4/2-eps-converted-to.pdf Graphic file (type pdf)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use figures/ch4/2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch4/2-eps-converted-to.pdf used on input line 
+46.
+(pdftex.def)             Requested size: 260.97437pt x 159.59584pt.
 
- [37pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+Underfull \vbox (badness 1264) has occurred while \output is active []
+
+ [36pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.60 \end{solution}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.4.2}) has been already used, duplicate ignored
+l.55 
+      <./figures/ch4/1.png>]
+<figures/ch4/12.png, id=541, 308.8338pt x 357.9774pt>
+File: figures/ch4/12.png Graphic file (type png)
+ <use figures/ch4/12.png>
+Package pdftex.def Info: figures/ch4/12.png used on input line 91.
+(pdftex.def)             Requested size: 370.5987pt x 429.57072pt.
+
+Overfull \hbox (10.5987pt too wide) in paragraph at lines 91--92
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.60 \end{solution}
-                    <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures
-/ch4/2.png> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch4/3.p
-ng>] <figures/ch4/5.png, id=565, 271.76532pt x 182.18062pt>
+l.95 H
+      ence based on the table listed in figure \ref{fig:4:12} , solving this...
+ <./figures/ch4/2-eps-converted-to.pdf>] [38pdfTeX warning (ext4): destination 
+with the same identifier (name{figure.4.3}) has been already used, duplicate ig
+nored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.100 $$
+        \theta*=C_1\exp(-\zeta^2_1Fo)\cos(\zeta_1x*)$$ <./figures/ch4/12.png>]
+Package epstopdf Info: Source file: <figures/ch4/10.eps>
+(epstopdf)                    date: 2015-01-22 22:38:47
+(epstopdf)                    size: 291369 bytes
+(epstopdf)             Output file: <figures/ch4/10-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-22 22:48:18
+(epstopdf)                    size: 15545 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch4/10-eps-convert
+ed-to.pdf figures/ch4/10.eps>
+(epstopdf)             \includegraphics on input line 104.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/ch4/10-eps-converted-to.pdf, id=559, 260.975pt x 159.59625pt>
+File: figures/ch4/10-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch4/10-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch4/10-eps-converted-to.pdf used on input line
+ 104.
+(pdftex.def)             Requested size: 260.97437pt x 159.59584pt.
+Package epstopdf Info: Source file: <figures/ch4/11.eps>
+(epstopdf)                    date: 2015-01-22 22:42:07
+(epstopdf)                    size: 326752 bytes
+(epstopdf)             Output file: <figures/ch4/11-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-22 23:02:34
+(epstopdf)                    size: 20117 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ch4/11-eps-convert
+ed-to.pdf figures/ch4/11.eps>
+(epstopdf)             \includegraphics on input line 111.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/ch4/11-eps-converted-to.pdf, id=561, 260.975pt x 162.6075pt>
+File: figures/ch4/11-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ch4/11-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ch4/11-eps-converted-to.pdf used on input line
+ 111.
+(pdftex.def)             Requested size: 260.97437pt x 162.6071pt.
+ [39pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.115 \end{solution}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.4.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.115 \end{solution}
+                     <./figures/ch4/10-eps-converted-to.pdf> <./figures/ch4/11-
+eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
+
+ []
+
+[40] <figures/ch4/7.png, id=581, 638.385pt x 632.3625pt>
+File: figures/ch4/7.png Graphic file (type png)
+
+<use figures/ch4/7.png>
+Package pdftex.def Info: figures/ch4/7.png used on input line 171.
+(pdftex.def)             Requested size: 383.03394pt x 379.42043pt.
+
+Overfull \hbox (23.03394pt too wide) in paragraph at lines 171--172
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+<figures/ch4/8.png, id=587, 363.3575pt x 288.07625pt>
+File: figures/ch4/8.png Graphic file (type png)
+ <use figures/ch4/8.png>
+Package pdftex.def Info: figures/ch4/8.png used on input line 187.
+(pdftex.def)             Requested size: 363.3566pt x 288.07553pt.
+
+Overfull \hbox (3.3566pt too wide) in paragraph at lines 187--188
+ [][] 
+ []
+
+[42pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.191 \end{solution}
+                     <./figures/ch4/7.png>]
+<figures/ch4/5.png, id=597, 271.76532pt x 182.18062pt>
 File: figures/ch4/5.png Graphic file (type png)
-
-<use figures/ch4/5.png>
-Package pdftex.def Info: figures/ch4/5.png used on input line 71.
+ <use figures/ch4/5.png>
+Package pdftex.def Info: figures/ch4/5.png used on input line 203.
 (pdftex.def)             Requested size: 217.41254pt x 145.74467pt.
- <figures/ch4/6.png, id=568, 297.36093pt x 278.54062pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.207 \end{example}
+                    <./figures/ch4/8.png (PNG copy)>]
+<figures/ch4/6.png, id=607, 297.36093pt x 278.54062pt>
 File: figures/ch4/6.png Graphic file (type png)
-
-<use figures/ch4/6.png>
-Package pdftex.def Info: figures/ch4/6.png used on input line 83.
+ <use figures/ch4/6.png>
+Package pdftex.def Info: figures/ch4/6.png used on input line 215.
 (pdftex.def)             Requested size: 237.88905pt x 222.8328pt.
- [38pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-3}) has been already used, duplicate ignored
+
+[44pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.86 \end{figure}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.4.4}) has been already used, duplicate ignored
+l.224 $$
+        pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.4.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.86 \end{figure}
-                  <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/c
-h4/4.png> <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch4/5.png
->] [39pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.119 $$
-         <C:/Users/guoxx691/Documents/GitHub/thermalTutorial/figures/ch4/6.png>
-]) [40] (C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\appendix.tex
-Appendix A.
-[41
-
-
-
-]
-Overfull \hbox (2.52628pt too wide) in paragraph at lines 61--63
-[][]\T1/lmr/bx/n/10.95 Example A.6 []SOV (sep-a-ra-tion of vari-able) in 1D Cyl
-in-dri-cal space
- []
-
-[42]
-Overfull \hbox (20.99936pt too wide) detected at line 124
-[] \OT1/lmr/m/n/10.95 + [][] + [] \OML/lmm/m/it/10.95 R \OT1/lmr/m/n/10.95 = 0[
-]
- []
-
-[43]) [44]
+l.224 $$
+         <./figures/ch4/5.png> <./figures/ch4/6.png>] [45]) [46]
 No file document.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\document.aux
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\chMathematica.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch2.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch3.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\ch4.aux)
-(C:\Users\guoxx691\Documents\GitHub\thermalTutorial\tex\appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
+(./document.aux (./tex/chMathematica.aux) (./tex/ch2.aux) (./tex/ch3.aux)
+(./tex/ch4.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: A9AFAC087D721244DEE67690F355F1C2;1575.
+(rerunfilecheck)             Checksum: BDE05F67349D7A3CAB3542F57277EAE9;1636.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29.
  ) 
 Here is how much of TeX's memory you used:
- 19396 strings out of 493921
- 328984 string characters out of 3147272
- 544301 words of memory out of 3000000
- 22035 multiletter control sequences out of 15000+200000
- 113564 words of font info for 83 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 63i,11n,60p,580b,3122s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
-.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmc
-sc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on document.pdf (44 pages, 1525137 bytes).
+ 21196 strings out of 493117
+ 376013 string characters out of 6135433
+ 582664 words of memory out of 5000000
+ 24043 multiletter control sequences out of 15000+600000
+ 105217 words of font info for 80 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,11n,60p,580b,3122s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
+cal/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
+14/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2014/texmf-dist/
+fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/
+dvips/lm/lm-mathex.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/l
+m/lmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmbx12.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/lm/lmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/l
+mr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/lm/lmri10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/lm/lmro10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/l
+mss10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on document.pdf (46 pages, 1733694 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
- 209 named destinations out of 1000 (max. 500000)
- 347 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 735 PDF objects out of 1000 (max. 8388607)
+ 599 compressed objects within 6 object streams
+ 160 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
