@@ -1,17 +1,124 @@
-\appendix
-\renewcommand{\thechapter}{\arabic{chapter}}
-\renewcommand{\thesection}{\arabic{section}}
-
-\addcontentsline{titletoc}{part}{\appendixname}
-\numberwithin{example}{section}
-\chapter{Workshops examples*}
+\begin{appendices}
+%\addcontentsline{toc}{\chapter}{Appendices}
+\appendixpage
+\noappendicestocpagenum
+\addappheadtotoc
 
 \newcommand{\myWSEgPath}[1] {
 \label{example:#1}
   \textcolor{blue} {(Please refer to .../workshopNB/#1.nb)}}
 
-\section{Mathematica Workbook Listing}
+\renewcommand{\thesection}{\arabic{section}}
+
+\chapter*{Mathematica Workbook Listing*}
 ~\\Here is a listing of most common seen heat transfer condition and regularly used methods for solving the problems. As listed, the problem marked with \textbf{*} were already mentioned in the tutorial examples. Others will be further discussed in the mathematica workbooks.
+
+\section*{General topics*}
+
+\begin{itemize}
+\item Steady State: $\nabla^2T+\frac{q'''}{k}=0$
+\begin{itemize}
+\item 1-D: Fourier's Law*
+\item 1-D: Geometry: Cartesian*, Cylindrical, Spherical
+\item 1-D: with heat generation
+\item Special 1-D and Fin Solutions:
+\begin{itemize}
+\item Variable X-S area*
+\item Fin: Cartesian*
+\item Fin: Radial
+\item Bioheat Equation (Fin analog)*
+\end{itemize}
+\end{itemize}
+
+\item Multi-dimensional: $\nabla^2T+\frac{q'''}{k}=0$
+\begin{itemize}
+\item 2-D: Exact solution rectangle*
+\begin{itemize}
+\item Derivative on a boundary (heat flux)*
+\end{itemize}
+\item NDSolve with heat generation?
+\end{itemize}
+
+\item Transient: $\frac{1}{\alpha}\frac{\partial T}{\partial t}
+=\nabla^2T+\frac{q'''}{k}$
+\begin{itemize}
+\item Lumped form*
+\begin{itemize}
+\item Special case –radiative condition (lumped system HMWK4P7)
+\end{itemize}
+\item (Lumped vs. Transient 1 term – HMWK4P4 or other)*
+\item SOV*–  Case 9 – analytical solution (Ozisik Table 2.1)
+\item NDSolve\^: 1 Dheat(WORKS) (w/ and w/o g) can compare to SOV
+\item Semi-infinite solutions
+\end{itemize}
+
+
+\item Numerical (Programming in Mathematica)
+\begin{itemize}
+\item Finite difference Fin*
+\item Finite Difference Cartesian, Cylindrical and Spherical (Fin Diff 3 geometries)
+\end{itemize}
+
+\end{itemize}
+
+\section*{Specific topics \uppercase\expandafter{\romannumeral1}}
+See Mathematica 1999 Tutorial (See Conduction Problems Folder).
+\begin{itemize}
+\item Multi-dimensional SOV solutions \\
+(See:  Tutorial: Mathematica for Advanced Heat Transfer)
+\begin{itemize}
+\item Cartesian
+\item Cylindrical
+\item Spherical
+\end{itemize}
+
+\item Laplace Solution
+
+\end{itemize}
+
+\section*{Specific topics \uppercase\expandafter{\romannumeral2}}
+\begin{itemize}
+\item Drug Delivery
+\begin{itemize}
+\item One compartment drug delivery
+\item Two compartment drug delivery
+\end{itemize}
+\item Phase Change (Xiaoqing)
+	\begin{itemize}
+	\item Part \uppercase\expandafter{\romannumeral1}: Steady State
+	\item Part \uppercase\expandafter{\romannumeral2}: Quasi – Steady Solutions (Cooper and Trezek)
+	\item Part \uppercase\expandafter{\romannumeral3}: Neumann + Stefan
+	\end{itemize}
+\item Biophysics
+	\begin{itemize}
+	\item Arrhenius Modeling vs. Clinical Equivalent Minutes (CEM)
+		\begin{itemize}
+		\item Protein denaturation \& Fractional denaturation
+		\item Thermal Dose
+		\end{itemize}
+	\item Water Transport
+	\item Cryoprotective Loading
+	\end{itemize}
+\item Iron Oxide Nanoparticle Heating
+	\begin{itemize}
+	\item Cancer
+	\item Regenerative Medicine (See Navid)
+	\end{itemize}
+
+\end{itemize}
+
+
+
+
+
+\chapter{General Topics}
+%\renewcommand{\thechapter}{\arabic{chapter}}
+
+%\addcontentsline{titletoc}{part}{\appendixname}
+\numberwithin{example}{section}
+%\chapter{Workshops examples*}
+
+
 
 \section{1-dimensional steady state}
 \subsection{Variable heat generation}
@@ -250,32 +357,31 @@ erfc(H \sqrt{\alpha t}+x\sqrt{4\alpha t})\\
 \textbf{Finite Difference method for fin: Cartesian, Cylindrical and Spherical}
 \end{example}
 
-\appendix
-
-\section{Special Topics 1}
-\subsection{Multi-dimensional SOV solutions}
+\chapter{Special Topics \uppercase\expandafter{\romannumeral1}}
+\section{Multi-dimensional SOV solutions}
 
 \begin{example}
 \textbf{Finite Difference method for fin: Cartesian, Cylindrical and Spherical}
 \end{example}
 
-\subsection{Laplace Solution}
+\section{Laplace Solution}
 \begin{example}
 \textbf{Laplace Solution}
 \end{example}
 
-\subsection{Duhamel Solution}
+\section{Duhamel Solution}
 \begin{example}
 \textbf{DuhamelSolution}
 \end{example}
 
-\subsection{More Error Function Solutions}
+\section{More Error Function Solutions}
 \begin{example}
 \textbf{Semi Inf. Domain}
 \end{example}
 
-\section{Special Topics 2}
-\subsection{Drug Delivery}
+\chapter{Special Topics \uppercase\expandafter{\romannumeral2}}
+
+\section{Drug Delivery}
 \begin{example}
 \textbf{One compartment drug delivery}
 \end{example}
@@ -284,7 +390,7 @@ erfc(H \sqrt{\alpha t}+x\sqrt{4\alpha t})\\
 \textbf{Two compartment drug delivery}
 \end{example}
 
-\subsection{Phase Change}
+\section{Phase Change}
 \begin{example}
 \textbf{Part I: Steady State}
 \end{example}
@@ -297,7 +403,7 @@ erfc(H \sqrt{\alpha t}+x\sqrt{4\alpha t})\\
 \textbf{Part III:  Neumann + Stefan}
 \end{example}
 
-\subsection{Biophysics}
+\section{Biophysics}
 \subsubsection{Arrhenius Modeling vs. Clinical Equivalent Minutes (CEM)}
 \begin{example}
 \textbf{Protein denaturation \& Fractional denaturation}
@@ -307,10 +413,10 @@ erfc(H \sqrt{\alpha t}+x\sqrt{4\alpha t})\\
 \textbf{Thermal Dose}
 \end{example}
 
-\subsubsection{Water Transport}
-\subsubsection{Cryoprotective Loading}
+\subsection{Water Transport}
+\subsection{Cryoprotective Loading}
 
-\subsection{Iron Oxide Nanoparticle Heating}
+\section{Iron Oxide Nanoparticle Heating}
 
 \begin{example}
 \textbf{Cancer}
@@ -319,3 +425,5 @@ erfc(H \sqrt{\alpha t}+x\sqrt{4\alpha t})\\
 \begin{example}
 \textbf{Regenerative Medicine}
 \end{example}
+
+\end{appendices}
