@@ -79,29 +79,29 @@ Sketch the wall internal temperature change with time as figure \ref{fig:4:2}
 \section{The Lumped Capacitance Method}
 \begin{example}
 \textbf{Transient one term solution}
-\textcolor{blue} {\emph{Refer to  }}
-Coonsider the wall thickness in Example \ref{Example:4:1} please answer the following for two cases where the half thickness is $L =0.1$ m, $Bi=10$. Please plot the centerline solutions over time.\ref{Example:4:1}
+\textcolor{blue} {\emph{ Refer to tutorial 4-2-1 Lumped and General Solution.nb}}
+Coonsider the wall thickness in Example \ref{Example:4:1} please answer the following for two cases where the half thickness is $L =0.1$ m, $Bi=10$. Please plot the centerline solutions over time.
 \end{example}
 \begin{solution}
-First calculate $Bi$, and $F_o$, $L_C= 0.1$.
+First calculate $Bi$, and $F_o$, $L_c= 0.1$.
 $$Bi= 10$$
-$$Fo=-\frac{\alpha t}{L_C^2}=2.27496$$
-Hence based on the table listed in figure \ref{fig:4:12} , solving this problem with exact solution method
-$$\theta*=\frac{T-T_\infty}{T_i-T_\infty}=\sum_{n=1}^{\infty}C_n\exp(-\zeta^2_nFo)\cos(\zeta_nx*)$$ 
+$$Fo=-\frac{\alpha t}{L_c^2}=2.27496$$
+Hence based on the table listed in {figure \ref{fig:4:12}}\footnote{Theodore L. Bergman,  Adrienne S. Lavine, Frank P. Incropera and David P. Dewitt: Fundamentals of Heat and Mass Transfer, 7th Edition (Wiley 2002),301.} , solving this problem with exact solution method
+$$\theta^*=\frac{T-T_\infty}{T_i-T_\infty}=\sum_{n=1}^{\infty}C_n\exp(-\zeta^2_nFo)\cos(\zeta_nx^*)$$ 
 
 \begin{figure}[H]
   \centering
     \includegraphics[scale=1.2]{figures/ch4/12}
-    \caption{One term coefficients}\footnote{Theodore L. Bergman,  Adrienne S. Lavine, Frank P. Incropera and David P. Dewitt: Fundamentals of Heat and Mass Transfer, 7th Edition(Wiley 2002),301}
+    \caption{One term coefficients}
     \label{fig:4:12}
 \end{figure}
 
 
-Where $x*=x/L$.
+Where $x^*=x/L$.
 For values of $Fo>0.2$,the infinete series solution, $\theta*$ could be approximated by the first term of the series, $n=1$
 the form of te temperature distribution becomes
-$$\theta*=C_1\exp(-\zeta^2_1Fo)\cos(\zeta_1x*)$$
-Hence based on the table listed in figure?? , $\zeta_{1}=0.4801$, $C_1=1.0382$,sketch the centerline temperature with time $\theta_0*$ as figure \ref{fig:4:10}
+$$\theta^*=C_1\exp(-\zeta^2_1Fo)\cos(\zeta_1x^*)$$
+Hence based on the table listed in figure \ref{fig:4:10} , $\zeta_{1}=0.4801$, $C_1=1.0382$,sketch the centerline temperature with time $\theta_0*$ as figure \ref{fig:4:10}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=1]{figures/ch4/10}
@@ -123,8 +123,8 @@ Use lumped method to solve the problem, and compare the sketch of lumped method 
 \section{SOV analytical solution}
 \begin{example}
 \textbf{SOV for slab}
-\textcolor{blue} {\emph{Refer to tutorial 4-3-1 SOV method.nb.}}
-Consdider a slab under homogenous dirichlet boundary condition.$T\infty=0$, $\alpha=1$, length $L$, 
+\textcolor{blue} {\emph{Refer to tutorial 4-4-1 SOV method.nb.}}
+Consdider a slab under homogenous dirichlet boundary condition.$T_\infty=0$, $\alpha=1$, length $L$, 
 At $t=0$, $T(x=0,t)\Rightarrow0$,$T(x,0)=f(x)$
 \end{example}
 \begin{solution}
@@ -162,13 +162,6 @@ then get
   \end{cases}
 \]
   
-The application of initial condition gives
-$$f(x)=\sum_{m=1}^{\infty} C_m X(\beta_m,x) \text{ in } 0<x<L$$
-So 
-$$C_m=\frac{1}{N\beta_m}\int_0^L X(\beta_m,x')f(x')dx'$$
-The dummy symbol $x'$ is introduced to distinguish the space variable with the integration form. The norm $N$ is defined as
-$$N(\beta_m)=\int_0^L [X(\beta_m,x)]^2dx$$
-So that from the table in the figure below
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.6]{figures/ch4/7}
@@ -176,6 +169,13 @@ So that from the table in the figure below
     \label{fig:4:7}
 \end{figure}
 
+The application of initial condition gives
+$$f(x)=\sum_{m=1}^{\infty} C_m X(\beta_m,x) \text{ in } 0<x<L$$
+So 
+$$C_m=\frac{1}{N\beta_m}\int_0^L X(\beta_m,x')f(x')dx'$$
+The dummy symbol $x'$ is introduced to distinguish the space variable with the integration form. The norm $N$ is defined as
+$$N(\beta_m)=\int_0^L [X(\beta_m,x)]^2dx$$
+So that from the table in the figure below as figure {\ref{fig:4:7}}\footnote{M. Necati Ozisik: Heat Conduction, 2nd Edition (John Wiley \& Sons, 1993), 49.}.\\
 For dirichlet boundary condition $T(L,0)=0$, it is condition 9, so that
 \[
  T(x,t) = 
@@ -184,6 +184,7 @@ For dirichlet boundary condition $T(L,0)=0$, it is condition 9, so that
    \underbrace{\sin\left(xm\frac{\pi}{L}\right)}_{X(\beta_m,x)}
    \int_0^L{y^2 \sin\left(ym\frac{\pi}{L}\right)}dy
 \]
+
 And sketch the temperature distribution with time as figure \ref{fig:4:8}
 \begin{figure}[H]
   \centering
@@ -197,13 +198,14 @@ And sketch the temperature distribution with time as figure \ref{fig:4:8}
 \section{FEM method for fin problem}
 \begin{example}
 \label{example:4:FEM}
+\textcolor{blue} {\emph{Refer to tutorial 4-5-1 fin normal.nb and fin RC.nb.}}
 Consider a fin length is $L = 0.04 m$, width $w = 0.01$, thickness $THICK = 1 m. h = 10 W/m^2 C, k = 3 W/mC, Cp = 450 J/kg C$,
 density $DENS = 8000 kg/m^3$. At $t=0$, the fin temperature at $x=0 $is $T_0=30\circ C$,
 the fin is suddenly put into a environment with Tenv=20 0C, at x=L, the temperature keeps as $40^\circ C$.
 Use RC method to get the transient temperature in the fin. (Shown in figure \ref{fig:4:5})
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.8]{figures/ch4/5}
+    \includegraphics[scale=0.6]{figures/ch4/5}
     \caption{model of example \ref{example:4:FEM}}
     \label{fig:4:5}
 \end{figure}
@@ -215,7 +217,7 @@ Chose $\Delta X=0.01 m$, $\Delta T=2.5 s$. Build the energy balance equation for
 As shown in figure \ref{fig:4:6}.
 \begin{figure}[H]
   \centering
-    \includegraphics[scale=0.8]{figures/ch4/6}
+    \includegraphics[scale=0.6]{figures/ch4/6}
     \caption{unit node with convection and one-dimensional transient conduction}
     \label{fig:4:6}
 \end{figure}

@@ -6,17 +6,19 @@
 
 \newcommand{\myWSEgPath}[1] {
 \label{example:#1}
-  \textcolor{blue} {(Please refer to .../workshopNB/#1.nb)}}
+  \textcolor{blue} {(Please refer to .../workbooks/#1.nb)}}
 
 \renewcommand{\thesection}{\arabic{section}}
 
-\chapter*{Mathematica Workbook Listing*}
+\chapter*{Mathematica Workbook Listing}
 ~\\Here is a listing of most common seen heat transfer condition and regularly used methods for solving the problems. As listed, the problem marked with \textbf{*} were already mentioned in the tutorial examples. Others will be further discussed in the mathematica workbooks.
 
-\section*{General topics*}
+\section*{General topics}
+
+\renewcommand{\labelitemiii}{$\circ$}
 
 \begin{itemize}
-\item Steady State: $\nabla^2T+\frac{q'''}{k}=0$
+\item Steady State: $\nabla^2T+\frac{\dot{q}}{k}=0$
 \begin{itemize}
 \item 1-D: Fourier's Law*
 \item 1-D: Geometry: Cartesian*, Cylindrical, Spherical
@@ -30,25 +32,25 @@
 \end{itemize}
 \end{itemize}
 
-\item Multi-dimensional: $\nabla^2T+\frac{q'''}{k}=0$
+\item Multi-dimensional: $\nabla^2T+\frac{\dot{q}}{k}=0$
 \begin{itemize}
 \item 2-D: Exact solution rectangle*
 \begin{itemize}
 \item Derivative on a boundary (heat flux)*
 \end{itemize}
-\item NDSolve with heat generation?
+\item NDSolve with heat generation
 \end{itemize}
 
 \item Transient: $\frac{1}{\alpha}\frac{\partial T}{\partial t}
-=\nabla^2T+\frac{q'''}{k}$
+=\nabla^2T+\frac{\dot{q}}{k}$
 \begin{itemize}
 \item Lumped form*
 \begin{itemize}
-\item Special case –radiative condition (lumped system HMWK4P7)
+\item Special case –radiative condition
 \end{itemize}
-\item (Lumped vs. Transient 1 term – HMWK4P4 or other)*
-\item SOV*–  Case 9 – analytical solution (Ozisik Table 2.1)
-\item NDSolve\^: 1 Dheat(WORKS) (w/ and w/o g) can compare to SOV
+\item Lumped vs. Transient one term solution*
+\item SOV analytical solution*
+\item NDSolve one dimensional with heat generation
 \item Semi-infinite solutions
 \end{itemize}
 
@@ -56,16 +58,14 @@
 \item Numerical (Programming in Mathematica)
 \begin{itemize}
 \item Finite difference Fin*
-\item Finite Difference Cartesian, Cylindrical and Spherical (Fin Diff 3 geometries)
+\item Finite Difference Cartesian, Cylindrical and Spherical
 \end{itemize}
 
 \end{itemize}
 
 \section*{Specific topics \uppercase\expandafter{\romannumeral1}}
-See Mathematica 1999 Tutorial (See Conduction Problems Folder).
 \begin{itemize}
-\item Multi-dimensional SOV solutions \\
-(See:  Tutorial: Mathematica for Advanced Heat Transfer)
+\item Multi-dimensional SOV solutions
 \begin{itemize}
 \item Cartesian
 \item Cylindrical
@@ -73,7 +73,8 @@ See Mathematica 1999 Tutorial (See Conduction Problems Folder).
 \end{itemize}
 
 \item Laplace Solution
-
+\item Duhamel
+\item More Error Function Solutions
 \end{itemize}
 
 \section*{Specific topics \uppercase\expandafter{\romannumeral2}}
@@ -126,7 +127,7 @@ See Mathematica 1999 Tutorial (See Conduction Problems Folder).
 \textbf{1-D steady state solution in Cartisian coordinate}\\
 BCs: at $x=0$, $T=10$; 
 $x=1$, $T=100$ Heat Generation: g variable Given: $k=1$
-\myWSEgPath{1-1}
+\textcolor{blue} {\emph{Please refer to 1D Variheat Cati.nb}}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/1}
@@ -140,8 +141,7 @@ $$T=0.5gx^2+C_1x+C_2$$
 \textbf{1 - D steady state solution in spherical coordinate}\\
 BCs: at $r = 0.1$, $T = 10$; $r = 1$, $T = 100$.
 Heat Generation: g variable
-\myWSEgPath{1-2}
-Given: $k=1$
+Given: $k=1$ \textcolor{blue} {\emph{Please refer to 1D VariHeat spheri.nb}}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/2}
@@ -150,11 +150,11 @@ $$\frac{1}{r}\frac{d^2}{dr^2}(rT)+g=0$$
 $$T=\frac{1}{6}gr^2+\frac{C_1}{r}+C_2$$
 \end{example}
 
-\subsection{round fin}
+\subsection{Round fin}
 \begin{example}
 \textbf{fin problem: round rod}\\
 Given: $k=206W/m/K$
-\myWSEgPath{1-3}
+\textcolor{blue} {\emph{Please refer to Round fin.nb}}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/3}
@@ -165,14 +165,17 @@ $$\theta=\frac{\cosh{m(l-x)}+n\sinh{(m(l-x))}}{\cosh{(ml)}+n\sinh{(ml)}}\theta_0
 \end{example}
 
 \section{Multi-dimensional steady state}
-\subsection{2D square with heat generation, NDSolve method}
+\subsection{2D square with heat generation}
+\begin{example}
+\textbf{NDSolve method}\textcolor{blue} {\emph{Please refer to 2D heat g NDSolve.nb}}
+\end{example}
 
 \section{Transient}
 \subsection{Lumped form cylindrical}
 \begin{example}
-\textbf{lumped problem:long thin rod at $T(0)=20^oC$}\\
+\textbf{lumped problem: long thin rod at $T(0)=20^oC$}\\
 Given: $k = 0.5$; $\rho= 900$; $C_p = 3800$.
-\myWSEgPath{2-1}
+\textcolor{blue} {\emph{Please refer to lump long thin rod.nb}}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/4}
@@ -182,13 +185,16 @@ $$\theta'-m^2\theta=0,~m=\sqrt{\frac{hA}{\rho C_pV}}$$
 $$\theta=\theta_0e^{-mt}$$
 \end{example}
 \subsection{Lumped form radiative condition}
-
+\begin{example}
+A metal sphere of diameter $D$, which is at a uniform temperature $T_i$, is suddenly removed from a furnace and suspended from a fine wire in a large room with air at a uniform temperature $T_\infty$, and the surrounding walls are at a temperature $T_{surr}$.  
+\textcolor{blue} {\emph{Please refer to Lumped with radiat.nb}}
+\end{example}
 \subsection{SOV method: Catesian, Cylindrical, Spherical}
 \begin{example}
 \textbf{ SOV (separation of variable) in 1D Cartisian space and time
 No heat Generation}\\
 $k = 0.5$; $\rho=1000$; $C_p = 4200$.
-\myWSEgPath{2-2}
+\textcolor{blue} {\emph{Please refer to SOV Carti.nb}}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/5}
@@ -211,7 +217,7 @@ $$\frac{1}{N_i}=2\frac{{\beta_i}^2+{H_2}^2}{l({\beta_i}^2+{H_2}^2)+H_2},
 \textbf{SOV (separation of variable) in 1D Cylindrical space and time
 No heat Generation}
 $k = 0.5$; $\rho= 1000$; $C_p = 4200$.
-\myWSEgPath{2-3}
+\textcolor{blue} {\emph{Please refer to SOV Cylin.nb}}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/6}
@@ -246,7 +252,7 @@ $$
 \begin{example}
 \textbf{SOV (separation of variable) in 1D spherical space and time: full sphere No heat Generation}\\
 $k = 0.5$, $\rho= 1000$, $C_p = 4200$, $b=0.01$, $T(x,0)=60$, $T(b,t)=0$.
-\myWSEgPath{2-4}
+\textcolor{blue} {\emph{Please refer to SOV Spheri.nb}}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/7}
@@ -267,9 +273,7 @@ $$
 \frac{V}{4r^2}+
 \frac{1}{r^2}\frac{\partial}{\partial \mu}
 \left( (1-\mu^2)\frac{\partial V}{\partial \mu}\right)+
-\frac{1}{r^2(1-\mu^2)}\frac{\partial^2 V}{\partial \phi^2}
-$$
-
+\frac{1}{r^2(1-\mu^2)}\frac{\partial^2 V}{\partial \phi^2}$$
 $$V(r,\mu,\phi,t)=R(r)M(\mu)\Phi(\phi)\Gamma(t)$$
 $$R(r)\text{: Bessel function, }\beta$$
 $$\Phi(\phi)\text{: trigonometric, m}$$
@@ -287,6 +291,7 @@ $$
 \left[ n(n+1)-\frac{m^2}{1-\mu^2} \right]M=0
 $$
 $$\text{Legendre’s associated differential equation of degree n and order m}$$
+
 \begin{equation*}
 \begin{aligned}
 T(r,\mu,t)=&\sum_{n=0}^{\infty}\sum_{p=1}^{\infty} \frac{1}{N(n)N(\beta_{np})}
@@ -300,7 +305,7 @@ $$N(\beta_{np})=-\frac{b^2}{2}J_{n-0.5}(\beta_{np}b)J_{n+1.5}(\beta_{np}b)$$
 \end{example}
 
 \begin{example}
-\textbf{SOV (separation of variable) in 1D spherical space and time: half sphere}. \myWSEgPath{2-5}
+\textbf{SOV (separation of variable) in 1D spherical space and time: half sphere}. \textcolor{blue} {\emph{Please refer to SOV half Spheri.nb}}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/8}
@@ -319,12 +324,20 @@ $$N(n)=\frac{1}{2n+1}$$
 $$N(\beta_{np})=-\frac{b^2}{2}J_{n-0.5}(\beta_{np}b)J_{n+1.5}(\beta_{np}b)$$
 \end{example}
 
+
+
+\subsection{1-D with heat generation}
+\begin{example}
+\textbf{NDSolve 1-D heat generation} \textcolor{blue} {\emph{Please refer to 1-Dheatg ND.nb}}
+\end{example}
+
+\subsection{Semi-infinite solutions}
 \begin{example}
 \textbf{Semi-infinite domain solution: error function and complimentary error
 function}\\
 $k = 0.5$, $\rho= 1000$, $C_p = 4200$.
 Initial condition: $T(x,0)=0$
-Boundary condition: $T(0,t)=100^oC$ or convective $w/:h=100w/m^2$, $T_f=100^oC$.\myWSEgPath{2-6}
+Boundary condition: $T(0,t)=100^oC$ or convective $w/:h=100w/m^2$, $T_f=100^oC$.\textcolor{blue} {Please refer to error func semiinfi.nb}
 \begin{figure}[H]
   \centering
     \includegraphics[scale=0.5]{figures/appendixA/9}
@@ -337,27 +350,25 @@ erfc(H \sqrt{\alpha t}+x\sqrt{4\alpha t})\\
 \end{eqnarray*}
 \end{example}
 
-\subsection{NDSolve method}
-
-\subsection{Semi-infinite solutions}
 \begin{example}
-\textbf{Analytical solution}
+\textbf{Analytical solution}\textcolor{blue} {\emph{Please refer to f(t)semiinf.nb}}
 \end{example}
 
 \begin{example}
-\textbf{Duhamel method}
+\textbf{Duhamel method}\textcolor{blue} {\emph{Please refer to Duhamelsemiinf.nb}}
 \end{example}
 
 \begin{example}
-\textbf{Laplace method}
+\textbf{Laplace method}\textcolor{blue} {\emph{Please refer to Laplace semiinf.nb}}
 \end{example}
 
 \subsection{Numerical method}
 \begin{example}
-\textbf{Finite Difference method for fin: Cartesian, Cylindrical and Spherical}
+\textbf{Finite Difference method for fin: Cartesian, Cylindrical and Spherical}\textcolor{blue} {\emph{Please refer to Fin Diff 3 Geometries.nb}}
 \end{example}
 
 \chapter{Special Topics \uppercase\expandafter{\romannumeral1}}
+All the workbooks for problems listed in Appendix B Special Topics I could be found in \textcolor{blue} {\emph{Special Topic I.pdf}}
 \section{Multi-dimensional SOV solutions}
 
 \begin{example}
@@ -371,55 +382,59 @@ erfc(H \sqrt{\alpha t}+x\sqrt{4\alpha t})\\
 
 \section{Duhamel Solution}
 \begin{example}
-\textbf{DuhamelSolution}
+\textbf{Duhamel Solution}
 \end{example}
 
 \section{More Error Function Solutions}
 \begin{example}
-\textbf{Semi Inf. Domain}
+\textbf{Semi Infinite Domain}
 \end{example}
 
 \chapter{Special Topics \uppercase\expandafter{\romannumeral2}}
 
 \section{Drug Delivery}
 \begin{example}
-\textbf{One compartment drug delivery}
+\textbf{One compartment drug delivery}\textcolor{blue} {\emph{Please refer to one-comp drug deli.nb}}
 \end{example}
 
 \begin{example}
-\textbf{Two compartment drug delivery}
+\textbf{Two compartment drug delivery}\textcolor{blue} {\emph{Please refer to two-comp drug deli.nb}}
 \end{example}
 
 \section{Phase Change}
 \begin{example}
-\textbf{Part I: Steady State}
+\textbf{Part I: Steady State}\textcolor{blue} {\emph{Please refer to Phase Change Problems.nb}}
 \end{example}
 
 \begin{example}
-\textbf{Part II: Quasi – Steady Solutions (Cooper and Trezek)}
+\textbf{Part II: Quasi – Steady Solutions (Cooper and Trezek)}\textcolor{blue} {\emph{Please refer to Phase Change Problems.nb}}
 \end{example}
 
 \begin{example}
-\textbf{Part III:  Neumann + Stefan}
+\textbf{Part III:  Neumann + Stefan}\textcolor{blue} {\emph{Please refer to Phase Change Problems.nb}}
 \end{example}
 
 \section{Biophysics}
 \subsubsection{Arrhenius Modeling vs. Clinical Equivalent Minutes (CEM)}
 \begin{example}
-\textbf{Protein denaturation \& Fractional denaturation}
+\textbf{Protein denaturation \& Fractional denaturation}\textcolor{blue} {\emph{Please refer to CPALoading2012v042914.nb, CPALoadWeiss.nb, CPALoadingSmith.nb}}
 \end{example}
 
 \begin{example}
-\textbf{Thermal Dose}
+\textbf{Thermal Dose}\textcolor{blue} {\emph{Please refer to Thermal Dose.nb }}
 \end{example}
 
 \subsection{Water Transport}
+\begin{example}
+\textbf{Water Transport Simulation}\textcolor{blue} {\emph{Please refer to Water Trans.nb}}
+\end{example}
 \subsection{Cryoprotective Loading}
+
 
 \section{Iron Oxide Nanoparticle Heating}
 
 \begin{example}
-\textbf{Cancer}
+\textbf{Cancer}\textcolor{blue} {\emph{Please refer to FEO NP for Cancer Treat.nb}}
 \end{example}
 
 \begin{example}
